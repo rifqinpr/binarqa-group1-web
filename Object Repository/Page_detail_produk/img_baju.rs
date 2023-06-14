@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_baju</name>
+   <tag></tag>
+   <elementGuidId>1caeb87e-7e05-4bcc-9c0a-b4a062ddd483</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='products']/div/a/div/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img.card-img.img-product-thumbnail.p-3.rounded-4.overflow-hidden</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>0574f87a-7405-426a-83d9-f9e9100bcc85</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Download file</value>
+      <webElementGuid>85c7fc79-1fb8-4773-85a1-5cdd238c1e72</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>card-img img-product-thumbnail p-3 rounded-4 overflow-hidden</value>
+      <webElementGuid>2a32b55a-56cc-4147-b9b3-13df04ccac1a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>/placeholder.webp</value>
+      <webElementGuid>8fdba9d5-193d-4b48-a897-8729b9277ec0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;products&quot;)/div[@class=&quot;col-12 col-md-4 col-lg-3&quot;]/a[@class=&quot;product-card&quot;]/div[@class=&quot;card px-0 border-0 shadow h-100 pb-4 rounded-4&quot;]/img[@class=&quot;card-img img-product-thumbnail p-3 rounded-4 overflow-hidden&quot;]</value>
+      <webElementGuid>31024743-3b99-4f13-8582-42fe95785b94</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='products']/div/a/div/img</value>
+      <webElementGuid>796f7e73-ee35-45cc-8da5-3f8102a285a4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Download file']</value>
+      <webElementGuid>28355d56-756e-49f6-9c1e-9f2dc02f2223</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/a/div/img</value>
+      <webElementGuid>d68eafae-1b39-4d0d-b321-da91a87597f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@alt = 'Download file' and @src = '/placeholder.webp']</value>
+      <webElementGuid>28334be0-dbb6-43a5-92f9-0f7c2fc137ce</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_Kesehatan_card-img img-product-thumbnail</name>
+   <tag></tag>
+   <elementGuidId>56f96e38-f7d5-4d5b-a852-8db50302068e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>img.card-img.img-product-thumbnail.p-3.rounded-4.overflow-hidden</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@src = 'https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBalJIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6b4ff4ab93f07114ab6e3ca965d91cadba546654/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUFXa0NBQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b50863606d6ba2f597650ed7335384ba20cf4712/gw007.jpg']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='products']/div/a/div/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>a5929ba8-2ac9-4407-b103-65376b6b1a40</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>card-img img-product-thumbnail p-3 rounded-4 overflow-hidden</value>
+      <webElementGuid>066995a4-b752-499d-a5d5-2b50768282d0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBalJIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6b4ff4ab93f07114ab6e3ca965d91cadba546654/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUFXa0NBQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b50863606d6ba2f597650ed7335384ba20cf4712/gw007.jpg</value>
+      <webElementGuid>179701d8-4105-446d-bb03-37f9dc43eb40</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;products&quot;)/div[@class=&quot;col-12 col-md-4 col-lg-3&quot;]/a[@class=&quot;product-card&quot;]/div[@class=&quot;card px-0 border-0 shadow h-100 pb-4 rounded-4&quot;]/img[@class=&quot;card-img img-product-thumbnail p-3 rounded-4 overflow-hidden&quot;]</value>
+      <webElementGuid>338ffe9d-b29d-4be7-8650-d30883f2466a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='products']/div/a/div/img</value>
+      <webElementGuid>221fca2b-3dae-4ac9-a9f6-603951c9d7c7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[contains(@src,'https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBalJIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6b4ff4ab93f07114ab6e3ca965d91cadba546654/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUFXa0NBQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b50863606d6ba2f597650ed7335384ba20cf4712/gw007.jpg')]</value>
+      <webElementGuid>b927f494-c4e3-41ce-a0f3-979ac11373fa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/a/div/img</value>
+      <webElementGuid>4c1d3dd2-75d4-4de3-8d52-4a6b621bb7e1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = 'https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBalJIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6b4ff4ab93f07114ab6e3ca965d91cadba546654/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUFXa0NBQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b50863606d6ba2f597650ed7335384ba20cf4712/gw007.jpg']</value>
+      <webElementGuid>8b502236-0a27-421c-97df-0c1e0ca5bf54</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

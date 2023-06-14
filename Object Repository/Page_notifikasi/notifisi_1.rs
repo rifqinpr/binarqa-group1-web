@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>notifisi_1</name>
+   <tag></tag>
+   <elementGuidId>bfe8f633-386a-42c0-a306-43d2dec67d05</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='navbarSupportedContent']/div/ul/li[3]/a/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.nav-link.dropdown-toggle.position-relative.show > i.bi.bi-bell</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>55dc525d-7990-4e4e-b1c6-0e7038ea5d25</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bi bi-bell</value>
+      <webElementGuid>c279ee08-069f-4f68-b7ad-3597098e8f5a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;navbarSupportedContent&quot;)/div[@class=&quot;ms-auto&quot;]/ul[@class=&quot;navbar-nav&quot;]/li[@class=&quot;nav-item dropdown me-0 me-lg-2 fs-5 d-none d-xl-block position-relative&quot;]/a[@class=&quot;nav-link dropdown-toggle position-relative show&quot;]/i[@class=&quot;bi bi-bell&quot;]</value>
+      <webElementGuid>63bdf2e9-db74-4780-a101-4593e1bf97b6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='navbarSupportedContent']/div/ul/li[3]/a/i</value>
+      <webElementGuid>fbd265aa-bc4a-4e59-af16-61356c25971e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[3]/a/i</value>
+      <webElementGuid>4f38eadd-a24e-422e-bc05-cab3c82067c8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
