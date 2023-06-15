@@ -60,5 +60,3 @@ def afterTestSuite(TestSuiteContext testSuiteContext) {
 	this.closeBrowser()
 }
 }
-
-

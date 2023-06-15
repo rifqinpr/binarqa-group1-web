@@ -16,19 +16,15 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@buyer
-Feature: Bid
+
+Feature: Bid Valid
   Buyer wants to bid with valid harga
 
-  @bid @bidValid
   Scenario Outline: Bid - buyer wants to bid with valid harga
   
     Given buyer is in Sign In Page 
-    And buyer login with email "alexbeli@gmail.com"
+    When buyer login with email "alexbeli@gmail.com"
     And buyer login with password "asdqwe"
     And buyer click Sign In button
     
-    When buyer click first product in home page
-    And buyer click Saya tertarik dan ingin nego
-    And buyer input Harga Tawar "1000"
-    Then button nego will change to Menunggu respon penjual
+    
