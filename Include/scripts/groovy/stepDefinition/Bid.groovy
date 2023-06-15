@@ -52,4 +52,30 @@ class Bid {
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : "asdqwe"], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
+	
+	@When("buyer click first cart product")
+	public void buyer_click_first_cart_product() {
+		WebUI.callTestCase(findTestCase('Bid/Click First Cart Product'), [:], FailureHandling.STOP_ON_FAILURE)
+	}
+	
+	@When("buyer click Saya tertarik dan ingin nego button")
+	public void buyer_click_button() {
+		WebUI.callTestCase(findTestCase('Bid/Click Saya Tertarik dan Ingin Nego'), [:], FailureHandling.STOP_ON_FAILURE)
+	}
+	
+	@When("buyer memasukkan harga tawaran {string}")
+	public void buyer_memasukkan_harga_tawaran(String harga) {
+		WebUI.callTestCase(findTestCase('Bid/Input Harga Tawar'), [('harga') : harga], FailureHandling.STOP_ON_FAILURE)
+	}
+	
+	@When("buyer click tombol Kirim")
+	public void buyer_click_tombol_Kirim() {
+		WebUI.callTestCase(findTestCase('Bid/Click Button Kirim'), [:], FailureHandling.STOP_ON_FAILURE)
+	}
+	
+	@Then("buyer menunggu respon penjual")
+	public void buyer_menunggu_respon_penjual() {
+		WebUI.callTestCase(findTestCase('Bid/Verify Text'), [:], FailureHandling.STOP_ON_FAILURE)	}
+	
+	
 }

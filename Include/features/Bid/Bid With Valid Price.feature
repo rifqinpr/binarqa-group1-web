@@ -25,3 +25,9 @@ Feature: Bid Valid
   Scenario: Bid - buyer wants to bid with valid harga
     Given buyer already login
     
+    When 	buyer click first cart product
+    And buyer click Saya tertarik dan ingin nego button
+    And buyer memasukkan harga tawaran "1000"
+    And buyer click tombol Kirim
+    Then buyer menunggu respon penjual
+    

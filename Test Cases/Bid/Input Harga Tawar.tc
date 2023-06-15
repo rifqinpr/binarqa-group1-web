@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Input Harga Tawar</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2bca9707-d044-47a4-b937-0be4ad2dc747</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a655e935-b3c3-45f8-808f-6a9a53c26da6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a655e935-b3c3-45f8-808f-6a9a53c26da6</id>
+      <masked>false</masked>
+      <name>harga</name>
+   </variable>
+</TestCaseEntity>
