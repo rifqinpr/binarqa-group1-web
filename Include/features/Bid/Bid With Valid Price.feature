@@ -17,14 +17,13 @@
 ## (Comments)
 #Sample Feature Definition Template
 
+@Bid
 Feature: Bid Valid
   Buyer wants to bid with valid harga
 
-  Scenario Outline: Bid - buyer wants to bid with valid harga
-  
+	@Bid01
+  Scenario: Bid - buyer wants to bid with valid harga
     Given buyer is in Sign In Page 
     When buyer login with email "alexbeli@gmail.com"
     And buyer login with password "asdqwe"
     And buyer click Sign In button
-    
-    

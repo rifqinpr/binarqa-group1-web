@@ -64,5 +64,4 @@ class Bid {
 	public void buyer_click_Sign_In_button() {
 		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-
 }
