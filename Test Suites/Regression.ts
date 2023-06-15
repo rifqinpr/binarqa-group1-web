@@ -148,7 +148,7 @@
       <guid>a69f2a0e-81fa-4d1e-9222-7948731dbcfc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/FEATURE NOTIFIKASI/TC1_NOTIFIKASI</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Notifikasi/TC1_NOTIFIKASI</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

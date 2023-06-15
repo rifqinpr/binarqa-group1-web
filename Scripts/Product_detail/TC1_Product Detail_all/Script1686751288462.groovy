@@ -23,19 +23,19 @@ WebUI.navigateToUrl('https://secondhand.binaracademy.org/')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/Page_login/Masuk'))
+WebUI.click(findTestObject('null'))
 
-WebUI.setText(findTestObject('Object Repository/Page_login/input_Email_useremail'), 'syafradha@gmail.com')
+WebUI.setText(findTestObject('null'), 'syafradha@gmail.com')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_login/input_Password_userpassword'), 'FPYExdvWvvd1Zn9qtGusuw==')
+WebUI.setEncryptedText(findTestObject('null'), 'FPYExdvWvvd1Zn9qtGusuw==')
 
-WebUI.click(findTestObject('Object Repository/Page_login/input_Password_commit'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/Page_kategori/Semua'))
+WebUI.click(findTestObject('Object Repository/HomePage/Page_kategori/Semua'))
 
-WebUI.click(findTestObject('Page_detail_produk/img_all_baju'))
+WebUI.click(findTestObject('Products/Page_detail_produk/img_all_baju'))
 
-WebUI.verifyElementText(findTestObject('Page_detail_produk/Deskripsi'), '')
+WebUI.verifyElementText(findTestObject('Products/Page_detail_produk/Deskripsi'), '')
 
 WebUI.closeBrowser()
 

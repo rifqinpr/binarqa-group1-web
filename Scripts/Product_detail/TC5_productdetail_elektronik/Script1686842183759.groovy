@@ -17,23 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://secondhand.binaracademy.org/')
-
-WebUI.maximizeWindow()
-
-WebUI.click(findTestObject('null'))
-
-WebUI.setText(findTestObject('null'), 'syafradha@gmail.com')
-
-WebUI.setEncryptedText(findTestObject('null'), 'FPYExdvWvvd1Zn9qtGusuw==')
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('HomePage/Page_kategori/Kesehatan'))
-
-WebUI.verifyElementPresent(findTestObject('HomePage/Page_kategori/Verify_content (1)'), 0)
-
-WebUI.closeBrowser()
-

@@ -45,28 +45,11 @@ import cucumber.api.java.en.When
 
 class Bid {
 
-	@Given("buyer is in Sign In Page")
-	public void buyer_is_in_Sign_In_Page() {
-		WebUI.callTestCase(findTestCase('Bid/Click Button Masuk From HomePage'), [:], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@When("buyer login with email {string}")
-	public void buyer_login_with_email(String email) {
-		WebUI.callTestCase(findTestCase('Bid/Input Email'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@When("buyer login with password {string}")
-	public void buyer_login_with_password(String password) {
-		WebUI.callTestCase(findTestCase('Bid/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@And("buyer click Sign In button")
-	public void buyer_click_Sign_In_button() {
-		WebUI.callTestCase(findTestCase('Login/Click Button Sign In from Sign In Page'), [:], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@Then("user will be redirected to Homepage")
-	public void user_will_be_redirected_to_HomePage() {
-		WebUI.callTestCase(findTestCase('Login/Verify Content'), [:], FailureHandling.STOP_ON_FAILURE)
+	@Given("buyer already login")
+	public void buyer_already_login() {
+		WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : "alexbeli@gmail.com"], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : "asdqwe"], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }
