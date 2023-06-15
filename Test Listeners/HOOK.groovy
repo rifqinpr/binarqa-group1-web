@@ -28,8 +28,8 @@ class Hook {
 	
 def openBrowser() {
 	WebUI.openBrowser('');
-	WebUI.maximizeWindow();
-	WebUI.navigateToUrl('https://www.saucedemo.com/');
+	//WebUI.maximizeWindow();
+	WebUI.navigateToUrl('https://secondhand.binaracademy.org/');
 }
 	
 def closeBrowser() {
