@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>empty all fields</description>
+   <name>LGN03 - User login without enter any data</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f8a332ab-2811-4915-9b4d-48da748d22fb</testCaseGuid>
+</TestCaseEntity>

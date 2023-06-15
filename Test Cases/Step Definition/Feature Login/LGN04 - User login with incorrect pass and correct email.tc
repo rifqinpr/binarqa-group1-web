@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>correct email and INCORRECT password</description>
+   <name>LGN04 - User login with incorrect pass and correct email</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>368ec03c-844e-48f4-89da-2287c7170ad9</testCaseGuid>
+</TestCaseEntity>
