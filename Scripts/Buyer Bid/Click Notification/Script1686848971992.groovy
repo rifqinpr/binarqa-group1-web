@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Navbar/i_Produk Saya_bi bi-bell me-4 me-lg-0'))
+WebUI.click(findTestObject('Navbar/a_Notifikasi Icon'))
 

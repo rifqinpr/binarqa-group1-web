@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Update Status Product/Update Status Produk Terima/Page_SecondHand/label_Terima'))
+WebUI.click(findTestObject('Info Penawaran/label_Terima Tawaran'))
 

@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementPresent(findTestObject('Update Status Product/Hubungi Di Whatsapp/Page_SecondHand/a_Hubungi di'), 2)
+WebUI.verifyElementPresent(findTestObject('Info Penawaran/a_Hubungi di WhatsAPP'), 2)
 
