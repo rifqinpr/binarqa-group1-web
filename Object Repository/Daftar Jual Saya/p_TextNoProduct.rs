@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_TextNoProduct</name>
+   <tag></tag>
+   <elementGuidId>665e44cc-a2f0-4d78-9c20-755049f08ad0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Terjual'])[1]/following::p[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>p.py-5</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>311fe4eb-fbd3-4b1e-9398-eb04c534a104</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>py-5</value>
+      <webElementGuid>926541b6-19ad-4a1d-b072-bd3f2618eab0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Belum ada produkmu yang diminati nih, sabar ya rejeki nggak kemana kok</value>
+      <webElementGuid>bd8a51cc-af8e-4e11-91b3-5a883914c414</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/section[@class=&quot;pt-5 mt-5&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;row my-5&quot;]/div[@class=&quot;col-12 col-lg-9 mt-5 mt-lg-0&quot;]/div[@class=&quot;row g-4&quot;]/div[@class=&quot;d-flex flex-column justify-content-center align-items-center&quot;]/div[@class=&quot;container d-flex flex-column justify-content-center align-items-center&quot;]/p[@class=&quot;py-5&quot;]</value>
+      <webElementGuid>a3123852-645d-4fba-9687-2d88deebec9e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Terjual'])[1]/following::p[1]</value>
+      <webElementGuid>802694cd-a5f7-4bae-9a51-8c26c904b4c3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Diminati'])[1]/following::p[1]</value>
+      <webElementGuid>15777c0e-019b-4862-beef-5181f26fac12</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Belum ada produkmu yang diminati nih, sabar ya rejeki nggak kemana kok']/parent::*</value>
+      <webElementGuid>4a703e16-4707-4af6-a52e-9425d1b039e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p</value>
+      <webElementGuid>d2ecf1a1-78ac-41a7-8f70-5ad6819f2562</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Belum ada produkmu yang diminati nih, sabar ya rejeki nggak kemana kok' or . = 'Belum ada produkmu yang diminati nih, sabar ya rejeki nggak kemana kok')]</value>
+      <webElementGuid>170c09c5-63ae-417a-bd9c-c52e0a096511</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

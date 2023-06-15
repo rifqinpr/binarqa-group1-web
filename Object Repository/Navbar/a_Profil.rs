@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>Lihat/Edit Profil</description>
+   <name>a_Profil</name>
+   <tag></tag>
+   <elementGuidId>a4dae514-468b-4523-81ba-bbcd23817eed</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@class = 'nav-user' and @href = '/profiles']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>712d41b2-b61b-49f6-ae5f-afb57dd11c0c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>nav-user</value>
+      <webElementGuid>d2880c9c-79b5-41ab-8d33-f466afb65f03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/profiles</value>
+      <webElementGuid>35eeb38e-5ae8-48da-a640-a4a3f73730b5</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

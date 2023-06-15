@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h2_Daftar</name>
+   <tag></tag>
+   <elementGuidId>aa82322d-7e3d-48df-bf77-55a561561c4f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//h2[@class = 'fw-bold mb-5' and (text() = 'Daftar' or . = 'Daftar')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='SecondHand.'])[1]/following::h2[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h2.fw-bold.mb-5</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h2</value>
+      <webElementGuid>a496818a-4a66-4913-bf51-acb9f81e2c23</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fw-bold mb-5</value>
+      <webElementGuid>5b761882-ad69-4016-844f-426e3c20a04e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Daftar</value>
+      <webElementGuid>56049088-d327-45e8-b296-0d1902d416d9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/section[@class=&quot;container-fluid min-height-100vh&quot;]/div[@class=&quot;row min-height-100vh w-100&quot;]/div[@class=&quot;col-6 d-flex flex-column align-items-center justify-content-center&quot;]/div[@class=&quot;container p-5&quot;]/h2[@class=&quot;fw-bold mb-5&quot;]</value>
+      <webElementGuid>c180d2e7-0c74-45be-a0da-354708078863</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SecondHand.'])[1]/following::h2[1]</value>
+      <webElementGuid>77da1f6f-d29e-4650-818a-a7f0f38bf14e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[1]/preceding::h2[1]</value>
+      <webElementGuid>a90581d1-9218-4a8d-a739-62593457b55e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email'])[1]/preceding::h2[1]</value>
+      <webElementGuid>3b6c81dd-59a0-488e-b842-f044f32ba225</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Daftar']/parent::*</value>
+      <webElementGuid>ca85c62f-bc20-4614-9ebb-27dd2a54f0e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h2</value>
+      <webElementGuid>81663614-8fd9-4fc3-8fc2-80b98b120b61</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h2[(text() = 'Daftar' or . = 'Daftar')]</value>
+      <webElementGuid>6325e4a9-0a0b-47a5-990b-9cef3a04df67</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

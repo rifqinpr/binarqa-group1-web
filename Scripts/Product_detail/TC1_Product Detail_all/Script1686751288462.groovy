@@ -31,7 +31,7 @@ WebUI.setEncryptedText(findTestObject('null'), 'FPYExdvWvvd1Zn9qtGusuw==')
 
 WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/HomePage/Page_kategori/Semua'))
+WebUI.click(findTestObject('Object Repository/HomePage/Kategori Filter/a_Filter Semua'))
 
 WebUI.click(findTestObject('Products/Page_detail_produk/img_all_baju'))
 

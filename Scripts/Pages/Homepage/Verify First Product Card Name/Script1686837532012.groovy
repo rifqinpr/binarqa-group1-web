@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyMatch(WebUI.getText(findTestObject('HomePage/h5_first-card-title')), text, true)
+WebUI.verifyMatch(WebUI.getText(findTestObject('HomePage/h5_First Product Card Title')), text, true)
 

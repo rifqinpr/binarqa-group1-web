@@ -31,9 +31,9 @@ WebUI.setEncryptedText(findTestObject('null'), 'FPYExdvWvvd1Zn9qtGusuw==')
 
 WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('HomePage/Page_kategori/Kesehatan'))
+WebUI.click(findTestObject('HomePage/Kategori Filter/a_Filter Kesehatan'))
 
-WebUI.verifyElementPresent(findTestObject('HomePage/Page_kategori/Verify_content (1)'), 0)
+WebUI.verifyElementPresent(findTestObject('null'), 0)
 
 WebUI.closeBrowser()
 

@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementVisible(findTestObject('Login/Page_SecondHand/errormsg-invalidemail'))
+WebUI.verifyElementVisible(findTestObject('Login/div_Error Message'))
 

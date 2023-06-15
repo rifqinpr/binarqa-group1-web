@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h1_SecondHand</name>
+   <tag></tag>
+   <elementGuidId>d6ac9d00-5f9f-4f7c-aee9-b38018030350</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Invalid Email or password.'])[1]/following::h1[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//h1[@class = 'display-5 fw-bold text-white align-self-center p-5' and (text() = 'SecondHand.' or . = 'SecondHand.')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h1.display-5.fw-bold.text-white.align-self-center.p-5</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h1</value>
+      <webElementGuid>c8c98be1-7039-4822-936c-fa6b1b6e154a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>display-5 fw-bold text-white align-self-center p-5</value>
+      <webElementGuid>582ad46f-1dac-49f3-96ff-db85ef4eb784</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>SecondHand.</value>
+      <webElementGuid>ffb37ca7-1ff6-4603-9c29-2b84ce624149</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/section[@class=&quot;container-fluid min-height-100vh&quot;]/div[@class=&quot;row min-height-100vh w-100&quot;]/div[@class=&quot;col-6 session-background d-flex&quot;]/h1[@class=&quot;display-5 fw-bold text-white align-self-center p-5&quot;]</value>
+      <webElementGuid>183e5fde-4414-4c6d-a2aa-56d111cae9f0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Invalid Email or password.'])[1]/following::h1[1]</value>
+      <webElementGuid>21b868b9-1f8f-4100-904a-794f4ad2c5e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Masuk'])[1]/preceding::h1[1]</value>
+      <webElementGuid>c04a0c77-ee5e-483b-bd90-15c34342acbe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email'])[1]/preceding::h1[1]</value>
+      <webElementGuid>ffc5dc7b-9213-46be-be8c-7c5e06ddd654</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Second']/parent::*</value>
+      <webElementGuid>b6153492-e238-4f5f-8d7b-958a5d7c4240</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h1</value>
+      <webElementGuid>94217647-76dc-44f6-b8b5-6fcef7134cb7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h1[(text() = 'SecondHand.' or . = 'SecondHand.')]</value>
+      <webElementGuid>962b3045-c6ee-4d0e-a981-52f0b1bd0835</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

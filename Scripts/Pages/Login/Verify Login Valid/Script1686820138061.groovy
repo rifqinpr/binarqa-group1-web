@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementVisible(findTestObject('User Profile/Page_SecondHand/a_Profil Saya'))
+WebUI.verifyElementVisible(findTestObject('Navbar/a_Profil Saya Icon'))
 

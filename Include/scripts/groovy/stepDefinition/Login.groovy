@@ -46,17 +46,17 @@ class Login {
 	@Given("I already registered an account and go to Login page")
 	public void i_already_registered_an_account() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/')
-		WebUI.click(findTestObject('Login/Page_SecondHand/a_Masuk'))
+		WebUI.click(findTestObject('Login/a_Masuk'))
 	}
 
 	@When("I input email (.*)")
 	public void i_input_email(String email) {
-		WebUI.setText(findTestObject('Login/Page_SecondHand/input_Email_useremail'), email)
+		WebUI.setText(findTestObject('Login/input_Email'), email)
 	}
 
 	@And("I input password (.*)")
 	public void i_input_password(String password) {
-		WebUI.setText(findTestObject('Login/Page_SecondHand/input_Password_userpassword'), password)
+		WebUI.setText(findTestObject('Login/input_Password'), password)
 	}
 
 	@And("I click Masuk button")
@@ -67,16 +67,16 @@ class Login {
 	@Then("I should see the next step (.*)")
 	public void i_should_see_the_nextstep(String status) {
 		if (status == 'success') {
-			WebUI.verifyElementVisible(findTestObject('User Profile/Page_SecondHand/a_Profil Saya'))
+			WebUI.verifyElementVisible(findTestObject('User Profile/a_Profil Saya'))
 		}
 		else if (status == 'required email') {
-			WebUI.verifyElementAttributeValue(findTestObject('Login/Page_SecondHand/input_Email_useremail'), 'required', 'true', 20)
+			WebUI.verifyElementAttributeValue(findTestObject('Login/input_Email'), 'required', 'true', 20)
 		}
 		else if (status == 'required pass') {
-			WebUI.verifyElementAttributeValue(findTestObject('Login/Page_SecondHand/input_Password_userpassword'), 'required', 'true', 20)
+			WebUI.verifyElementAttributeValue(findTestObject('Login/input_Password'), 'required', 'true', 20)
 		}
 		else if (status == 'invalid') {
-			WebUI.verifyElementVisible(findTestObject('Login/Page_SecondHand/errormsg-invalidemail'))
+			WebUI.verifyElementVisible(findTestObject('Login/div_Error Message'))
 		}
 		WebUI.closeBrowser()
 	}

@@ -17,4 +17,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.sendKeys(findTestObject('HomePage/input_Search'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Navbar/input_Search Field'), Keys.chord(Keys.ENTER))

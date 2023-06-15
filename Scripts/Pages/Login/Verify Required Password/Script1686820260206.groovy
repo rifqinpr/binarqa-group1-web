@@ -17,6 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementAttributeValue(findTestObject('Login/Page_SecondHand/input_Password_userpassword'), 'required', 'true', 
+WebUI.verifyElementAttributeValue(findTestObject('Login/input_Password'), 'required', 'true', 
     20)
 
