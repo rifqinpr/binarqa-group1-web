@@ -1,119 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Notifikasi Icon</name>
+   <name>a_Masuk</name>
    <tag></tag>
-   <elementGuidId>b843dd1e-ecd2-4d18-ae00-18bee787f69c</elementGuidId>
+   <elementGuidId>7c2e01dd-8e72-4f47-81e9-af023d21458f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='navbarSupportedContent']/div/ul/li[2]/a</value>
+         <key>CSS</key>
+         <value>a.btn.btn-primary</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>li.nav-item.me-0.me-lg-2.fs-5.d-block.d-xl-none.position-relative > a.nav-link.d-flex.align-items-center</value>
+         <key>XPATH</key>
+         <value>//div[@id='navbarSupportedContent']/div/a</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>ad3d78d4-4696-4d6a-943b-297670ea1e27</webElementGuid>
+      <webElementGuid>45288754-43fc-4866-abdc-97b057b9d592</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>nav-link d-flex align-items-center</value>
-      <webElementGuid>fa122065-ef7e-4a91-8337-5f477f4c2a33</webElementGuid>
+      <value>btn btn-primary</value>
+      <webElementGuid>eebf663a-ab02-4fad-9838-7f827ec9ff58</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>/notifications</value>
-      <webElementGuid>df9e00fa-88d2-4a16-abb2-69e2922a9b00</webElementGuid>
+      <value>/users/sign_in</value>
+      <webElementGuid>c691569d-640b-46d3-b912-f9ac10152f5b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>
-      
-      Notifikasi
-
+  
+  Masuk
 </value>
-      <webElementGuid>459cae61-9434-45c2-876b-60ae1ee3515f</webElementGuid>
+      <webElementGuid>c08dde7e-b674-4c99-a3c1-6d919e2acca8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;navbarSupportedContent&quot;)/div[@class=&quot;ms-auto&quot;]/ul[@class=&quot;navbar-nav&quot;]/li[@class=&quot;nav-item me-0 me-lg-2 fs-5 d-block d-xl-none position-relative&quot;]/a[@class=&quot;nav-link d-flex align-items-center&quot;]</value>
-      <webElementGuid>26301252-ae69-48de-87ba-b2f0325d0958</webElementGuid>
+      <value>id(&quot;navbarSupportedContent&quot;)/div[@class=&quot;ms-auto&quot;]/a[@class=&quot;btn btn-primary&quot;]</value>
+      <webElementGuid>14b62443-f66f-4045-9562-472bed2e1ae8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='navbarSupportedContent']/div/ul/li[2]/a</value>
-      <webElementGuid>9c81e3ff-a1e3-4394-8210-f50c31b4ff43</webElementGuid>
+      <value>//div[@id='navbarSupportedContent']/div/a</value>
+      <webElementGuid>e9af32a9-7193-4648-935c-548216b16409</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Produk Saya'])[1]/following::a[1]</value>
-      <webElementGuid>1b6eb10e-f659-4103-88a6-144fc92d2b52</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bulan RamadhanBanyak diskon!'])[1]/preceding::a[1]</value>
+      <webElementGuid>d1ac315e-0490-4716-99b0-5ff84c4eb4ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tidak ada notifikasi'])[1]/preceding::a[2]</value>
-      <webElementGuid>d20fdc12-f8ce-4ab9-8555-b9997f2af723</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Diskon Hingga'])[1]/preceding::a[1]</value>
+      <webElementGuid>514d24e3-053d-4603-a82d-e3c0c148a651</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Masuk']/parent::*</value>
+      <webElementGuid>a291079f-a310-4d09-a7b9-42bec06fe10c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, '/notifications')]</value>
-      <webElementGuid>da8255db-2f50-41d8-9575-1c2b825dafed</webElementGuid>
+      <value>//a[contains(@href, '/users/sign_in')]</value>
+      <webElementGuid>09f40e1e-5a2e-4155-b452-49dc134dc27b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[2]/a</value>
-      <webElementGuid>df5f8e4b-dbac-4b8f-8ca8-d01eb4fb65ab</webElementGuid>
+      <value>//div/div/a</value>
+      <webElementGuid>62c39fd0-eaf0-4cf3-a23b-038bb23d63b8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@href = '/notifications' and (text() = '
-      
-      Notifikasi
-
+      <value>//a[@href = '/users/sign_in' and (text() = '
+  
+  Masuk
 ' or . = '
-      
-      Notifikasi
-
+  
+  Masuk
 ')]</value>
-      <webElementGuid>e724d82e-a7ca-435d-b2ea-6c1891f842d2</webElementGuid>
+      <webElementGuid>a2985c85-c681-4abc-8a6e-906c756b61bf</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
