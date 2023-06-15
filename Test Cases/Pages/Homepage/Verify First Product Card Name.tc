@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify First Product Card Name</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9b9094dc-9252-47aa-8f10-66503bda2515</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7da2d996-d995-4e4f-a542-738cabee817b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7da2d996-d995-4e4f-a542-738cabee817b</id>
+      <masked>false</masked>
+      <name>text</name>
+   </variable>
+</TestCaseEntity>
