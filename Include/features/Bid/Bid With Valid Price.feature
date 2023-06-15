@@ -23,7 +23,5 @@ Feature: Bid Valid
 
 	@Bid01
   Scenario: Bid - buyer wants to bid with valid harga
-    Given buyer is in Sign In Page 
-    When buyer login with email "alexbeli@gmail.com"
-    And buyer login with password "asdqwe"
-    And buyer click Sign In button
+    Given buyer already login
+    

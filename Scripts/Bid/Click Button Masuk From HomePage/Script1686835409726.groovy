@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Object Repository/Test/Page_SecondHand/i_Masuk_bi bi-arrow-bar-right'))
+WebUI.click(findTestObject('null'))
 
 WebUI.waitForPageLoad(5)
 
