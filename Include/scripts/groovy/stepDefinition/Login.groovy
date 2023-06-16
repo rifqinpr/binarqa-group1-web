@@ -46,37 +46,38 @@ class Login {
 	@Given("I already registered an account and go to Login page")
 	public void i_already_registered_an_account() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/')
-		WebUI.click(findTestObject('Login/a_Masuk'))
+		WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("I input email (.*)")
 	public void i_input_email(String email) {
-		WebUI.setText(findTestObject('Login/input_Email'), email)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@And("I input password (.*)")
 	public void i_input_password(String password) {
-		WebUI.setText(findTestObject('Login/input_Password'), password)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@And("I click Masuk button")
 	public void i_click_Masuk_button() {
-		WebUI.click(findTestObject('Login/Page_SecondHand/button_Masuk'))
+		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("I should see the next step (.*)")
 	public void i_should_see_the_nextstep(String status) {
 		if (status == 'success') {
-			WebUI.verifyElementVisible(findTestObject('User Profile/a_Profil Saya'))
+			//WebUI.verifyElementVisible(findTestObject('User Profile/a_Profil Saya'))
+			WebUI.callTestCase(findTestCase('Pages/Login/Verify Login Valid'), [:], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (status == 'required email') {
-			WebUI.verifyElementAttributeValue(findTestObject('Login/input_Email'), 'required', 'true', 20)
+			WebUI.callTestCase(findTestCase('Pages/Login/Verify Required Email'), [:], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (status == 'required pass') {
-			WebUI.verifyElementAttributeValue(findTestObject('Login/input_Password'), 'required', 'true', 20)
+			WebUI.callTestCase(findTestCase('Pages/Login/Verify Required Password'), [:], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (status == 'invalid') {
-			WebUI.verifyElementVisible(findTestObject('Login/div_Error Message'))
+			WebUI.callTestCase(findTestCase('Pages/Login/Verify Invalid Email or Pass'), [:], FailureHandling.STOP_ON_FAILURE)
 		}
 		WebUI.closeBrowser()
 	}
