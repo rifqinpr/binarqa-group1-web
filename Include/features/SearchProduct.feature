@@ -9,6 +9,7 @@ Feature: Search Product
     Then List of products that match with <text> inputted will be shown
 
     Examples: 
-      | text  |
-      | laptop |
-      | kemeja |
+      | text  	|
+      | hrv 		|
+      | kemeja 	|
+      | zenbook |

@@ -26,8 +26,8 @@ import internal.GlobalVariable
 
 public class Accept {
 
-	@Given("seller already login")
-	public void buyer_already_login() {
+	@Given("Seller already login")
+	public void seller_already_login() {
 		WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : "alexjual@gmail.com"], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : "asdqwe"], FailureHandling.STOP_ON_FAILURE)

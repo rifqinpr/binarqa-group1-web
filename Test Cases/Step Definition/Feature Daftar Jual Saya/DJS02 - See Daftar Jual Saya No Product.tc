@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User want to see &quot;Daftar Jual Saya&quot; List when no product added yet</description>
+   <name>DJS02 - See Daftar Jual Saya No Product</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c9465434-82fa-4fc1-a527-3805d5b7b94b</testCaseGuid>
+</TestCaseEntity>

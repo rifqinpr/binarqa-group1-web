@@ -17,5 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-println(WebUI.getText(findTestObject('HomePage/h5_First Product Card Title')))
-WebUI.verifyMatch(WebUI.getText(findTestObject('HomePage/h5_First Product Card Title')), text, true)
+WebUI.callTestCase(findTestCase('Pages/Homepage/Input Text in Search Field'), [('text') : text], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Homepage/Press Enter Key'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Homepage/Verify First Product Card Name'), [('text') : '(?i).*'+text+'.*'], FailureHandling.STOP_ON_FAILURE)

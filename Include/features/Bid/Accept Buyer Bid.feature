@@ -5,7 +5,7 @@ Feature: Accept Bid
   @AcceptValid
   Scenario: Seller wants to accept buyer bid
   
-    Given seller already login
+    Given Seller already login
     When seller click notification
     And seller click first notification
     And seller click Terima

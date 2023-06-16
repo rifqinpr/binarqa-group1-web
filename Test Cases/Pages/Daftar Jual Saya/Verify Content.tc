@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verifying Content Inside Daftar Jual Saya Page</description>
+   <name>Verify Content</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b8c9d588-4bcb-42be-a58e-71a1b7973a66</testCaseGuid>
+</TestCaseEntity>

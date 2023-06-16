@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User click Diminati category</description>
+   <name>Click Diminati</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c2fc440a-e326-463a-8a85-de447dbe585a</testCaseGuid>
+</TestCaseEntity>

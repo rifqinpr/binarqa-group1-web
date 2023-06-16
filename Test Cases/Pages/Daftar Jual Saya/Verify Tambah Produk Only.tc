@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify Tambah Produk is visible</description>
+   <name>Verify Tambah Produk Only</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>144b1fc3-498f-4533-88be-9c4f6a505748</testCaseGuid>
+</TestCaseEntity>

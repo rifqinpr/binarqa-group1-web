@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User want to search product</description>
+   <name>SRC01 - Search Product</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9365f867-62df-45b1-9ed4-27a221505913</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>1f0737a0-c58d-42e3-a91a-e6a23ea5eb90</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/SearchData</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>1f0737a0-c58d-42e3-a91a-e6a23ea5eb90</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>text</value>
+      <variableId>5c02b350-4b15-46fc-a576-6e01d0f9ab3c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5c02b350-4b15-46fc-a576-6e01d0f9ab3c</id>
+      <masked>false</masked>
+      <name>text</name>
+   </variable>
+</TestCaseEntity>

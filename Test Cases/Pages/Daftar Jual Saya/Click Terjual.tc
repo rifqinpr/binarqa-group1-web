@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User click Terjual category</description>
+   <name>Click Terjual</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a5522931-676e-4ef9-b0fd-bb1feaaff2ef</testCaseGuid>
+</TestCaseEntity>

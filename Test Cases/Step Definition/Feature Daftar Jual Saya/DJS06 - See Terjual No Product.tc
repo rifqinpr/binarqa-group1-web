@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User want to see &quot;Terjual&quot; List of product when no product sold</description>
+   <name>DJS06 - See Terjual No Product</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b0f9c2d7-f1ce-42da-ba56-61e8e409ff70</testCaseGuid>
+</TestCaseEntity>

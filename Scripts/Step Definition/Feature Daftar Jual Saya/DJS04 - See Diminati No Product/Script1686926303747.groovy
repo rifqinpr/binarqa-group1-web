@@ -17,5 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-println(WebUI.getText(findTestObject('HomePage/h5_First Product Card Title')))
-WebUI.verifyMatch(WebUI.getText(findTestObject('HomePage/h5_First Product Card Title')), text, true)
+WebUI.callTestCase(findTestCase('Pages/Daftar Jual Saya/Click Product List Icon'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Daftar Jual Saya/Verify Content'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Daftar Jual Saya/Click Diminati'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Daftar Jual Saya/Verify No Product Exists'), [:], FailureHandling.STOP_ON_FAILURE)
+

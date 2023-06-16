@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User want to see &quot;Terjual&quot; List of product that shows product that already sold</description>
+   <name>DJS05 - See Terjual</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aa7e541b-b78f-41d0-89ba-96ccab4aff07</testCaseGuid>
+</TestCaseEntity>

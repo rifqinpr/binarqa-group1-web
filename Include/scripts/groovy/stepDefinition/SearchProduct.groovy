@@ -44,19 +44,18 @@ import cucumber.api.java.en.When
 
 class SearchProduct {
 	@When("User input (.*) of product name in search field")
-	public void user_input_text_of_product_name_in_search_field(String text) {
-		println(text)
+	public void input_search_field(String text) {
 		WebUI.callTestCase(findTestCase('Pages/Homepage/Input Text in Search Field'), [('text') : text], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@And("User press Enter key")
-	public void user_press_Enter_key() {
+	public void press_Enter_key() {
 		WebUI.callTestCase(findTestCase('Pages/Homepage/Press Enter Key'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("List of products that match with (.*) inputted will be shown")
-	public void list_of_products_that_match_with_text_inputted_will_be_shown(String text) {
-		WebUI.delay(5)
-		println(text)
+	public void product_searched(String text) {
+		text = '(?i).*'+text+'.*'
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Verify First Product Card Name'), [('text') : text], FailureHandling.STOP_ON_FAILURE)
 	}
 }

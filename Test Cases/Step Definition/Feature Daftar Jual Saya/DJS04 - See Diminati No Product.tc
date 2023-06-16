@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User want to see &quot;Diminati&quot; List when products added not yet been bid on</description>
+   <name>DJS04 - See Diminati No Product</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c3536fe2-dd7e-4a11-b98e-1d23237ce162</testCaseGuid>
+</TestCaseEntity>
