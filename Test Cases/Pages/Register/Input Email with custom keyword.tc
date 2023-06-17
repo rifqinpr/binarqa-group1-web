@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Input Email with custom keyword</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>936ab577-34c7-4b37-a75f-47013ff446c3</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d0a090bb-3905-4531-a9d0-8e9dbfc9aa95</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d0a090bb-3905-4531-a9d0-8e9dbfc9aa95</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+</TestCaseEntity>

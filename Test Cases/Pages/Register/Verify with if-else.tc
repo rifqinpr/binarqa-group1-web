@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>verify element with if else condition</description>
+   <name>Verify with if-else</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e5889d10-305c-4644-b097-f8180f7fb4e5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>dfde1979-5a41-482b-a2c1-d441b9ed3551</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>dfde1979-5a41-482b-a2c1-d441b9ed3551</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+</TestCaseEntity>
