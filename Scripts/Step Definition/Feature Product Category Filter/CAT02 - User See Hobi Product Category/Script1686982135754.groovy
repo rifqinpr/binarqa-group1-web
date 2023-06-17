@@ -17,5 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//println(WebUI.getText(findTestObject('HomePage/h5_First Product Card Title')))
-WebUI.verifyMatch(WebUI.getText(findTestObject('HomePage/h5_First Product Card Title')), text, true)
+WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify Category Filter Button'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Click Hobi Category Filter'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify First Product Card Category'), [('textExpected') : WebUI.getText(
+            findTestObject('HomePage/Kategori Filter/a_Filter Hobi')), ('isRegex') : false], FailureHandling.STOP_ON_FAILURE)
+

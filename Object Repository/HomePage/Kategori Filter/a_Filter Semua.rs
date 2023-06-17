@@ -6,16 +6,16 @@
    <elementGuidId>d95e44bd-4061-41f8-8b3d-078a6f745081</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Telusuri Kategori'])[1]/following::a[1]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//a[@class = 'btn btn-alt-primary col rounded-4 py-2 px-4 d-inline-flex align-items-center']</value>
+         <value>//a[contains(@class, 'btn btn-alt-primary col rounded-4 py-2 px-4 d-inline-flex align-items-center') and @href = '/']</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>a.btn.btn-alt-primary.col.rounded-4.py-2.px-4.d-inline-flex.align-items-center.active</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Telusuri Kategori'])[1]/following::a[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>cf99deb7-fbf4-455d-b35d-d1c544280a6b</webElementGuid>
+      <webElementGuid>f60b5dcb-57a9-43b8-952b-a20496561833</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,15 +34,15 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-alt-primary col rounded-4 py-2 px-4 d-inline-flex align-items-center</value>
-      <webElementGuid>79f641c6-795e-4293-9b1c-856fdab18aa5</webElementGuid>
+      <webElementGuid>35d1ce33-10b9-4995-987c-2da60ab438e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>/</value>
-      <webElementGuid>493426af-350b-4923-a2d3-7c6179b3bd16</webElementGuid>
+      <webElementGuid>4cc8a5b8-0de2-4b3b-83c9-4b77b1f91611</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       
       Semua
 </value>
-      <webElementGuid>e2503d3a-c67a-42d2-93d3-bec7095ee040</webElementGuid>
+      <webElementGuid>d0254f55-4e4e-4480-80dd-af80b362380a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/section[@class=&quot;pt-5 mt-5&quot;]/section[@class=&quot;container&quot;]/nav[@class=&quot;nav row gap-4 px-2 px-lg-0&quot;]/a[@class=&quot;btn btn-alt-primary col rounded-4 py-2 px-4 d-inline-flex align-items-center active&quot;]</value>
-      <webElementGuid>893d8f76-5124-49a8-b4a5-8bf52549399c</webElementGuid>
+      <webElementGuid>9ad62732-a55b-4147-b9d7-b7194b5cd3ec</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Telusuri Kategori'])[1]/following::a[1]</value>
-      <webElementGuid>9fd33ca0-0e98-4f26-8266-6320087cfb97</webElementGuid>
+      <webElementGuid>f3c32d06-0e8c-4e4d-bb61-eb336815b9ea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Diskon Hingga'])[1]/following::a[1]</value>
-      <webElementGuid>a48b692e-cec5-404c-8b75-923f3d3c52d6</webElementGuid>
+      <webElementGuid>fc8ef92e-7980-49e9-9808-5e1c788f2724</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Semua']/parent::*</value>
-      <webElementGuid>2b03aeb0-2764-476a-b052-665ff6f1711c</webElementGuid>
+      <webElementGuid>24953d96-660c-43ca-81fc-c12f65a8852f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '/')])[6]</value>
-      <webElementGuid>6420b713-bf64-4080-928d-fcd2edd4233e</webElementGuid>
+      <webElementGuid>59e08256-60d8-46ba-8a1a-973adc5e13ab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//nav/a</value>
-      <webElementGuid>099f969d-c0ba-4854-b53d-7e1f8e86f86a</webElementGuid>
+      <webElementGuid>f70fe428-c400-4145-9ce0-29d9347b4dd3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -115,6 +115,6 @@
       
       Semua
 ')]</value>
-      <webElementGuid>ba6761a6-3269-418a-a459-86df758f236e</webElementGuid>
+      <webElementGuid>f4faef05-c588-44be-859f-66bb6ab544d4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
