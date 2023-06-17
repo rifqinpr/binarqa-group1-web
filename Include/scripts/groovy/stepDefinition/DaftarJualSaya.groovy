@@ -75,7 +75,7 @@ public class DaftarJualSaya {
 
 	@Given("User already logged in and have product added but not yet bidded")
 	public void user_login_no_product_in_bid() {
-		user_login('garasimobil@mytestmail.net', 'a1b2c3d4')
+		user_login('gunawansipembeli@jualbeli.com', 'a1b2c3d4')
 	}
 
 	@Then("No product message will be shown")
