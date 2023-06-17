@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Jual</name>
+   <tag></tag>
+   <elementGuidId>dff132ce-10b1-408b-a7fe-9937f25fe676</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.btn.btn-primary.btn-lg.rounded-4.d-inline-flex.align-items-center.justify-content-space-between.px-5 > span.fs-6</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Next →'])[1]/following::span[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>cf343a53-18fe-468c-8aff-d0a8ea3dc01a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fs-6</value>
+      <webElementGuid>68ac3b57-9686-48fb-b637-fe81f17c50fe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Jual</value>
+      <webElementGuid>783cfea9-2fbb-48e6-b5e6-9295c4f1c152</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/section[@class=&quot;pt-5 mt-5&quot;]/div[@class=&quot;sticky-bottom d-flex align-items-center justify-content-center py-4&quot;]/a[@class=&quot;btn btn-primary btn-lg rounded-4 d-inline-flex align-items-center justify-content-space-between px-5&quot;]/span[@class=&quot;fs-6&quot;]</value>
+      <webElementGuid>ad97f690-b299-48f1-8600-f79875244dff</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Next →'])[1]/following::span[1]</value>
+      <webElementGuid>94f062a4-fe60-4af7-b0fb-ed70dba7b3f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='← Previous'])[1]/following::span[1]</value>
+      <webElementGuid>abc5e38a-df97-4b50-a698-5878136b6770</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Jual']/parent::*</value>
+      <webElementGuid>3962a533-37fc-43d9-9a0d-99bb37848985</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/a/span</value>
+      <webElementGuid>5e57219f-4016-49ce-8290-eb6168cd5f43</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Jual' or . = 'Jual')]</value>
+      <webElementGuid>5cf93894-10df-427e-9115-70785aeef7b3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
