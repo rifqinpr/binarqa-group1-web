@@ -77,7 +77,7 @@ class Login {
 			WebUI.callTestCase(findTestCase('Pages/Login/Verify Required Password'), [:], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (status == 'invalid') {
-			WebUI.callTestCase(findTestCase('Pages/Login/Verify Invalid Email or Pass'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Login/Read Error Msg - Invalid Email or Pass'), [:], FailureHandling.STOP_ON_FAILURE)
 		}
 		WebUI.closeBrowser()
 	}
