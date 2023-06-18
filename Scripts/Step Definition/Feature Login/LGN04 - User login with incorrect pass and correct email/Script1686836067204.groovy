@@ -25,5 +25,5 @@ WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : '
 
 WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Login/Verify Invalid Email or Pass'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Login/Read Error Msg - Invalid Email or Pass'), [:], FailureHandling.STOP_ON_FAILURE)
 

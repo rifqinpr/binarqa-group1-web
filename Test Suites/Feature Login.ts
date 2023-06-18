@@ -24,6 +24,12 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Login/LGN02 - User login with unregistered email</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>eba9373a-6dc6-41b8-9893-1b406813b195</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>7d3df5b4-ba9a-4d87-8551-338afe07f79b</guid>

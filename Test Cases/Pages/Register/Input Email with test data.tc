@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>without random email</description>
+   <name>Input Email with test data</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d9ad96e3-0b0f-4be4-bc03-7e16df22254a</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>25185d8c-7f57-4ad7-a27a-d51d1fa82b6e</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+</TestCaseEntity>

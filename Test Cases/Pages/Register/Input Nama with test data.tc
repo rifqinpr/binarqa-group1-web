@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>without customkeyword</description>
+   <name>Input Nama with test data</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a0a5077b-140b-4a49-b4f1-1f79a4befc8e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d8cf63b7-49c0-40e7-8d2d-4543364effe8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d8cf63b7-49c0-40e7-8d2d-4543364effe8</id>
+      <masked>false</masked>
+      <name>nama</name>
+   </variable>
+</TestCaseEntity>

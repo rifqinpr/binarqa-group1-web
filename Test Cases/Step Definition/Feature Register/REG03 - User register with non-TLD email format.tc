@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REG03 - User register with non-TLD email format</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3384ace9-8a0d-4dd3-81ae-fc5db913bd5d</testCaseGuid>
+</TestCaseEntity>

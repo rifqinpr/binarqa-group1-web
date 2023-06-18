@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADDP03 - Add Product Without Input Nama Produk Field</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>549883d6-ac64-457b-bbb8-72f3c5dcd617</testCaseGuid>
+</TestCaseEntity>

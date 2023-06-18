@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Read Error Msg - Invalid Email or Pass</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>697cbf96-833f-44f1-8f84-a5ed0cb06807</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d08b1694-4d0c-4e94-8faa-499a4ff18974</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d08b1694-4d0c-4e94-8faa-499a4ff18974</id>
+      <masked>false</masked>
+      <name>expected</name>
+   </variable>
+</TestCaseEntity>

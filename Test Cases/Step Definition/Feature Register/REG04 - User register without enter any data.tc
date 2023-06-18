@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>empty all fields (Nama, Email, Password)</description>
+   <name>REG04 - User register without enter any data</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>40eaa095-ea25-45bb-b526-8363e8bfe07d</testCaseGuid>
+</TestCaseEntity>
