@@ -7,6 +7,7 @@ Feature: Denied Bid
   
     Given Seller Denied already login
     When seller denied click notification
+    And seller denied click all notification
     And seller denied click first notification
     And seller click Tolak
    	Then verify text Penawaran produk ditolak

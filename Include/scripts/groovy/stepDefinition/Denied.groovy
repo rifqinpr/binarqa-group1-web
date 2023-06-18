@@ -46,31 +46,35 @@ import cucumber.api.java.en.When
 
 class Denied {
 	@Given("Seller Denied already login")
-public void seller_Denied_already_login() {
+	public void seller_Denied_already_login() {
 		WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : "alexjual1@gmail.com"], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : "asdqwe"], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
-}
-
-@When("seller denied click notification")
-public void seller_denied_click_notification() {
-	 WebUI.callTestCase(findTestCase('Buyer Bid/Notification'), [:], FailureHandling.STOP_ON_FAILURE)
-}
-
-@When("seller denied click first notification")
-public void seller_denied_click_first_notification() {
-    WebUI.callTestCase(findTestCase('Buyer Bid/Click First Notification'), [:], FailureHandling.STOP_ON_FAILURE)
-}
-
-@When("seller click Tolak")
-public void seller_click_Tolak() {
-    WebUI.callTestCase(findTestCase('Buyer Bid/Seller click Tolak'), [:], FailureHandling.STOP_ON_FAILURE)
-}
-
-@Then("verify text Penawaran produk ditolak")
-public void verify_text_Penawaran_produk_ditolak() {
-	WebUI.callTestCase(findTestCase('Buyer Bid/Verify Penawaran produk ditolak'), [:], FailureHandling.STOP_ON_FAILURE)
-}
-
 	}
+
+	@When("seller denied click notification")
+	public void seller_denied_click_notification() {
+		WebUI.callTestCase(findTestCase('Buyer Bid/Click Notification'), [:], FailureHandling.STOP_ON_FAILURE)
+	}
+
+	@And("seller denied click all notification")
+	public void seller_denied_click_all_notification() {
+		WebUI.callTestCase(findTestCase('Buyer Bid/Click Lihat semua notifikasi'), [:], FailureHandling.STOP_ON_FAILURE)
+	}
+	
+	@When("seller denied click first notification")
+	public void seller_denied_click_first_notification() {
+		WebUI.callTestCase(findTestCase('Buyer Bid/Click First Notification'), [:], FailureHandling.STOP_ON_FAILURE)
+	}
+
+	@When("seller click Tolak")
+	public void seller_click_Tolak() {
+		WebUI.callTestCase(findTestCase('Buyer Bid/Seller click Tolak'), [:], FailureHandling.STOP_ON_FAILURE)
+	}
+
+	@Then("verify text Penawaran produk ditolak")
+	public void verify_text_Penawaran_produk_ditolak() {
+		WebUI.callTestCase(findTestCase('Buyer Bid/Verify Penawaran produk ditolak'), [:], FailureHandling.STOP_ON_FAILURE)
+	}
+}

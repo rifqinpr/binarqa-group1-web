@@ -17,5 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Navbar/a_Notifikasi Icon'))
+WebUI.click(findTestObject('Navbar/a_Masuk'))
+
+WebUI.setText(findTestObject('Login/input_Email'), 'alexbeli@gmail.com')
+
+WebUI.setText(findTestObject('Login/input_Password'), 'asdqwe')
+
+WebUI.click(findTestObject('Login/button_Masuk'))
+
+WebUI.click(findTestObject('HomePage/a_First Product Card'))
+
+WebUI.click(findTestObject('Products/Product Detail Page/button_Saya tertarik dan ingin nego'))
+
+WebUI.setText(findTestObject('Products/Product Detail Page/input_Harga Tawar_offerprice'), '2000')
+
+WebUI.click(findTestObject('Products/Product Detail Page/input_Harga Tawar'))
 

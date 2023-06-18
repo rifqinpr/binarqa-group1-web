@@ -17,5 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.click(findTestObject('Navbar/a_Masuk'))
+
+WebUI.setText(findTestObject('Login/input_Email'), 'alexjual@gmail.com')
+
+WebUI.setText(findTestObject('Login/input_Password'), 'asdqwe')
+
+WebUI.click(findTestObject('Login/button_Masuk'))
+
 WebUI.click(findTestObject('Navbar/a_Notifikasi Icon'))
+
+WebUI.click(findTestObject('Notification/a_Lihat Semua Notifikasi'))
+
+WebUI.click(findTestObject('Notification/a_First Notification Card'))
+
+WebUI.click(findTestObject('Info Penawaran/button_Status'))
+
+WebUI.click(findTestObject('Info Penawaran/Status Produk/input_Batalkan Transaksi'))
+
+WebUI.click(findTestObject('Info Penawaran/Status Produk/input_Kirim Update Status'))
+
+WebUI.verifyTextPresent('Penjualan dibatalkan', true)
 

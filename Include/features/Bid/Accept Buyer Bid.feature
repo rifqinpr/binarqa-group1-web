@@ -7,6 +7,7 @@ Feature: Accept Bid
   
     Given Seller already login
     When seller click notification
+    And seller accept click all notification
     And seller click first notification
     And seller click Terima
     Then button hubungi buyer di whatsapp akan muncul
