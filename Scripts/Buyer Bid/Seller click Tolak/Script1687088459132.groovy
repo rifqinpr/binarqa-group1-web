@@ -17,7 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Login/button_Masuk'))
-
-WebUI.waitForPageLoad(5)
+WebUI.click(findTestObject('Info Penawaran/label_Tolak Tawaran'))
 
