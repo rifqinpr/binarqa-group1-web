@@ -30,15 +30,15 @@ Feature: Product Feature
     And I fill deskripsi <deskripsi>
     And I upload image product <img>
     When I click button Terbitkan
-    Then The product successfully added to catalog
+    Then I <status> add product
     
 
     Examples: 
-      | case     | condition                 | nama_product | harga_product | kategori  | deskripsi | img       |
-      | positive | valid credential          | correct      | correct       | correct   | correct   | correct   |
-      | negative | empty field name product  | incorrect    | correct       | correct   | correct   | correct   |
-      | negative | empty field harga product | correct      | incorrect     | correct   | correct   | correct   |
-      | negative | empty field katageri      | correct      | correct       | incorrect | correct   | correct   |
-      | negative | empty field deskripsi     | correct      | correct       | correct   | incorrect | correct   |
-      | negative | no upload img             | correct      | correct       | correct   | correct   | incorrect |
-      | negative | upload img format salah   | correct      | correct       | correct   | correct   | wrong     |
+      | case     | condition                 | nama_product | harga_product | kategori  | deskripsi | img       | status 	|
+      | positive | valid credential          | correct      | correct       | correct   | correct   | correct   | Success	|
+      | negative | empty field name product  | incorrect    | correct       | correct   | correct   | correct   | Failed	|
+      | negative | empty field harga product | correct      | incorrect     | correct   | correct   | correct   | Failed	|
+      | negative | empty field katageri      | correct      | correct       | incorrect | correct   | correct   | Failed	|
+      | negative | empty field deskripsi     | correct      | correct       | correct   | incorrect | correct   | Failed	|
+      | negative | no upload img             | correct      | correct       | correct   | correct   | incorrect |	Failed 	|
+      | negative | upload img format salah   | correct      | correct       | correct   | correct   | incorrect |	Failed  |

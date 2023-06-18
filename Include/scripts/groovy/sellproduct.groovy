@@ -63,60 +63,67 @@ class sellproduct {
 	@When("I fill nama product (.*)")
 	public void i_fill_nama_product(String nama_product) {
 		if(nama_product=='correct') {
-			WebUI.setText(findTestObject('Object Repository/Products/Page_add_product/input_Nama Produk'), 'Baju')
+			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/input_Nama Produk'), 'Baju')
 		}
 		else if (nama_product=='incorrect'){
-			WebUI.setText(findTestObject('Object Repository/Products/Page_add_product/input_Nama Produk'), '')
+			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/input_Nama Produk'), '')
 		}
 	}
 
 	@When("I fill harga product (.*)")
 	public void I_fill_harga_product(String harga_product) {
 		if(harga_product=='correct') {
-			WebUI.setText(findTestObject('Object Repository/Products/Page_add_product/input_Harga Produk'), '300000')
+			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/input_Harga Produk'), '300000')
 		}
 		else if (harga_product=='incorrect'){
-			WebUI.setText(findTestObject('Object Repository/Products/Page_add_product/input_Harga Produk'), '')
+			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/input_Harga Produk'), '')
 		}
 	}
 
 	@When("I fill kategori (.*)")
 	public void I_fill_kategori(String kategori) {
 		if(kategori=='correct') {
-			WebUI.selectOptionByLabel(findTestObject('Object Repository/Products/Page_add_product/select_Kategori'), 'Elektronik', false)
+			WebUI.selectOptionByLabel(findTestObject('Object Repository/Products/Add Product Page/select_Kategori'), 'Elektronik', false)
 		}
 		else if (kategori=='incorrect'){
-			WebUI.selectOptionByLabel(findTestObject('Object Repository/Products/Page_add_product/select_Kategori'), 'Elektronik', false)
+			WebUI.selectOptionByLabel(findTestObject('Object Repository/Products/Add Product Page/select_Kategori'), 'Elektronik', false)
 		}
 	}
 
 	@When("I fill deskripsi (.*)")
 	public void I_fill_deskripsi(String deskripsi) {
 		if(deskripsi=='correct') {
-			WebUI.setText(findTestObject('Object Repository/Products/Page_add_product/fieldDeskripsi_product'), 'Lampu dengan watt yang bagus')
+			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/textarea_Deskripsi'), 'Lampu dengan watt yang bagus')
 		}
 		else if (deskripsi=='incorrect'){
-			WebUI.setText(findTestObject('Object Repository/Products/Page_add_product/fieldDeskripsi_product'), 'Lampu dengan watt yang bagus')
+			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/textarea_Deskripsi'), 'Lampu dengan watt yang bagus')
 		}
 	}
 
 	@When("I upload image product (.*)")
 	public void I_fill_image(String img) {
 		if(img=='correct') {
-			WebUI.uploadFile(findTestObject('Object Repository/Products/Page_add_product/uploadGambar'), "C:\\binar.png")
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\binar.png'], 
+    FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (img=='incorrect'){
-			WebUI.uploadFile(findTestObject('Object Repository/Products/Page_add_product/uploadGambar'), "")
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\Users\\ntt.reka\\Downloads\\binar.pdf'], 
+    FailureHandling.STOP_ON_FAILURE)
 		}
 	}
 
 	@When("I click button Terbitkan")
 	public void i_click_button_Terbitkan() {
-		WebUI.click(findTestObject('Object Repository/Products/Page_add_product/button_Terbitkan'))
+		WebUI.click(findTestObject('Object Repository/Products/Add Product Page/label_Button Terbitkan'))
 	}
 
-	@Then("The product successfully added to catalog")
-	public void the_product_successfully_added_to_catalog() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Products/Page_add_product/suksesAdd'), 0)
+	@Then("I (.*) add product")
+	public void i_add_product(String status) {
+		if(status=='success') {
+			WebUI.verifyElementPresent(findTestObject('Object Repository/Products/Product Detail Page/img_Gambar Produk'), 0)
+		}
+		else if (status=='failed'){
+			WebUI.verifyElementPresent(findTestObject('Object Repository/Products/Add Product Page/label_Button Terbitkan'), 0)
+		}
 	}
 }
