@@ -6,18 +6,18 @@
    <elementGuidId>2d7a56c4-99d0-4ec1-a02e-fd38abb03367</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//a[contains(@class, 'btn btn-alt-primary col rounded-4 py-2 px-4 d-inline-flex align-items-center') and @href = '/?category_id=3']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//*/text()[normalize-space(.)='Baju']/parent::*</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[contains(@class, 'btn btn-alt-primary col rounded-4 py-2 px-4 d-inline-flex align-items-center') and @href = '/?category_id=3']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

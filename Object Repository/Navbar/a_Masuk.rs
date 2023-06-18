@@ -6,19 +6,19 @@
    <elementGuidId>a3ea1159-31e9-4df0-b31e-37628fd0bebb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//a[@class = 'btn btn-primary' and @href = '/users/sign_in']</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[@id='navbarSupportedContent']/div/a</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>a.btn.btn-primary</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div/div/a</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@class = 'btn btn-primary' and @href = '/users/sign_in']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
