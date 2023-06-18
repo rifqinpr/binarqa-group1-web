@@ -17,13 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-if (status == 'success') {
-    WebUI.callTestCase(findTestCase('Pages/Register/Verify Register Valid'), [:], FailureHandling.STOP_ON_FAILURE)
-} else if (status == 'required') {
-    WebUI.callTestCase(findTestCase('Pages/Register/Verify Required Email'), [:], FailureHandling.STOP_ON_FAILURE)
-	WebUI.verifyElementVisible(findTestObject('Register/h2_Daftar'), FailureHandling.STOP_ON_FAILURE)
-} else if (status == 'invalid') {
-	WebUI.callTestCase(findTestCase('Pages/Register/Read Error Msg - Registered Email'), [('expected') : ''], FailureHandling.STOP_ON_FAILURE)
-	WebUI.verifyElementVisible(findTestObject('Register/h2_Daftar'))
-}
+WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('Pages/Register/Click Button Daftar di sini from login page'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Register/Input Nama with test data'), [('nama') : 'invalid domain'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Register/Input Email with non-TLD'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Register/Input Password'), [('password') : 'abc!12345'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Register/Click Button Daftar to submit'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Register/Verify Required Email'), [:], FailureHandling.STOP_ON_FAILURE)
+
+//The test result should be FAILED, because it's not match with EXPECTED RESULT ----- (BUG)

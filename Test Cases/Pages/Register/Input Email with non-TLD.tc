@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>non-TLD format email - using custom keyword</description>
+   <name>Input Email with non-TLD</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>01c3d624-0129-4397-816f-b4e869b47ced</testCaseGuid>
+</TestCaseEntity>

@@ -55,10 +55,13 @@ class Register {
 	@When("I register with input Nama (.*) and (.*)")
 	public void i_register_with_input_Nama(String nama, statusnama) {
 		if (statusnama == 'random') {
-			WebUI.callTestCase(findTestCase('Pages/Register/Input Nama with custom keyword'), [('name') : nama], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Register/Input Nama with custom keyword'), [('nama') : nama], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (statusnama == 'required') {
 			WebUI.callTestCase(findTestCase('Pages/Register/Input Nama with test data'), [('nama') : nama], FailureHandling.STOP_ON_FAILURE)
+		}
+		else if (statusnama == 'non-tld') {
+			WebUI.callTestCase(findTestCase('Pages/Register/Input Nama with test data'), [('nama') : 'Email with non-TLD'], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (statusnama == 'invalid') {
 			WebUI.callTestCase(findTestCase('Pages/Register/Input Nama with test data'), [('nama') : nama], FailureHandling.STOP_ON_FAILURE)
@@ -72,6 +75,9 @@ class Register {
 		}
 		else if (statusemail == 'required') {
 			WebUI.callTestCase(findTestCase('Pages/Register/Input Email with test data'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
+		}
+		else if (statusemail == 'non-tld') {
+			WebUI.callTestCase(findTestCase('Pages/Register/Input Email with non-TLD'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (statusemail == 'invalid') {
 			WebUI.callTestCase(findTestCase('Pages/Register/Input Email with test data'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
@@ -87,16 +93,18 @@ class Register {
 	public void i_click_Daftar_button() {
 		WebUI.callTestCase(findTestCase('Pages/Register/Click Button Daftar to submit'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	@Then("I should see the next step for register")
-	public void i_should_see_the_nextstep_register(String status) {
+	@Then("I should see the result for register (.*)")
+	public void see_the_result_register(String status) {
 		if (status == 'success') {
-			WebUI.callTestCase(findTestCase('Pages/Register/Verify Register Valid'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Register/Verify Register Valid'), [('status') : status], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (status == 'required') {
-			WebUI.callTestCase(findTestCase('Pages/Register/Verify Required Email'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Register/Verify Required Email'), [('status') : status], FailureHandling.STOP_ON_FAILURE)
+			WebUI.verifyElementVisible(findTestObject('Register/h2_Daftar'), FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (status == 'invalid') {
-			WebUI.callTestCase(findTestCase('Pages/Register/Verify Registered Email'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Register/Read Error Msg - Registered Email'), [('status') : status], FailureHandling.STOP_ON_FAILURE)
+			WebUI.verifyElementVisible(findTestObject('Register/h2_Daftar'), FailureHandling.STOP_ON_FAILURE)
 		}
 		WebUI.closeBrowser()
 	}

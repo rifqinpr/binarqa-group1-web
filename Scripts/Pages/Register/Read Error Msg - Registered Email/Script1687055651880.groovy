@@ -19,3 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.verifyElementVisible(findTestObject('Register/div_Error Message'))
 
+error_msg = WebUI.getText(findTestObject('Register/div_Error Message'))
+
+com.kms.katalon.core.util.KeywordUtil.logInfo(error_msg)
+
+String expected = error_msg
+
+WebUI.verifyMatch(error_msg, expected, false)
+

@@ -5,11 +5,38 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>e5889d10-305c-4644-b097-f8180f7fb4e5</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>493025f5-111c-4410-868e-35de15e58a95</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Register-InvalidData</testDataId>
+   </testDataLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>493025f5-111c-4410-868e-35de15e58a95</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>status</value>
       <variableId>dfde1979-5a41-482b-a2c1-d441b9ed3551</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>493025f5-111c-4410-868e-35de15e58a95</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>nama</value>
+      <variableId>b7e5153d-50c1-4863-ad5e-1c216d032d2c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>493025f5-111c-4410-868e-35de15e58a95</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>email</value>
+      <variableId>173624af-441d-4523-9d9c-b64c4bd2c514</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>493025f5-111c-4410-868e-35de15e58a95</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>password</value>
+      <variableId>f56ec84f-f67f-4e9b-8ae3-9b68b34f6d8c</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
@@ -17,5 +44,26 @@
       <id>dfde1979-5a41-482b-a2c1-d441b9ed3551</id>
       <masked>false</masked>
       <name>status</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b7e5153d-50c1-4863-ad5e-1c216d032d2c</id>
+      <masked>false</masked>
+      <name>nama</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>173624af-441d-4523-9d9c-b64c4bd2c514</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f56ec84f-f67f-4e9b-8ae3-9b68b34f6d8c</id>
+      <masked>false</masked>
+      <name>password</name>
    </variable>
 </TestCaseEntity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>email is already registered</description>
+   <name>Read Error Msg - Registered Email</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b7cefad9-bab3-448e-8546-9e279c61e906</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>23ac2d7c-09d7-4738-b0d5-59e17b1415ec</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>23ac2d7c-09d7-4738-b0d5-59e17b1415ec</id>
+      <masked>false</masked>
+      <name>expected</name>
+   </variable>
+</TestCaseEntity>
