@@ -14,17 +14,16 @@
 #@ (Tags/Labels):To group Scenarios
 #<> (placeholder)
 #""
-## (Comments)
+# (Comments)
 #Sample Feature Definition Template
+
 @tag
-Feature: Add Product to catalog
-  I want to Add Product 
+Feature: Product Feature
 
   @tag1
   Scenario Outline: Add Product with <condition>
-    Given I open page home to add product 
-    When I click jual button 
-    And I should redirect to product page
+  	Given I login as Seller
+    When I click jual button
     And I fill nama product <nama_product>
     And I fill harga product <harga_product>
     And I fill kategori <kategori>
@@ -32,15 +31,14 @@ Feature: Add Product to catalog
     And I upload image product <img>
     When I click button Terbitkan
     Then The product successfully added to catalog
+    
 
     Examples: 
-      | case     | condition        					| nama_product  |	harga_product     | kategori  | deskripsi  | img 				|
-      | positive | valid credential 					| correct 			| correct						| correct		| correct		 | correct  	|
-      | negative | empty field name product		| incorrect 		| correct						| correct		| correct		 | correct  	|
-      | negative | empty field harga product	| correct  			| incorrect					| correct		| correct		 | correct  	|
-      | negative | empty field katageri				| correct		    | correct						| incorrect	| correct		 | correct  	|
-      | negative | empty field deskripsi			| correct				| correct						| correct		| incorrect	 | correct  	|
-      | negative | no upload img							| correct	 			| correct						| correct		| correct		 | incorrect 	|
-      | positive | add product > 4 img				| correct	 			| correct						| correct		| correct		 | correct  	|
-      | negative | upload img format salah		| correct  			| correct						| correct		| correct		 | wrong	  	|
-      
+      | case     | condition                 | nama_product | harga_product | kategori  | deskripsi | img       |
+      | positive | valid credential          | correct      | correct       | correct   | correct   | correct   |
+      | negative | empty field name product  | incorrect    | correct       | correct   | correct   | correct   |
+      | negative | empty field harga product | correct      | incorrect     | correct   | correct   | correct   |
+      | negative | empty field katageri      | correct      | correct       | incorrect | correct   | correct   |
+      | negative | empty field deskripsi     | correct      | correct       | correct   | incorrect | correct   |
+      | negative | no upload img             | correct      | correct       | correct   | correct   | incorrect |
+      | negative | upload img format salah   | correct      | correct       | correct   | correct   | wrong     |

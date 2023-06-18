@@ -42,95 +42,81 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-
 class sellproduct {
-	/**
-	 * The step definitions below match with Katalon sample Gherkin steps
-	 */
-	@Given("I open page home to add product")
-public void i_open_page_home_to_add_product() {
-    
-}
 
-@When("I click jual button")
-public void i_click_jual_button() {
-    
-}
+	@Given("I login as Seller")
+	public void i_login_as_seller() {
+		WebUI.openBrowser('')
+		WebUI.navigateToUrl('https://secondhand.binaracademy.org/')
+		WebUI.maximizeWindow()
+		WebUI.click(findTestObject('Object Repository/Navbar/a_Masuk'))
+		WebUI.setText(findTestObject('Object Repository/Login/input_Email'), 'groupsatu@gmail.com')
+		WebUI.setText(findTestObject('Object Repository/Login/input_Password'), 'abc!12345')
+		WebUI.click(findTestObject('Object Repository/Login/button_Masuk'))
+	}
 
-@When("I should redirect to product page")
-public void i_should_redirect_to_product_page() {
-    
-}
+	@When("I click jual button")
+	public void i_click_jual_button() {
+		WebUI.click(findTestObject('Object Repository/HomePage/a_Button Jual'))
+	}
 
-@When("I fill nama product correct")
-public void i_fill_nama_product_correct() {
-    
-}
+	@When("I fill nama product (.*)")
+	public void i_fill_nama_product(String nama_product) {
+		if(nama_product=='correct') {
+			WebUI.setText(findTestObject('Object Repository/Products/Page_add_product/input_Nama Produk'), 'Baju')
+		}
+		else if (nama_product=='incorrect'){
+			WebUI.setText(findTestObject('Object Repository/Products/Page_add_product/input_Nama Produk'), '')
+		}
+	}
 
-@When("I fill harga product correct")
-public void i_fill_harga_product_correct() {
-    
-}
+	@When("I fill harga product (.*)")
+	public void I_fill_harga_product(String harga_product) {
+		if(harga_product=='correct') {
+			WebUI.setText(findTestObject('Object Repository/Products/Page_add_product/input_Harga Produk'), '300000')
+		}
+		else if (harga_product=='incorrect'){
+			WebUI.setText(findTestObject('Object Repository/Products/Page_add_product/input_Harga Produk'), '')
+		}
+	}
 
-@When("I fill kategori correct")
-public void i_fill_kategori_correct() {
-    
-}
+	@When("I fill kategori (.*)")
+	public void I_fill_kategori(String kategori) {
+		if(kategori=='correct') {
+			WebUI.selectOptionByLabel(findTestObject('Object Repository/Products/Page_add_product/select_Kategori'), 'Elektronik', false)
+		}
+		else if (kategori=='incorrect'){
+			WebUI.selectOptionByLabel(findTestObject('Object Repository/Products/Page_add_product/select_Kategori'), 'Elektronik', false)
+		}
+	}
 
-@When("I fill deskripsi correct")
-public void i_fill_deskripsi_correct() {
-    
-}
+	@When("I fill deskripsi (.*)")
+	public void I_fill_deskripsi(String deskripsi) {
+		if(deskripsi=='correct') {
+			WebUI.setText(findTestObject('Object Repository/Products/Page_add_product/fieldDeskripsi_product'), 'Lampu dengan watt yang bagus')
+		}
+		else if (deskripsi=='incorrect'){
+			WebUI.setText(findTestObject('Object Repository/Products/Page_add_product/fieldDeskripsi_product'), 'Lampu dengan watt yang bagus')
+		}
+	}
 
-@When("I upload image product correct")
-public void i_upload_image_product_correct() {
-    
-}
+	@When("I upload image product (.*)")
+	public void I_fill_image(String img) {
+		if(img=='correct') {
+			WebUI.uploadFile(findTestObject('Object Repository/Products/Page_add_product/uploadGambar'), "C:\\binar.png")
+		}
+		else if (img=='incorrect'){
+			WebUI.uploadFile(findTestObject('Object Repository/Products/Page_add_product/uploadGambar'), "")
+		}
+	}
 
-@When("I click button Terbitkan")
-public void i_click_button_Terbitkan() {
-    
-}
+	@When("I click button Terbitkan")
+	public void i_click_button_Terbitkan() {
+		WebUI.click(findTestObject('Object Repository/Products/Page_add_product/button_Terbitkan'))
+	}
 
-@Then("The product successfully added to catalog")
-public void the_product_successfully_added_to_catalog() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@When("I fill nama product incorrect")
-public void i_fill_nama_product_incorrect() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@When("I fill harga product incorrect")
-public void i_fill_harga_product_incorrect() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@When("I fill kategori incorrect")
-public void i_fill_kategori_incorrect() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@When("I fill deskripsi incorrect")
-public void i_fill_deskripsi_incorrect() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@When("I upload image product incorrect")
-public void i_upload_image_product_incorrect() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@When("I upload image product wrong")
-public void i_upload_image_product_wrong() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
+	@Then("The product successfully added to catalog")
+	public void the_product_successfully_added_to_catalog() {
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Products/Page_add_product/suksesAdd'), 0)
+	}
 }
