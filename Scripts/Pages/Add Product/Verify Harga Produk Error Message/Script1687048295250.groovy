@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementVisible(findTestObject('Products/Add Product Page/img_Product Image Preview'))
+WebUI.verifyElementVisible(findTestObject('Products/Add Product Page/Error Message/div_Price cant be blank'))
 

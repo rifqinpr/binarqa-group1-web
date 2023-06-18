@@ -29,7 +29,7 @@ public class randomName {
 			sb.append(chars.charAt(rand.nextInt(chars.length())));
 		}
 		return sb
-	}	
+	}
 	public String getWaktu(String waktu) {
 		Date today = new Date()
 		String todaysDate = today.format('mmddyy-hhmm')
