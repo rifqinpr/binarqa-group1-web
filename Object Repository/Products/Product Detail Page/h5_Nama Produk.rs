@@ -6,15 +6,15 @@
    <elementGuidId>848d020d-482b-4bd3-8af9-5225445cd6e2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Deskripsi'])[1]/following::h5[1]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>h5.card-title.fs-5.fw-bolder</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[2]/div/div/h5</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

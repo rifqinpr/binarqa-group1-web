@@ -19,3 +19,5 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.click(findTestObject('Login/button_Masuk'))
 
+WebUI.waitForPageLoad(5)
+

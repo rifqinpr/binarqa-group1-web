@@ -6,19 +6,19 @@
    <elementGuidId>cf3e08f7-6896-4966-963f-daf5538044f4</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>div.alert.alert-danger.alert-dismissible.position-fixed.top-0.start-50.translate-middle-x.mt-5</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='SecondHand.'])[1]/preceding::div[1]</value>
+         <value>//div</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>//div[@class = 'alert alert-danger alert-dismissible position-fixed top-0 start-50 translate-middle-x mt-5' and @role = 'alert']</value>
       </entry>
-      <entry>
-         <key>CSS</key>
-         <value>div.alert.alert-danger.alert-dismissible.position-fixed.top-0.start-50.translate-middle-x.mt-5</value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
