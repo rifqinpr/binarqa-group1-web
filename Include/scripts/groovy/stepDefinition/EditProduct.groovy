@@ -52,8 +52,8 @@ class EditProduct {
 		WebUI.navigateToUrl('https://secondhand.binaracademy.org/')
 		WebUI.maximizeWindow()
 		WebUI.click(findTestObject('Object Repository/Navbar/a_Masuk'))
-		WebUI.setText(findTestObject('Object Repository/Login/input_Email'), 'groupsatu@gmail.com')
-		WebUI.setText(findTestObject('Object Repository/Login/input_Password'), 'abc!12345')
+		WebUI.setText(findTestObject('Object Repository/Login/input_Email'), 'group1@gmail.com')
+		WebUI.setText(findTestObject('Object Repository/Login/input_Password'), 'group1@123')
 		WebUI.click(findTestObject('Object Repository/Login/button_Masuk'))
 	}
 
@@ -69,11 +69,11 @@ class EditProduct {
 
 	@When("I click button Edit")
 	public void i_click_button_Edit() {
-		WebUI.click(findTestObject('Object Repository/Products/Page_detail_produk/a_Edit'))
+		WebUI.click(findTestObject('Object Repository/Products/Product Detail Page/Button_Edit'))
 	}
 
 	@When("I edit nama product (.*)")
-	public void i_edit_nama_product_correct(String nama_product) {
+	public void i_edit_nama_product(String nama_product) {
 		if(nama_product=='correct') {
 			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/input_Nama Produk'), 'Baju')
 		}
@@ -83,7 +83,7 @@ class EditProduct {
 	}
 
 	@When("I edit harga product (.*)")
-	public void i_edit_harga_product_correct(String harga_product) {
+	public void i_edit_harga_product(String harga_product) {
 		if(harga_product=='correct') {
 			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/input_Harga Produk'), '300000')
 		}
@@ -93,7 +93,7 @@ class EditProduct {
 	}
 
 	@When("I edit kategori (.*)")
-	public void i_edit_kategori_correct(String kategori) {
+	public void i_edit_kategori(String kategori) {
 		if(kategori=='correct') {
 			WebUI.selectOptionByLabel(findTestObject('Object Repository/Products/Add Product Page/select_Kategori'), 'Elektronik', false)
 		}
@@ -103,7 +103,7 @@ class EditProduct {
 	}
 
 	@When("I edit deskripsi (.*)")
-	public void i_edit_deskripsi_correct(String deskripsi) {
+	public void i_edit_deskripsi(String deskripsi) {
 		if(deskripsi=='correct') {
 			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/textarea_Deskripsi'), 'Lampu dengan watt yang bagus')
 		}
@@ -112,8 +112,8 @@ class EditProduct {
 		}
 	}
 
-	@When("I edit image product correct")
-	public void i_edit_image_product_correct(String img) {
+	@When("I edit image product (.*)")
+	public void i_edit_image_product(String img) {
 		if(img=='correct') {
 			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\binar.png'],
 			FailureHandling.STOP_ON_FAILURE)

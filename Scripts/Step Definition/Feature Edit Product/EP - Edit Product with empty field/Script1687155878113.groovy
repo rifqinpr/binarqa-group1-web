@@ -17,7 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'group1@gmail.com'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'group1@123'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Login/Verify Login Valid'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Edit_Product/Click Product Saya'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -25,7 +33,9 @@ WebUI.callTestCase(findTestCase('Edit_Product/Click Detail Product'), [:], Failu
 
 WebUI.callTestCase(findTestCase('Edit_Product/Click Button Edit'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Edit_Product/Edit Harga Product'), [(hargaProduk) : 60000], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Edit_Product/Edit Nama Product'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Edit_Product/Edit Harga Product'), [("hargaProduk") : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Edit_Product/Edit Category Product'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -33,5 +43,5 @@ WebUI.callTestCase(findTestCase('Edit_Product/Edit Deskripsi Product'), [:], Fai
 
 WebUI.callTestCase(findTestCase('Edit_Product/Click Terbitkan'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Nama Produk Error Message'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Harga Produk Error Message'), [:], FailureHandling.STOP_ON_FAILURE)
 

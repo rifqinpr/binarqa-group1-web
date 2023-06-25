@@ -17,12 +17,12 @@
 ## (Comments)
 #Sample Feature Definition Template
 @DeleteProduct
-Feature: Seller want to delete Product
+Feature: Delete Product
 
   @Delete
   Scenario: delete product
-    Given User already logged in and have product added
-    And User in Daftar Jual Saya page
-    When User click Produk
-    And  User click button delete
-    Then Produck success to delete
+    Given I Login
+    And I click Product
+    And I click Product Detail
+    When I click button Delete
+    Then I success delete product

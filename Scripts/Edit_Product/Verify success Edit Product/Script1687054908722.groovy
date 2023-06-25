@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementPresent(findTestObject('Products/Page_add_product/verify success edit product'), 0)
+WebUI.verifyElementPresent(findTestObject('Products/Add Product Page/Error Message/sukses editproduct'), 0)
 

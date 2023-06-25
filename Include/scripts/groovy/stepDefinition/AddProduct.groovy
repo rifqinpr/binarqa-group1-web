@@ -51,8 +51,8 @@ class AddProduct {
 		WebUI.navigateToUrl('https://secondhand.binaracademy.org/')
 		WebUI.maximizeWindow()
 		WebUI.click(findTestObject('Object Repository/Navbar/a_Masuk'))
-		WebUI.setText(findTestObject('Object Repository/Login/input_Email'), 'groupsatu@gmail.com')
-		WebUI.setText(findTestObject('Object Repository/Login/input_Password'), 'abc!12345')
+		WebUI.setText(findTestObject('Object Repository/Login/input_Email'), 'group1@gmail.com')
+		WebUI.setText(findTestObject('Object Repository/Login/input_Password'), 'group1@123')
 		WebUI.click(findTestObject('Object Repository/Login/button_Masuk'))
 	}
 

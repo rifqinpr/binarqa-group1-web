@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.setText(findTestObject('Products/Page_add_product/input_Nama Produk'), namaProduk)
+WebUI.setText(findTestObject('Products/Add Product Page/input_Nama Produk'), 'baju')
 
