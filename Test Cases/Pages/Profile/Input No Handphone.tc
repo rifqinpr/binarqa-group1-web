@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Input No Handphone</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7f172ea1-e994-4f0d-9719-4a44557e70f5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>badd319b-beaf-4190-b169-f81f4acab1dd</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>badd319b-beaf-4190-b169-f81f4acab1dd</id>
+      <masked>false</masked>
+      <name>noHP</name>
+   </variable>
+</TestCaseEntity>
