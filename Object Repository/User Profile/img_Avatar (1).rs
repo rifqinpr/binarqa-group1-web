@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_Avatar (1)</name>
+   <tag></tag>
+   <elementGuidId>ce67d2f1-df96-4037-a34d-0fff21b81cfd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//img[@class = 'img-thumbnail img-avatar-profile rounded-4 p-0 border-0 overflow-hidden']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img.img-thumbnail.img-avatar-profile.rounded-4.p-0.border-0.overflow-hidden</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='form-avatar-image']/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>14c69776-2c2a-4da3-a233-e7bd7c87970b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>img-thumbnail img-avatar-profile rounded-4 p-0 border-0 overflow-hidden</value>
+      <webElementGuid>9965f171-3baf-4ea1-9800-99caa9779ac0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbmhIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a0514bbf89a640d85571496cfa5a9dcc2bec868d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFXa0NrQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--68ce5b37660f0527e00bd1e60af75a7b48156984/343596-PACYSS-905-min.jpg</value>
+      <webElementGuid>2fac40af-dc7b-4453-8cd0-70fab35bdcbc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;form-avatar-image&quot;)/img[@class=&quot;img-thumbnail img-avatar-profile rounded-4 p-0 border-0 overflow-hidden&quot;]</value>
+      <webElementGuid>0685923a-eef5-4752-ab22-30427ed9ec7a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='form-avatar-image']/img</value>
+      <webElementGuid>95562254-a353-481a-b035-bd1d8c43a470</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[contains(@src,'https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbmhIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a0514bbf89a640d85571496cfa5a9dcc2bec868d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFXa0NrQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--68ce5b37660f0527e00bd1e60af75a7b48156984/343596-PACYSS-905-min.jpg')]</value>
+      <webElementGuid>637c1829-38e8-4bf7-844d-f1e4587cbe98</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//img</value>
+      <webElementGuid>db3b560f-4416-4114-8e36-7c61ba062063</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = 'https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbmhIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a0514bbf89a640d85571496cfa5a9dcc2bec868d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFXa0NrQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--68ce5b37660f0527e00bd1e60af75a7b48156984/343596-PACYSS-905-min.jpg']</value>
+      <webElementGuid>a1a85b85-c844-4d30-84e3-2607f22ffa90</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

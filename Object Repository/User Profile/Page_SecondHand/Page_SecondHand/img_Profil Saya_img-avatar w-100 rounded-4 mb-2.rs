@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_Profil Saya_img-avatar w-100 rounded-4 mb-2</name>
+   <tag></tag>
+   <elementGuidId>2dbbe8a9-3fb3-45c8-b3a7-93cbbb4d6185</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;navbarSupportedContent&quot;)/div[@class=&quot;ms-auto&quot;]/ul[@class=&quot;navbar-nav&quot;]/li[@class=&quot;nav-item dropdown fs-5 d-none d-lg-block&quot;]/ul[@class=&quot;dropdown-menu show&quot;]/li[1]/a[@class=&quot;nav-user&quot;]/div[@class=&quot;d-flex align-items-center justify-content center flex-column py-2&quot;]/img[@class=&quot;img-avatar w-100 rounded-4 mb-2&quot;]</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='navbarSupportedContent']/div/ul/li[6]/ul/li/a/div/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img.img-avatar.w-100.rounded-4.mb-2</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>5e114698-ebf2-4c24-918b-9398490d9c18</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>img-avatar w-100 rounded-4 mb-2</value>
+      <webElementGuid>4a9354cb-1fde-481a-b479-140e8f9e1468</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>/user.svg</value>
+      <webElementGuid>48f89398-7e5d-4f68-a9b0-4a0dc7534ca0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;navbarSupportedContent&quot;)/div[@class=&quot;ms-auto&quot;]/ul[@class=&quot;navbar-nav&quot;]/li[@class=&quot;nav-item dropdown fs-5 d-none d-lg-block&quot;]/ul[@class=&quot;dropdown-menu show&quot;]/li[1]/a[@class=&quot;nav-user&quot;]/div[@class=&quot;d-flex align-items-center justify-content center flex-column py-2&quot;]/img[@class=&quot;img-avatar w-100 rounded-4 mb-2&quot;]</value>
+      <webElementGuid>9a156181-7bef-4356-aae3-533596f7e2ed</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='navbarSupportedContent']/div/ul/li[6]/ul/li/a/div/img</value>
+      <webElementGuid>10862849-cdbf-49b9-b0d0-dbd864f459d5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//img</value>
+      <webElementGuid>5a5371dd-f05b-48f9-a2b1-47087db2de0a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '/user.svg']</value>
+      <webElementGuid>e9466cd7-fea3-40e1-928f-92b1f7a4c16a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
