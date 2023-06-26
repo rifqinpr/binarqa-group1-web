@@ -1,3 +1,4 @@
+package stepDefinition
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -42,7 +43,7 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class sellproduct {
+class AddProduct {
 
 	@Given("I login as Seller")
 	public void i_login_as_seller() {
@@ -50,8 +51,8 @@ class sellproduct {
 		WebUI.navigateToUrl('https://secondhand.binaracademy.org/')
 		WebUI.maximizeWindow()
 		WebUI.click(findTestObject('Object Repository/Navbar/a_Masuk'))
-		WebUI.setText(findTestObject('Object Repository/Login/input_Email'), 'groupsatu@gmail.com')
-		WebUI.setText(findTestObject('Object Repository/Login/input_Password'), 'abc!12345')
+		WebUI.setText(findTestObject('Object Repository/Login/input_Email'), 'group1@gmail.com')
+		WebUI.setText(findTestObject('Object Repository/Login/input_Password'), 'group1@123')
 		WebUI.click(findTestObject('Object Repository/Login/button_Masuk'))
 	}
 
@@ -103,12 +104,12 @@ class sellproduct {
 	@When("I upload image product (.*)")
 	public void I_fill_image(String img) {
 		if(img=='correct') {
-			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\binar.png'], 
-    FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\binar.png'],
+			FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (img=='incorrect'){
-			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\Users\\ntt.reka\\Downloads\\binar.pdf'], 
-    FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\Users\\ntt.reka\\Downloads\\binar.pdf'],
+			FailureHandling.STOP_ON_FAILURE)
 		}
 	}
 

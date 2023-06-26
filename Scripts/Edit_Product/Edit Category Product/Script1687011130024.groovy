@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.selectOptionByLabel(findTestObject('Products/Page_add_product/select_Kategori'), 'Baju', false)
+WebUI.selectOptionByLabel(findTestObject('Products/Add Product Page/select_Kategori'), 'Baju', false)
 

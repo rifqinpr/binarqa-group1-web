@@ -35,7 +35,7 @@ WebUI.callTestCase(findTestCase('Edit_Product/Click Button Edit'), [:], FailureH
 
 WebUI.callTestCase(findTestCase('Edit_Product/Edit Nama Product'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Edit_Product/Edit Harga Product'), [('hargaProduk') : '250000'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Edit_Product/Edit Harga Product'), [("hargaProduk") : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Edit_Product/Edit Category Product'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -43,5 +43,5 @@ WebUI.callTestCase(findTestCase('Edit_Product/Edit Deskripsi Product'), [:], Fai
 
 WebUI.callTestCase(findTestCase('Edit_Product/Click Terbitkan'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Edit_Product/Verify success Edit Product'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Harga Produk Error Message'), [:], FailureHandling.STOP_ON_FAILURE)
 
