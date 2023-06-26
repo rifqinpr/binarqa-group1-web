@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Accept Buyer Bid</name>
+   <name>BID02 - Bid with Invalid Price</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>071727dd-9c6b-4e0c-87d3-1f0a3b1c5b6d</testCaseGuid>
+   <testCaseGuid>a98f66dc-87e9-4bd6-93d6-b794b8ef8452</testCaseGuid>
 </TestCaseEntity>

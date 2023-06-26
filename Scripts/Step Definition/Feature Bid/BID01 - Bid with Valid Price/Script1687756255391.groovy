@@ -17,21 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Navbar/a_Masuk'))
+WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Login/input_Email'), 'alexbeli@gmail.com')
+WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : "alexbeli@gmail.com"], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Login/input_Password'), 'asdqwe')
+WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : "asdqwe"], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Login/button_Masuk'))
+WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('HomePage/a_First Product Card'))
+WebUI.callTestCase(findTestCase('Bid/Click First Cart Product'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Products/Product Detail Page/button_Saya tertarik dan ingin nego'))
+WebUI.callTestCase(findTestCase('Bid/Click Saya Tertarik dan Ingin Nego'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Products/Product Detail Page/input_Harga Tawar_offerprice'), '9999999999')
+WebUI.callTestCase(findTestCase('Bid/Input Harga Tawar'), [('harga') : "2000"], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Products/Product Detail Page/input_Harga Tawar'))
+WebUI.callTestCase(findTestCase('Bid/Click Button Kirim'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyTextPresent('Menunggu respon penjual', true)
+WebUI.callTestCase(findTestCase('Bid/Verify Text'), [:], FailureHandling.STOP_ON_FAILURE)
 
