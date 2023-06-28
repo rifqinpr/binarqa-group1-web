@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'akuntesting@gmail.com'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'syafradha@gmail.com'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'asdqwe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'meditran5'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -31,13 +31,13 @@ WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun'), [:], Failu
 
 WebUI.callTestCase(findTestCase('Pages/Profile/Upload Image'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Profile/Input Nama'), [('nama') : 'Ini Edit Nama'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Profile/Input Nama'), [('nama') : 'Deksa'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Profile/Set Kota'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Profile/Input Alamat'), [('alamat') : '"Ini Edit Alamat"'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Profile/Input Alamat'), [('alamat') : 'jl anggur'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Profile/Input No Handphone'), [('noHP') : '0812121212'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Profile/Input No Handphone'), [('noHP') : '0843434343'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Profile/Click Button Simpan'), [:], FailureHandling.STOP_ON_FAILURE)
 
