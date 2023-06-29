@@ -6,12 +6,12 @@
    <elementGuidId>c1792778-1ad0-4e50-842c-84987ca56df2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//a[@class = 'nav-link dropdown-toggle d-flex align-items-center' and @role = 'button' and @data-bs-toggle = 'dropdown']</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='navbarSupportedContent']/div/ul/li[6]/a</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;navbarSupportedContent&quot;)</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -21,20 +21,20 @@
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>c4c0d965-7b9d-4533-9e85-50b5370b825a</webElementGuid>
+      <webElementGuid>acd59fde-f49b-48c3-b7bf-e69c022c8c11</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>nav-link dropdown-toggle d-flex align-items-center</value>
-      <webElementGuid>341a4089-51fe-4e0a-8cea-770a226d2bd5</webElementGuid>
+      <webElementGuid>43285cb3-89e8-4a99-8f49-98b0d3a5e065</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,23 +42,23 @@
       <name>href</name>
       <type>Main</type>
       <value>#</value>
-      <webElementGuid>6e90dd98-3dfb-461c-ac87-494102d7cf84</webElementGuid>
+      <webElementGuid>d99016f6-432d-402c-a9ba-50718173679f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>role</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>bc9503cd-68f0-43fe-a5cf-25d447b4330d</webElementGuid>
+      <webElementGuid>8d4442c1-e130-42af-95b5-1560eeee484e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-bs-toggle</name>
       <type>Main</type>
       <value>dropdown</value>
-      <webElementGuid>385ee894-a0d3-4670-9c77-da7fae956a77</webElementGuid>
+      <webElementGuid>45711272-596f-4d61-bd22-e144b412aad9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,7 +66,7 @@
       <name>aria-expanded</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>db2297f8-dd25-408f-b544-c170b3a24446</webElementGuid>
+      <webElementGuid>f9d06e2b-7993-4ece-a626-6f8e46f0f2d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,15 +77,15 @@
       
       Profil Saya
     </value>
-      <webElementGuid>93f76208-9964-46b2-96f2-a30c09e3b67c</webElementGuid>
+      <webElementGuid>b3982290-f8e8-400b-80df-0910d4815cb0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;navbarSupportedContent&quot;)/div[@class=&quot;ms-auto&quot;]/ul[@class=&quot;navbar-nav&quot;]/li[@class=&quot;nav-item dropdown fs-5 d-none d-lg-block&quot;]/a[@class=&quot;nav-link dropdown-toggle d-flex align-items-center&quot;]</value>
-      <webElementGuid>b3b82ef6-92c0-491e-bd6e-2dd7e2f44687</webElementGuid>
+      <value>id(&quot;navbarSupportedContent&quot;)</value>
+      <webElementGuid>d8ce892c-aadc-460f-8c39-e6f8a6763fcc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='navbarSupportedContent']/div/ul/li[6]/a</value>
-      <webElementGuid>6e996317-1c41-4d60-a48b-dd57a70031b6</webElementGuid>
+      <webElementGuid>86d167bd-14e7-43e3-9999-d7a25bba2118</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Keluar'])[1]/following::a[1]</value>
-      <webElementGuid>55b85a8c-4628-471c-bf89-0b2e482dd18e</webElementGuid>
+      <webElementGuid>2d39bc29-f8a2-46fc-a6ae-30f65b28c2fe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Profil Saya'])[1]/following::a[1]</value>
-      <webElementGuid>b33a6a98-175d-4852-a983-41f58778de67</webElementGuid>
+      <webElementGuid>eadda971-1d4a-43bf-b306-6167ac082b23</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='aaaaaaaaaaaaaaa'])[1]/preceding::a[1]</value>
-      <webElementGuid>1bc1f209-2c55-42e2-b40d-0ba375b34c54</webElementGuid>
+      <webElementGuid>7e8fd0fb-1478-4a18-b970-85d271497342</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '#')])[2]</value>
-      <webElementGuid>b9d1ed78-3814-40e2-bca7-d4c7734745b5</webElementGuid>
+      <webElementGuid>09d10d5c-b9bd-4aa3-8fc1-e3892ab0eabb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +133,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[6]/a</value>
-      <webElementGuid>fd265052-1b21-4d8a-9ec6-9d31a128cbfb</webElementGuid>
+      <webElementGuid>0511f3dd-b082-41bb-878a-b3e081fe14a6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -147,6 +147,6 @@
       
       Profil Saya
     ')]</value>
-      <webElementGuid>e46d776e-07a4-450e-84f0-ee6d25a73c2c</webElementGuid>
+      <webElementGuid>7e33a5a0-759b-4796-bbc3-5ddf801192e9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

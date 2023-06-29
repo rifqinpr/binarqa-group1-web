@@ -48,55 +48,54 @@ class profile {
 	@Given("user on the login page")
 	public void user_on_the_login_page() {
 		WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
-		
 	}
-	
-	@When("user input email syafradha@gmail.com")
-	public void user_input_email_syafradha_gmail_com() {
-		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'syafradha@gmail.com'], FailureHandling.STOP_ON_FAILURE)
+
+	@When("user input email (.*)")
+	public void user_input_email(String email) {
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
 	}
-	
-	@When("user input password meditran{int}")
-	public void user_input_password_meditran(Integer int1) {
-		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'meditran5'], FailureHandling.STOP_ON_FAILURE)
+
+	@When("user input password (.*)")
+	public void user_input_password_meditran(String password) {
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@When("user click login button")
 	public void user_click_login_button() {
 		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@When("user click user profile")
 	public void user_click_user_profile() {
-		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun Icon'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Click user profile'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Click image2'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@When("user click image")
 	public void user_click_image() {
-		
-		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun Icon'), [:], FailureHandling.STOP_ON_FAILURE)
 
-   WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Click Image Profile Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 
-   WebUI.callTestCase(findTestCase('Pages/Profile/Upload Image'), [:], FailureHandling.STOP_ON_FAILURE)
 
-	
+
+		WebUI.callTestCase(findTestCase('Pages/Profile/Upload Image'), [:], FailureHandling.STOP_ON_FAILURE)
+	}
+
 	@When("user input nama")
 	public void user_input_nama() {
-		WebUI.callTestCase(findTestCase('Pages/Profile/Input Nama'), [('nama') : 'Deksa'], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Profile/Input Nama 2'), [('nama') : 'Deksa'], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@When("user input kota")
 	public void user_input_kota() {
 		WebUI.callTestCase(findTestCase('Pages/Profile/Set Kota'), [:], FailureHandling.STOP_ON_FAILURE)
-		
 	}
-	
+
 	@When("user input alamat")
 	public void user_input_alamat() {
 		WebUI.callTestCase(findTestCase('Pages/Profile/Input Alamat'), [('alamat') : 'jl anggur'], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@When("user input no handphone")
 	public void user_input_no_handphone() {
 		WebUI.callTestCase(findTestCase('Pages/Profile/Input No Handphone'), [('noHP') : '0843434343'], FailureHandling.STOP_ON_FAILURE)
@@ -105,13 +104,9 @@ class profile {
 	public void user_click_button_submit() {
 		WebUI.callTestCase(findTestCase('Pages/Profile/Click Button Simpan'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
-	}
+
 	@Then("I verify the step success")
 	public void i_verify_the_step_success() {
-		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun Icon'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun'), [:], FailureHandling.STOP_ON_FAILURE)
-
+		WebUI.callTestCase(findTestCase('Pages/Profile/Verify text'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }
