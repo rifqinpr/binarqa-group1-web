@@ -25,11 +25,11 @@ WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : '
 
 WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun Icon'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Login/Click user profile'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Login/Click image2'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Profile/Upload Image'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Login/Click Image Profile Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Profile/Input Nama'), [('nama') : 'Deksa'], FailureHandling.STOP_ON_FAILURE)
 
@@ -41,7 +41,5 @@ WebUI.callTestCase(findTestCase('Pages/Profile/Input No Handphone'), [('noHP') :
 
 WebUI.callTestCase(findTestCase('Pages/Profile/Click Button Simpan'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun Icon'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Profile/Verify Required Alamat'), [:], FailureHandling.STOP_ON_FAILURE)
 

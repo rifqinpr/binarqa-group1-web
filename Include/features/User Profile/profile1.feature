@@ -1,32 +1,79 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
+@editprofile
+Feature: edit profile feature
+  I want to edit profile
 
   @tag1
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+  Scenario Outline: Profile with jpg
+    Given user on the login page
+    When user input email <email>
+    And user input password <password>
+    And user click login button
+    And user click user profile
+    And user click image
+    And user input nama <nama>
+    And user input kota <kota>
+    And user input alamat <alamat>
+    And user input no handphone <no handphone>
+    And user click button submit
+    Then I verify the step success
 
     Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+      | email               | password  | nama|kota|alamatstatus  |
+      | syafradha@gmail.com | meditran5 | success |
+
+  @tag2
+  Scenario Outline: Edit profile without nama
+    Given user on the login page
+    When user input email <email>
+    And user input password <password>
+    And user click login button
+    And user click user profile
+    And user click image
+    And user input nama
+    And user input kota
+    And user input alamat
+    And user input no handphone
+    And user click button submit
+    Then I verify the step success
+
+    Examples: 
+      | email               | password  | status  |
+      | syafradha@gmail.com | meditran5 | success |
+
+  @tag3
+  Scenario Outline: Edit profile without no handphone
+    Given user on the login page
+    When user input email <email>
+    And user input password <password>
+    And user click login button
+    And user click user profile
+    And user click image
+    And user input nama
+    And user input kota
+    And user input alamat
+    And user input no handphone
+    And user click button submit
+    Then I verify the step success
+
+    Examples: 
+      | email               | password  | status  |
+      | syafradha@gmail.com | meditran5 | success |
+
+  @tag4
+  Scenario Outline: Edit profile without alamat
+    Given user on the login page
+    When user input email <email>
+    And user input password <password>
+    And user click login button
+    And user click user profile
+    And user click image
+    And user input nama
+    And user input kota
+    And user input alamat
+    And user input no handphone
+    And user click button submit
+    Then I verify the step success
+
+    Examples: 
+      | email               | password  | status  |
+      | syafradha@gmail.com | meditran5 | success |
