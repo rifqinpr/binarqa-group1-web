@@ -29,8 +29,10 @@ Feature: Login
 
     Examples: 
       | email                 | password  | status  |
+      | satugroup@gmail.com   | abc!12345 | success |
       | groupsatu@gmail.com   | abc!12345 | success |
       | namakusilmi@gmail.com |  12345678 | success |
+      #note: akun groupsatu@gmail.com seharusnya berhasil login, akan tetapi akun tsb mengalami dampak dari 'bug' add product sehingga tidak bisa dibuka dan muncul error krn tidak sesuai dg expected result
 
   @LGN02 @LGN05
   Scenario Outline: Verify to login with invalid email
@@ -49,7 +51,7 @@ Feature: Login
       | aa@ss                   |  12345678 | required email |
       | namaku1357.com          | abc!12345 | required email |
       | namaku1357gmail         | abc!12345 | required email |
-      #note: akun aa@ss berhasil ke register, kalo login harusnya 'bug' sehingga bakal muncul error krn tdk sesuai dg expected res
+      #note: akun aa@ss berhasil ter-register, sehingga saat login terjadi 'bug' dan muncul error krn tidak sesuai dg expected result
 	
 	@LGN04
   Scenario Outline: Verify to login with invalid password
