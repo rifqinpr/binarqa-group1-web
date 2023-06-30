@@ -62,7 +62,7 @@ class Denied {
 	public void seller_denied_click_all_notification() {
 		WebUI.callTestCase(findTestCase('Buyer Bid/Click Lihat semua notifikasi'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@When("seller denied click first notification")
 	public void seller_denied_click_first_notification() {
 		WebUI.callTestCase(findTestCase('Buyer Bid/Click First Notification'), [:], FailureHandling.STOP_ON_FAILURE)

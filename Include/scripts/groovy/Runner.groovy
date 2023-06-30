@@ -23,9 +23,9 @@ import org.junit.runner.RunWith
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features = "Include/features/",
+features = "Include/features/Bid",
 glue = "stepDefinition",
-tags = "@tag1",
+tags = "@Transaksi01, @BidInvalid",
 monochrome = true
 )
 

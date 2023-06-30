@@ -53,11 +53,6 @@ class BidInvalid {
 		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("buyer click last cart product")
-	public void buyer_click_last_cart_product() {
-		WebUI.callTestCase(findTestCase('Bid/Click Last Cart Product'), [:], FailureHandling.STOP_ON_FAILURE)
-	}
-
 	@When("buyer invalid click Saya tertarik dan ingin nego button")
 	public void buyer_invalid_click_button() {
 		WebUI.callTestCase(findTestCase('Bid/Click Saya Tertarik dan Ingin Nego'), [:], FailureHandling.STOP_ON_FAILURE)

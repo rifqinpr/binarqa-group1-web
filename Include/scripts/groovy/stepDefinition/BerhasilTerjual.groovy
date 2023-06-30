@@ -48,7 +48,7 @@ class BerhasilTerjual {
 	@Given("seller already login and has product and approved")
 	public void seller_already_login_and_has_product_and_approved() {
 		WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
-		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : "alexjual@gmail.com"], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : "alexjual1@gmail.com"], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : "asdqwe"], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}

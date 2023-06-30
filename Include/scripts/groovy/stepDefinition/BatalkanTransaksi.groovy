@@ -57,14 +57,14 @@ class BatalkanTransaksi {
 	public void sellers_click_notification() {
 		WebUI.callTestCase(findTestCase('Buyer Bid/Click Notification'),[:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@And("sellers click all notification")
 	public void sellers_click_all_notification() {
 		WebUI.callTestCase(findTestCase('Buyer Bid/Click Lihat semua notifikasi'),[:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("sellers click first notification and already bid and accepted")
-	public void sellers_click_first_notification_and_already_bid_and_accepted() {
+	@When("sellers click first notification")
+	public void sellers_click_first_notification() {
 		WebUI.callTestCase(findTestCase('Buyer Bid/Click First Notification'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
