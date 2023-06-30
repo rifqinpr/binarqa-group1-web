@@ -22,10 +22,10 @@ import internal.GlobalVariable
 
 public class randomEmail {
 	@Keyword
-	public static String getEmail() {
+	public static String getEmail(String prefix) {
 		Date today = new Date()
 		String todaysDate = today.format('mmddyy-hhmm')
-		String email = 'user' + todaysDate + '@gmail.com'
+		String email = 'user' + todaysDate + '@' + prefix
 		//int randomNo = (int)(Math.random()*1000)
 		return email;
 	}
