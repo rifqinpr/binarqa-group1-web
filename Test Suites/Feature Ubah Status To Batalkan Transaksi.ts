@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Feature Accept Bid</name>
+   <name>Feature Ubah Status To Batalkan Transaksi</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,26 +10,26 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>25b2304f-866d-436a-ba83-3d5db0ac375a</testSuiteGuid>
+   <testSuiteGuid>72d2dee9-ba97-4a42-aa25-a4c9b8ac0951</testSuiteGuid>
    <testCaseLink>
-      <guid>27ba9494-5398-413d-9c28-8d2fb75182ec</guid>
+      <guid>d0e2b131-994a-4176-a75f-0705b99da015</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Bid/BID01 - Bid with Valid Price</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Bid/BID02 - Bid with Invalid Price</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>446e6136-b0e5-4376-afc4-9693fc52f489</guid>
+      <guid>a4b0cdb7-d280-44e6-b113-b2e2e0bc886b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Bid/ACC01 - Accept Buyer Bid</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>acbeafc4-ffd8-40f9-ba78-6fde1599a414</guid>
+      <guid>042c5a2e-e145-4d1d-b016-8e33f3997333</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Bid/UPD01 - Update Product Status Berhasil Terjual</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Bid/UPD02 - Update Product Status Batalkan Transaksi</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

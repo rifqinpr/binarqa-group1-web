@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : "alexbeli@gmail.com"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'alexbeli1@gmail.com'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : "asdqwe"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'asdqwe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -29,7 +29,7 @@ WebUI.callTestCase(findTestCase('Bid/Click First Cart Product'), [:], FailureHan
 
 WebUI.callTestCase(findTestCase('Bid/Click Saya Tertarik dan Ingin Nego'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Bid/Input Harga Tawar'), [('harga') : "2000"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Bid/Input Harga Tawar'), [('harga') : '2000'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Bid/Click Button Kirim'), [:], FailureHandling.STOP_ON_FAILURE)
 
