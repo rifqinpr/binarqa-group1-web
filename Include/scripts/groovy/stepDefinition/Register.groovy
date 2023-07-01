@@ -48,7 +48,7 @@ class Register {
 	@Given("I already access the website and user on the register page")
 	public void i_already_access_the_website_and_user_on_the_register_page() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/')
-		WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Register/Click Button Daftar di sini from login page'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 

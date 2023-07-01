@@ -47,7 +47,7 @@ import cucumber.api.java.en.When
 class editprofilewithoutalamat {
 	@Given("user on the login page")
 	public void user_on_the_login_page() {
-		WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("user input email")

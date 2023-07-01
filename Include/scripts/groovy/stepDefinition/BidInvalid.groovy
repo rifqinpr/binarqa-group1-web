@@ -47,7 +47,7 @@ import cucumber.api.java.en.When
 class BidInvalid {
 	@Given("buyer invalid already login")
 	public void buyer_already_login() {
-		WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : "alexjual@gmail.com"], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : "asdqwe"], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -55,21 +55,21 @@ class BidInvalid {
 
 	@When("buyer invalid click Saya tertarik dan ingin nego button")
 	public void buyer_invalid_click_button() {
-		WebUI.callTestCase(findTestCase('Pages/Bid/Click Saya Tertarik dan Ingin Nego'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Product Detail/Click Saya Tertarik dan Ingin Nego'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("buyer invalid memasukkan harga tawaran {string}")
 	public void buyer_invalid_memasukkan_harga_tawaran(String harga) {
-		WebUI.callTestCase(findTestCase('Pages/Bid/Input Harga Tawar'), [('harga') : harga], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Product Detail/Buy Bid Product/Input Harga Tawar'), [('harga') : harga], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("buyer invalid click tombol Kirim")
 	public void buyer_invalid_click_tombol_Kirim() {
-		WebUI.callTestCase(findTestCase('Pages/Bid/Click Button Kirim'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Product Detail/Buy Bid Product/Click Button Kirim'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("buyer invalid menunggu respon penjual")
 	public void buyer_invalid_menunggu_respon_penjual() {
-		WebUI.callTestCase(findTestCase('Pages/Bid/Verify Text'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Product Detail/Buy Bid Product/Verify Text - Menunggu respon penjual'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }

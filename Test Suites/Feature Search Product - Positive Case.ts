@@ -16,11 +16,20 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Search Product/SRC01 - Search Product</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>4cd4a899-2517-4c53-aebc-ddda0a1ab013</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/SearchData</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>4cd4a899-2517-4c53-aebc-ddda0a1ab013</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>text</value>
          <variableId>5c02b350-4b15-46fc-a576-6e01d0f9ab3c</variableId>
       </variableLink>
    </testCaseLink>

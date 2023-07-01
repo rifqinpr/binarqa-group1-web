@@ -46,7 +46,7 @@ class Login {
 	@Given("I already registered an account and go to Login page")
 	public void i_already_registered_an_account() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/')
-		WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("I input email (.*)")
