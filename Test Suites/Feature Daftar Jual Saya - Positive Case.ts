@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Feature Accept Bid</name>
+   <name>Feature Daftar Jual Saya - Positive Case</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,26 +10,26 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>25b2304f-866d-436a-ba83-3d5db0ac375a</testSuiteGuid>
+   <testSuiteGuid>a9c8c230-5a40-4f80-8af2-3c3529a5060e</testSuiteGuid>
    <testCaseLink>
-      <guid>27ba9494-5398-413d-9c28-8d2fb75182ec</guid>
+      <guid>d678a239-0f2c-4131-be67-e41e7a073e29</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Bid/BID01 - Bid with Input Valid Data in Harga Tawar Field</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Daftar Jual Saya/DJS01 - See Daftar Jual Saya</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>446e6136-b0e5-4376-afc4-9693fc52f489</guid>
+      <guid>fe99cf94-6da0-4d9a-8f3c-f65528095d7c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Bid/ACC01 - Accept Buyer Bid</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Daftar Jual Saya/DJS03 - See Diminati</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>acbeafc4-ffd8-40f9-ba78-6fde1599a414</guid>
+      <guid>094db4d1-db75-4953-a25b-a3673e774169</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Bid/UPD01 - Update Product Status Berhasil Terjual</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Daftar Jual Saya/DJS05 - See Terjual</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

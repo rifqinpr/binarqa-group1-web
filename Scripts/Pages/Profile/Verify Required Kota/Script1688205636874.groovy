@@ -17,5 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.selectOptionByLabel(findTestObject('User Profile/select_Pilih Kota'), kota, false)
+WebUI.verifyElementHasAttribute(findTestObject('User Profile/select_Pilih Kota'), 'required', 20)
 
+WebUI.verifyMatch(WebUI.getAttribute(findTestObject('User Profile/select_Pilih Kota'), 'required'), 'true', false)

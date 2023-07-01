@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Feature Accept Bid</name>
+   <name>Feature Daftar Jual Saya - Negative Case</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,26 +10,26 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>25b2304f-866d-436a-ba83-3d5db0ac375a</testSuiteGuid>
+   <testSuiteGuid>137f3a0f-add1-48cc-827a-2e444c30c7dd</testSuiteGuid>
    <testCaseLink>
-      <guid>27ba9494-5398-413d-9c28-8d2fb75182ec</guid>
+      <guid>7c21cfb9-090b-4d52-b6a6-3435e329dd30</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Bid/BID01 - Bid with Input Valid Data in Harga Tawar Field</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Daftar Jual Saya/DJS02 - See Daftar Jual Saya No Product</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>446e6136-b0e5-4376-afc4-9693fc52f489</guid>
+      <guid>b79090f7-3205-45d8-8c56-ce320d4116d3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Bid/ACC01 - Accept Buyer Bid</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Daftar Jual Saya/DJS04 - See Diminati No Product</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>acbeafc4-ffd8-40f9-ba78-6fde1599a414</guid>
+      <guid>a7746764-6a7e-43c5-880e-0a9d2900d364</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Bid/UPD01 - Update Product Status Berhasil Terjual</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Daftar Jual Saya/DJS06 - See Terjual No Product</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

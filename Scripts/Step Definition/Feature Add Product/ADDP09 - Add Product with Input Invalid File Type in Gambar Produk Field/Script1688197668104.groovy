@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Step Definition/Feature Register/REG01 - User register with valid credentials'), [:])
 
-WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun Icon'), [:])
+WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Icon Navbar'), [:])
 
-WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun'), [:])
+WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Account'), [:])
 
 WebUI.selectOptionByLabel(findTestObject('User Profile/select_Pilih Kota'), 'Jakarta', false)
 

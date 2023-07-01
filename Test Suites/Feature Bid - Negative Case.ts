@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Feature Ubah Status To Batalkan Transaksi</name>
+   <name>Feature Bid - Negative Case</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,26 +10,33 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>72d2dee9-ba97-4a42-aa25-a4c9b8ac0951</testSuiteGuid>
+   <testSuiteGuid>779a4fb5-1701-4a7b-9c2f-79aae9733fe5</testSuiteGuid>
    <testCaseLink>
-      <guid>d0e2b131-994a-4176-a75f-0705b99da015</guid>
+      <guid>aa37a9eb-d459-4244-bb5b-97ed87617d91</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Bid/BID02 - Bid with Input Harga Tawar Higher Than Harga Produk</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a4b0cdb7-d280-44e6-b113-b2e2e0bc886b</guid>
+      <guid>5a657cd7-28b7-4650-881c-e4105a82d2a9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Bid/ACC01 - Accept Buyer Bid</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Bid/BID03 - Bid with Input Negative Price in Harga Tawar Field</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>042c5a2e-e145-4d1d-b016-8e33f3997333</guid>
+      <guid>d951acee-d7c6-4c2c-86e6-c7b4912f1fed</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Bid/UPD02 - Update Product Status Batalkan Transaksi</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Bid/BID04 - Bid with Input Alphabet And Special Character in Harga Tawar Field</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>877917ca-ae73-4378-810f-52d23a4c93ab</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Step Definition/Feature Bid/BID05 - Bid with Empty Data in Harga Tawar Field</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

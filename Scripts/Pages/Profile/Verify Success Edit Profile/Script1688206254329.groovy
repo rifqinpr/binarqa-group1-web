@@ -17,5 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.selectOptionByLabel(findTestObject('User Profile/select_Pilih Kota'), kota, false)
+WebUI.click(findTestObject('Navbar/a_Profil Saya Icon'))
 
+WebUI.verifyElementVisible(findTestObject('Navbar/div_Nama Akun'))
+
+WebUI.verifyMatch(WebUI.getText(findTestObject('Navbar/div_Nama Akun')), nama, false)

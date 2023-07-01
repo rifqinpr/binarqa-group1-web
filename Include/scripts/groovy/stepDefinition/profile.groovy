@@ -67,14 +67,14 @@ class profile {
 
 	@When("user click user profile")
 	public void user_click_user_profile() {
-		WebUI.callTestCase(findTestCase('Pages/Login/Click user profile'), [:], FailureHandling.STOP_ON_FAILURE)
-		WebUI.callTestCase(findTestCase('Pages/Login/Click image2'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Profile/Click user profile'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Profile/Click image2'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("user click image")
 	public void user_click_image() {
 
-		WebUI.callTestCase(findTestCase('Pages/Login/Click Image Profile Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Profile/Click Image Profile Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 
 
 
