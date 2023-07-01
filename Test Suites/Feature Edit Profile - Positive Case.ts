@@ -15,7 +15,7 @@
       <guid>18ccfc32-fd11-48c4-b911-43f3b9d6045b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature User Profile/TC1 - Edit Profile With Valid Data</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature User Profile/USR01 - Edit profile with input valid</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

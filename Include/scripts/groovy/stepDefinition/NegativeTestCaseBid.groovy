@@ -47,7 +47,7 @@ import cucumber.api.java.en.When
 class NegativeTestCaseBid {
 	@When("buyer click cart product")
 	public void buyer_click_cart_product() {
-		WebUI.callTestCase(findTestCase('Pages/Bid/Click Second Cart Product'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Bid/Click Second Card Product'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("buyer memasukkan harga tawaran")
@@ -67,7 +67,7 @@ class NegativeTestCaseBid {
 	
 	@When("buyer click cart product ketiga")
 	public void buyer_click_cart_product_ketiga() {
-		WebUI.callTestCase(findTestCase('Pages/Bid/Click Third Cart Product'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Bid/Click Third Card Product'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("buyer memasukkan harga tawaran alphabet")
@@ -87,7 +87,7 @@ class NegativeTestCaseBid {
 	
 	@When("buyer click last cart")
 	public void buyer_click_last_cart() {
-		WebUI.callTestCase(findTestCase('Pages/Bid/Click Last Cart Product'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Bid/Click Last Card Product'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 	
 	@When("buyer memasukkan harga tawaran null")

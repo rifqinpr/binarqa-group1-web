@@ -55,7 +55,7 @@ class Bid {
 
 	@When("buyer click first cart product")
 	public void buyer_click_first_cart_product() {
-		WebUI.callTestCase(findTestCase('Pages/Bid/Click First Cart Product'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Bid/Click First Card Product'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("buyer click Saya tertarik dan ingin nego button")
