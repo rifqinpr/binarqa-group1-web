@@ -19,11 +19,23 @@ import org.openqa.selenium.Keys as Keys
 
 if (status == 'success') {
     WebUI.callTestCase(findTestCase('Pages/Register/Verify Register Valid'), [:], FailureHandling.STOP_ON_FAILURE)
-} else if (status == 'required') {
-    WebUI.callTestCase(findTestCase('Pages/Register/Verify Required Email'), [:], FailureHandling.STOP_ON_FAILURE)
-	WebUI.verifyElementVisible(findTestObject('Register/h2_Daftar'), FailureHandling.STOP_ON_FAILURE)
-} else if (status == 'invalid') {
-	WebUI.callTestCase(findTestCase('Pages/Register/Read Error Msg - Registered Email'), [('expected') : ''], FailureHandling.STOP_ON_FAILURE)
-	WebUI.verifyElementVisible(findTestObject('Register/h2_Daftar'))
+} else if (status == 'required email') {
+    WebUI.verifyElementVisible(findTestObject('Register/h2_Daftar'), FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.callTestCase(findTestCase('Pages/Register/Verify Required Email'), [('expected') : ''], FailureHandling.STOP_ON_FAILURE)
+} else if (status == 'invalid email') {
+    WebUI.verifyElementVisible(findTestObject('Register/h2_Daftar'))
+
+    WebUI.callTestCase(findTestCase('Pages/Register/Read Error Msg - Registered Email'), [('expected') : ''], FailureHandling.STOP_ON_FAILURE)
+} else if (status == 'required password') {
+    WebUI.verifyElementVisible(findTestObject('Register/h2_Daftar'))
+
+    WebUI.callTestCase(findTestCase('Pages/Register/Verify Required Password'), [:], FailureHandling.STOP_ON_FAILURE)
+} else if (status == 'invalid password') {
+    WebUI.callTestCase(findTestCase('Pages/Register/Read Error Msg - Password less than 8'), [('expected') : ''], FailureHandling.STOP_ON_FAILURE)
+} else if (status == 'required nama') {
+    WebUI.verifyElementVisible(findTestObject('Register/h2_Daftar'))
+	
+	WebUI.callTestCase(findTestCase('Pages/Register/Verify Required Nama'), [('expected') : ''], FailureHandling.STOP_ON_FAILURE)
 }
 

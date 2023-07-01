@@ -17,6 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String invalidEmail = CustomKeywords.'packages.randomEmail.getEmail'('random')
+String invalidEmail = CustomKeywords.'packages.randomEmail.getEmail'('tld')
 
 WebUI.sendKeys(findTestObject('Register/input_Email'), invalidEmail)

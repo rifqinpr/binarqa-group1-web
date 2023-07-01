@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>email without Top Level Domain or dotless such as .com, .co, etc</description>
    <name>REG03 - User register with non-TLD email format</name>
    <tag></tag>
    <comment></comment>

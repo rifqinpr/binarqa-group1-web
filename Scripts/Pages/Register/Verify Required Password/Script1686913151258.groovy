@@ -17,5 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementAttributeValue(findTestObject('Register/input_Password'), 'required', 'true', 20)
+WebUI.verifyElementAttributeValue(findTestObject('Register/input_Password'), 'required', 'true', 10)
 
+required = WebUI.getAttribute(findTestObject('Register/input_Password'), 'required')
+
+com.kms.katalon.core.util.KeywordUtil.logInfo(required)
+
+expected = required
+
+WebUI.verifyMatch(required, expected, false)

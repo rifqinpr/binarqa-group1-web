@@ -23,29 +23,38 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Register/REG02 - User register with invalid email</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>580b051f-beb4-40ba-8349-96a6e174d61f</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Register-InvalidEmail</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>580b051f-beb4-40ba-8349-96a6e174d61f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>nama</value>
          <variableId>09006e68-94f5-4a8e-b90b-7339c415c8c0</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>580b051f-beb4-40ba-8349-96a6e174d61f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>email</value>
          <variableId>ac4a7b43-cb2c-4d85-b718-98c07add0d50</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>580b051f-beb4-40ba-8349-96a6e174d61f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
          <variableId>2a1c46c4-ad51-47c4-ae11-573cba13bef5</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>580b051f-beb4-40ba-8349-96a6e174d61f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status</value>
          <variableId>52e3b8c8-308a-4e06-80db-cdca9913a184</variableId>
       </variableLink>
    </testCaseLink>
@@ -62,5 +71,52 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Step Definition/Feature Register/REG04 - User register without enter any data</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a42f7137-f008-4e5d-bd7e-5a48124fc022</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <iterationNameVariable>
+         <defaultValue>''</defaultValue>
+         <description></description>
+         <id>b009069e-3390-4c6a-af83-828f848c5887</id>
+         <masked>false</masked>
+         <name>status</name>
+      </iterationNameVariable>
+      <testCaseId>Test Cases/Step Definition/Feature Register/REG05 - User register with invalid password</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>9655af0f-4bb5-479a-a76f-f211f1fef8c2</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Register-InvalidPassword</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>9655af0f-4bb5-479a-a76f-f211f1fef8c2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>nama</value>
+         <variableId>2436808a-fa3d-4bcb-98f8-34718d765802</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9655af0f-4bb5-479a-a76f-f211f1fef8c2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>email</value>
+         <variableId>5720f4b6-8530-4626-a72f-cd3a180c2353</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9655af0f-4bb5-479a-a76f-f211f1fef8c2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
+         <variableId>57da349d-7b75-4713-9aad-60cc53ebfafd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9655af0f-4bb5-479a-a76f-f211f1fef8c2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status</value>
+         <variableId>b009069e-3390-4c6a-af83-828f848c5887</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

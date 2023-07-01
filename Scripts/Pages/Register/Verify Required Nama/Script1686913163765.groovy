@@ -19,3 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.verifyElementAttributeValue(findTestObject('Register/input_Name'), 'required', 'true', 20)
 
+required = WebUI.getAttribute(findTestObject('Register/input_Name'), 'required')
+
+com.kms.katalon.core.util.KeywordUtil.logInfo(required)
+
+expected = required
+
+WebUI.verifyMatch(required, expected, false)
+

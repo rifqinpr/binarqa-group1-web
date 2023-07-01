@@ -17,17 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Register/input_Password'))
 
-WebUI.callTestCase(findTestCase('Pages/Register/Click Button Daftar di sini from login page'), [:], FailureHandling.STOP_ON_FAILURE)
+error_msg = WebUI.getText(findTestObject('Register/input_Password'))
 
-WebUI.callTestCase(findTestCase('Pages/Register/Input Nama with test data'), [('nama') : ''], FailureHandling.STOP_ON_FAILURE)
+com.kms.katalon.core.util.KeywordUtil.logInfo(error_msg)
 
-WebUI.callTestCase(findTestCase('Pages/Register/Input Email with test data'), [('email') : ''], FailureHandling.STOP_ON_FAILURE)
+String expected = "Too short, password must have at least 8 characters"
 
-WebUI.callTestCase(findTestCase('Pages/Register/Input Password'), [('password') : ''], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Register/Click Button Daftar to submit'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Pages/Register/Verify Required Nama'), [('expected') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyMatch(error_msg, expected, true)
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>invalid email (empty, without '@', registered, incomplete format)</description>
    <name>REG02 - User register with invalid email</name>
    <tag></tag>
    <comment></comment>
@@ -12,7 +12,7 @@
          <iterationType>ALL</iterationType>
          <value></value>
       </iterationEntity>
-      <testDataId>Data Files/Register-InvalidData</testDataId>
+      <testDataId>Data Files/Register-InvalidEmail</testDataId>
    </testDataLinks>
    <variableLinks>
       <testDataLinkId>e9a6baca-326c-4a08-a507-497df67c3a43</testDataLinkId>
