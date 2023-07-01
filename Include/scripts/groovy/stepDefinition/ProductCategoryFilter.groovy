@@ -53,15 +53,15 @@ public class ProductCategoryFilter {
 		if(category == 'Semua') {
 			WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify First Product Card Category'), [('textExpected') : '\\bBaju|\\bElektronik|\\bHobi|\\bKendaraan|\\bKesehatan', ('isRegex') : true], FailureHandling.STOP_ON_FAILURE)
 		}else if(category == 'Hobi') {
-			WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify First Product Card Category'), [('textExpected') : WebUI.getText(findTestObject('HomePage/Kategori Filter/a_Filter Hobi')), ('isRegex') : false], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify First Product Card Category'), [('textExpected') : WebUI.getText(findTestObject('Homepage/Kategori Filter/a_Filter Hobi')), ('isRegex') : false], FailureHandling.STOP_ON_FAILURE)
 		}else if(category == 'Kendaraan') {
-			WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify First Product Card Category'), [('textExpected') : WebUI.getText(findTestObject('HomePage/Kategori Filter/a_Filter Kendaraan')), ('isRegex') : false], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify First Product Card Category'), [('textExpected') : WebUI.getText(findTestObject('Homepage/Kategori Filter/a_Filter Kendaraan')), ('isRegex') : false], FailureHandling.STOP_ON_FAILURE)
 		}else if(category == 'Baju') {
-			WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify First Product Card Category'), [('textExpected') : WebUI.getText(findTestObject('HomePage/Kategori Filter/a_Filter Baju')), ('isRegex') : false], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify First Product Card Category'), [('textExpected') : WebUI.getText(findTestObject('Homepage/Kategori Filter/a_Filter Baju')), ('isRegex') : false], FailureHandling.STOP_ON_FAILURE)
 		}else if(category == 'Elektronik') {
-			WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify First Product Card Category'), [('textExpected') : WebUI.getText(findTestObject('HomePage/Kategori Filter/a_Filter Elektronik')), ('isRegex') : false], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify First Product Card Category'), [('textExpected') : WebUI.getText(findTestObject('Homepage/Kategori Filter/a_Filter Elektronik')), ('isRegex') : false], FailureHandling.STOP_ON_FAILURE)
 		}else if(category == 'Kesehatan') {
-			WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify First Product Card Category'), [('textExpected') : WebUI.getText(findTestObject('HomePage/Kategori Filter/a_Filter Kesehatan')), ('isRegex') : false], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify First Product Card Category'), [('textExpected') : WebUI.getText(findTestObject('Homepage/Kategori Filter/a_Filter Kesehatan')), ('isRegex') : false], FailureHandling.STOP_ON_FAILURE)
 		}
 	}
 }

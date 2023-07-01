@@ -55,36 +55,36 @@ class BerhasilTerjual {
 
 	@When("seller click all notification")
 	public void seller_click_all_notification() {
-		WebUI.callTestCase(findTestCase('Buyer Bid/Click Notification'),[:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Notification'),[:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("seller click all notifications")
 	public void seller_click_all_notifications() {
-		WebUI.callTestCase(findTestCase('Buyer Bid/Click Lihat semua notifikasi'),[:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Lihat semua notifikasi'),[:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("seller click first notification and already bid and accepted")
 	public void seller_click_first_notification_and_already_bid_and_accepted() {
-		WebUI.callTestCase(findTestCase('Buyer Bid/Click First Notification'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click First Notification'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("seller click Status")
 	public void seller_click_Status() {
-		WebUI.callTestCase(findTestCase('Update Status Order/Click Status Button'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Update Status Order/Click Status Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("seller click radio button Berhasil terjual")
 	public void seller_click_radio_button_Berhasil_terjual() {
-		WebUI.callTestCase(findTestCase('Update Status Order/Click Berhasil Terjual Button'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Update Status Order/Click Berhasil Terjual Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("seller click Kirim button")
 	public void seller_click_Kirim_button() {
-		WebUI.callTestCase(findTestCase('Update Status Order/Click Kirim Button'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Update Status Order/Click Kirim Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("Verify text Berhasil terjual")
 	public void verify_text_Berhasil_terjual() {
-		WebUI.callTestCase(findTestCase('Update Status Order/Verify Berhasil terjual text'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Update Status Order/Verify Berhasil terjual text'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }

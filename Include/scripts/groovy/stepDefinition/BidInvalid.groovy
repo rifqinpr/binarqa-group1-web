@@ -55,21 +55,21 @@ class BidInvalid {
 
 	@When("buyer invalid click Saya tertarik dan ingin nego button")
 	public void buyer_invalid_click_button() {
-		WebUI.callTestCase(findTestCase('Bid/Click Saya Tertarik dan Ingin Nego'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Bid/Click Saya Tertarik dan Ingin Nego'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("buyer invalid memasukkan harga tawaran {string}")
 	public void buyer_invalid_memasukkan_harga_tawaran(String harga) {
-		WebUI.callTestCase(findTestCase('Bid/Input Harga Tawar'), [('harga') : harga], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Bid/Input Harga Tawar'), [('harga') : harga], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("buyer invalid click tombol Kirim")
 	public void buyer_invalid_click_tombol_Kirim() {
-		WebUI.callTestCase(findTestCase('Bid/Click Button Kirim'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Bid/Click Button Kirim'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("buyer invalid menunggu respon penjual")
 	public void buyer_invalid_menunggu_respon_penjual() {
-		WebUI.callTestCase(findTestCase('Bid/Verify Text'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Bid/Verify Text'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }

@@ -25,13 +25,13 @@ WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : '
 
 WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Buyer Bid/Click Notification'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Notification'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Buyer Bid/Click Lihat semua notifikasi'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Lihat semua notifikasi'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Buyer Bid/Click First Notification'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click First Notification'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Buyer Bid/Seller click Tolak'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Seller click Tolak'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Buyer Bid/Verify Penawaran produk ditolak'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Verify Penawaran produk ditolak'), [:], FailureHandling.STOP_ON_FAILURE)
 

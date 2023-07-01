@@ -55,36 +55,36 @@ class BatalkanTransaksi {
 
 	@When("sellers click notification")
 	public void sellers_click_notification() {
-		WebUI.callTestCase(findTestCase('Buyer Bid/Click Notification'),[:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Notification'),[:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@And("sellers click all notification")
 	public void sellers_click_all_notification() {
-		WebUI.callTestCase(findTestCase('Buyer Bid/Click Lihat semua notifikasi'),[:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Lihat semua notifikasi'),[:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("sellers click first notification")
 	public void sellers_click_first_notification() {
-		WebUI.callTestCase(findTestCase('Buyer Bid/Click First Notification'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click First Notification'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("sellers click Status")
 	public void sellers_click_Status() {
-		WebUI.callTestCase(findTestCase('Update Status Order/Click Status Button'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Update Status Order/Click Status Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("sellers click radio button Batalkan Transaksi")
 	public void sellers_click_radio_button_Batalkan_Transaksi() {
-		WebUI.callTestCase(findTestCase('Update Status Order/Click Batalkan Transaksi Button'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Update Status Order/Click Batalkan Transaksi Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("sellers click Kirim button")
 	public void sellers_click_Kirim_button() {
-		WebUI.callTestCase(findTestCase('Update Status Order/Click Kirim Button'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Update Status Order/Click Kirim Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("Verify text Penjualan dibatalkan")
 	public void verify_text_Penjualan_dibatalkan() {
-		WebUI.callTestCase(findTestCase('Update Status Order/Verify Penjualan dibatalkan Text'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Update Status Order/Verify Penjualan dibatalkan Text'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }

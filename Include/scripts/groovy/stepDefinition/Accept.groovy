@@ -56,26 +56,26 @@ public class Accept {
 
 	@When("seller click notification")
 	public void seller_click_notification() {
-		WebUI.callTestCase(findTestCase('Buyer Bid/Click Notification'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Notification'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@And("seller accept click all notification")
 	public void seller_accept_click_all_notification() {
-		WebUI.callTestCase(findTestCase('Buyer Bid/Click Lihat semua notifikasi'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click Lihat semua notifikasi'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@And("seller click first notification")
 	public void seller_click_first_notification() {
-		WebUI.callTestCase(findTestCase('Buyer Bid/Click First Notification'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Click First Notification'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@And("seller click Terima")
 	public void seller_click_Terima() {
-		WebUI.callTestCase(findTestCase('Buyer Bid/Seller Click Terima'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Seller Click Terima'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("button hubungi buyer di whatsapp akan muncul")
 	public void button_hubungi_buyer_di_whatsapp_akan_muncul() {
-		WebUI.callTestCase(findTestCase('Buyer Bid/Verify Whatsapp Button'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Buyer Bid/Verify Whatsapp Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }

@@ -52,7 +52,7 @@ public class DeleteProduct {
 	
 	@Then("I success delete product")
 	public void i_success_delete_product() {
-		WebUI.callTestCase(findTestCase('Delete_Produk/Verif delete produk'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Delete Product/Verif delete produk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 	
 }

@@ -58,7 +58,7 @@ class AddProduct {
 
 	@When("I click jual button")
 	public void i_click_jual_button() {
-		WebUI.click(findTestObject('Object Repository/HomePage/a_Button Jual'))
+		WebUI.click(findTestObject('Object Repository/Homepage/a_Button Jual'))
 	}
 
 	@When("I fill nama product (.*)")

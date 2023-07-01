@@ -25,13 +25,13 @@ WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : '
 
 WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Bid/Click Third Cart Product'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Bid/Click Third Cart Product'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Bid/Click Saya Tertarik dan Ingin Nego'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Bid/Click Saya Tertarik dan Ingin Nego'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Bid/Input Harga Tawar'), [('harga') : '*&AS*SAD-'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Bid/Input Harga Tawar'), [('harga') : '*&AS*SAD-'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Bid/Click Button Kirim'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Bid/Click Button Kirim'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Bid/Verify Input Number'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Bid/Verify Input Number'), [:], FailureHandling.STOP_ON_FAILURE)
 

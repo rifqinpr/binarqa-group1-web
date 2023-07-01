@@ -17,27 +17,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementVisible(findTestObject('HomePage/Kategori Filter/a_Filter Baju'))
+WebUI.verifyElementVisible(findTestObject('Homepage/Kategori Filter/a_Filter Baju'))
 
-WebUI.verifyElementClickable(findTestObject('HomePage/Kategori Filter/a_Filter Baju'))
+WebUI.verifyElementClickable(findTestObject('Homepage/Kategori Filter/a_Filter Baju'))
 
-WebUI.verifyElementVisible(findTestObject('HomePage/Kategori Filter/a_Filter Elektronik'))
+WebUI.verifyElementVisible(findTestObject('Homepage/Kategori Filter/a_Filter Elektronik'))
 
-WebUI.verifyElementVisible(findTestObject('HomePage/Kategori Filter/a_Filter Elektronik'))
+WebUI.verifyElementVisible(findTestObject('Homepage/Kategori Filter/a_Filter Elektronik'))
 
-WebUI.verifyElementVisible(findTestObject('HomePage/Kategori Filter/a_Filter Hobi'))
+WebUI.verifyElementVisible(findTestObject('Homepage/Kategori Filter/a_Filter Hobi'))
 
-WebUI.verifyElementVisible(findTestObject('HomePage/Kategori Filter/a_Filter Hobi'))
+WebUI.verifyElementVisible(findTestObject('Homepage/Kategori Filter/a_Filter Hobi'))
 
-WebUI.verifyElementClickable(findTestObject('HomePage/Kategori Filter/a_Filter Kendaraan'))
+WebUI.verifyElementClickable(findTestObject('Homepage/Kategori Filter/a_Filter Kendaraan'))
 
-WebUI.verifyElementClickable(findTestObject('HomePage/Kategori Filter/a_Filter Kendaraan'))
+WebUI.verifyElementClickable(findTestObject('Homepage/Kategori Filter/a_Filter Kendaraan'))
 
-WebUI.verifyElementClickable(findTestObject('HomePage/Kategori Filter/a_Filter Kesehatan'))
+WebUI.verifyElementClickable(findTestObject('Homepage/Kategori Filter/a_Filter Kesehatan'))
 
-WebUI.verifyElementClickable(findTestObject('HomePage/Kategori Filter/a_Filter Kesehatan'))
+WebUI.verifyElementClickable(findTestObject('Homepage/Kategori Filter/a_Filter Kesehatan'))
 
-WebUI.verifyElementVisible(findTestObject('HomePage/Kategori Filter/a_Filter Semua'))
+WebUI.verifyElementVisible(findTestObject('Homepage/Kategori Filter/a_Filter Semua'))
 
-WebUI.verifyElementClickable(findTestObject('HomePage/Kategori Filter/a_Filter Semua'))
+WebUI.verifyElementClickable(findTestObject('Homepage/Kategori Filter/a_Filter Semua'))
 

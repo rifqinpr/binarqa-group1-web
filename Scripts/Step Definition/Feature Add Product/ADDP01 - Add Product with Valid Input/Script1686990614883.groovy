@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'prabotanpreloved@mytestmail.net'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'group1@gmail.com'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'a1b2c3d4'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'group1@123'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -43,5 +43,6 @@ WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pat
 
 WebUI.callTestCase(findTestCase('Pages/Add Product/Click Terbitkan Button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Success Add Product'), [('namaProduk') : 'Produk A', ('hargaProduk') : 'Rp 100.000', ('kategoriProduk') : 'Kesehatan', ('deskripsiProduk') : 'Deskripsi Produk A'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Success Add Product'), [('namaProduk') : 'Produk A', ('hargaProduk') : 'Rp 100.000'
+        , ('kategoriProduk') : 'Kesehatan', ('deskripsiProduk') : 'Deskripsi Produk A'], FailureHandling.STOP_ON_FAILURE)
 
