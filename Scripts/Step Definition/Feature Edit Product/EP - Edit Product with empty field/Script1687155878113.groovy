@@ -43,5 +43,5 @@ WebUI.callTestCase(findTestCase('Edit_Product/Edit Deskripsi Product'), [:], Fai
 
 WebUI.callTestCase(findTestCase('Edit_Product/Click Terbitkan'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Harga Produk Error Message'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Error Message/Verify Harga Produk Blank Error Message'), [:], FailureHandling.STOP_ON_FAILURE)
 

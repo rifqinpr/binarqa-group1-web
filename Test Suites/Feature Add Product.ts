@@ -60,4 +60,18 @@
       <testCaseId>Test Cases/Step Definition/Feature Add Product/ADDP07 - Add Product Without Input Gambar Produk Field</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>ce0743e9-4c15-4854-b80f-f4753d66477b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Step Definition/Feature Add Product/ADDP08 - Add Product with Input Negative Value in Harga Produk Field</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>95f0c5f1-1351-4401-988c-d3ee71af9eda</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Step Definition/Feature Add Product/ADDP09 - Add Product with Input Invalid File Type in Gambar Produk Field</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

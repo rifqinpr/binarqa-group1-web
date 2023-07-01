@@ -17,5 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('null'))
+WebUI.waitForElementPresent(findTestObject('Products/Product Detail Page/h5_Nama Produk'), 0)
 
+WebUI.waitForElementPresent(findTestObject('Products/Product Detail Page/p_Kategori Produk'), 0)
+
+WebUI.waitForElementPresent(findTestObject('Products/Product Detail Page/p_Harga Produk'), 0)
+
+WebUI.waitForElementPresent(findTestObject('Products/Product Detail Page/p_Deskripsi Produk'), 0)
+
+WebUI.verifyMatch(WebUI.getText(findTestObject('Products/Product Detail Page/h5_Nama Produk'), FailureHandling.STOP_ON_FAILURE), namaProduk, false)
+
+WebUI.verifyMatch(WebUI.getText(findTestObject('Products/Product Detail Page/p_Kategori Produk'), FailureHandling.STOP_ON_FAILURE), kategoriProduk, false)
+
+WebUI.verifyMatch(WebUI.getText(findTestObject('Products/Product Detail Page/p_Harga Produk'), FailureHandling.STOP_ON_FAILURE), hargaProduk, false)
+
+WebUI.verifyMatch(WebUI.getText(findTestObject('Products/Product Detail Page/p_Deskripsi Produk'), FailureHandling.STOP_ON_FAILURE), deskripsiProduk, false)

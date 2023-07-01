@@ -31,6 +31,8 @@ WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Add Product Form'), [:
 
 WebUI.callTestCase(findTestCase('Pages/Add Product/Input Nama Produk'), [('namaProduk') : 'Produk A'], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('Pages/Add Product/Input Harga Produk'), [('hargaProduk') : '-100000'], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.callTestCase(findTestCase('Pages/Add Product/Input Kategori Produk'), [('kategoriProduk') : 'Kesehatan'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Add Product/Input Deskripsi Produk'), [('deskripsiProduk') : 'Deskripsi Produk A'], 
@@ -41,5 +43,5 @@ WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pat
 
 WebUI.callTestCase(findTestCase('Pages/Add Product/Click Terbitkan Button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Error Message/Verify Harga Produk Blank Error Message'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Error Message/Verify Harga Produk Negative Error Message'), [:], FailureHandling.STOP_ON_FAILURE)
 

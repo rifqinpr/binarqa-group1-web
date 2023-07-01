@@ -17,13 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Step Definition/Feature Register/REG01 - User register with valid credentials'), [:])
 
-WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'prabotanpreloved@mytestmail.net'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun Icon'), [:])
 
-WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'a1b2c3d4'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun'), [:])
 
-WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.selectOptionByLabel(findTestObject('User Profile/select_Pilih Kota'), 'Jakarta', false)
+
+WebUI.setText(findTestObject('User Profile/textarea_Alamat'), 'Alamat')
+
+WebUI.setText(findTestObject('User Profile/input_No Handphone'), '0')
+
+WebUI.uploadFile(findTestObject('User Profile/input_Avatar'), 'C:\\Users\\ASUS\\Downloads\\Image\\imgp.jpeg')
+
+WebUI.click(findTestObject('User Profile/button_simpan'))
 
 WebUI.callTestCase(findTestCase('Pages/Homepage/Click Jual Floating Button'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -31,15 +39,18 @@ WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Add Product Form'), [:
 
 WebUI.callTestCase(findTestCase('Pages/Add Product/Input Nama Produk'), [('namaProduk') : 'Produk A'], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('Pages/Add Product/Input Harga Produk'), [('hargaProduk') : '100000'], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.callTestCase(findTestCase('Pages/Add Product/Input Kategori Produk'), [('kategoriProduk') : 'Kesehatan'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Add Product/Input Deskripsi Produk'), [('deskripsiProduk') : 'Deskripsi Produk A'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\Users\\ASUS\\Downloads\\Image\\binar.jpg'], 
+WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\Users\\ASUS\\Downloads\\test.txt'], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Add Product/Click Terbitkan Button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Error Message/Verify Harga Produk Blank Error Message'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Error Message/Verify Gambar Produk Invalid File Error Message'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 

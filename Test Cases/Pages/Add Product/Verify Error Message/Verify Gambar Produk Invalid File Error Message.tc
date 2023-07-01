@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Gambar Produk Invalid File Error Message</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>65437d5c-81a5-45b4-a51b-ded30e755678</testCaseGuid>
+</TestCaseEntity>

@@ -11,7 +11,10 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class = 'form-text text-danger' and (contains(text(), concat(&quot;Description can&quot; , &quot;'&quot; , &quot;t be blank&quot;)) or contains(., concat(&quot;Description can&quot; , &quot;'&quot; , &quot;t be blank&quot;)))]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -22,7 +25,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>fa9d0aee-9c57-46cb-990c-11a726eb15fd</webElementGuid>
+      <webElementGuid>e688cc29-beaa-43d7-a4c2-345b1c58c162</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,17 +33,15 @@
       <name>class</name>
       <type>Main</type>
       <value>form-text text-danger</value>
-      <webElementGuid>b6cbfe01-f4f0-4c15-b10a-1a2127bd506e</webElementGuid>
+      <webElementGuid>2c3a792e-bf04-4cf6-92a5-ce3ebf8d4dc5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-            Description can't be blank
-          </value>
-      <webElementGuid>4b146ace-1cf2-447c-a82f-d905eeb3747f</webElementGuid>
+      <value>Description can't be blank</value>
+      <webElementGuid>3ca799b5-d78a-4dfc-b530-d4bd3657af07</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -48,7 +49,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/section[@class=&quot;pt-5 mt-5&quot;]/section[@class=&quot;container container-sm position-relative&quot;]/section[@class=&quot;row mt-5&quot;]/div[@class=&quot;col-11&quot;]/form[1]/div[@class=&quot;mb-4&quot;]/div[@class=&quot;form-text text-danger&quot;]</value>
-      <webElementGuid>72fadfa0-5d29-4bae-ab50-fadaf21e71c2</webElementGuid>
+      <webElementGuid>fda22cf8-3532-49b7-824c-6970483de03c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -56,7 +57,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Deskripsi'])[1]/following::div[2]</value>
-      <webElementGuid>711d4589-187b-4cbc-8136-3242daeb5e34</webElementGuid>
+      <webElementGuid>9290d309-21f0-4233-bacd-2c9564ac3c8c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,7 +65,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Category must exist'])[1]/following::div[4]</value>
-      <webElementGuid>de2e488c-34ca-4154-8df9-630031405eda</webElementGuid>
+      <webElementGuid>8424e07b-3597-4683-9e51-622e745e2e0e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -72,7 +73,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Preview'])[1]/preceding::div[3]</value>
-      <webElementGuid>3ab7ef9a-d90c-43de-b63d-78e172b36ef9</webElementGuid>
+      <webElementGuid>5ee0f1ed-34f9-49a6-a508-28fc5717e0d4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -80,7 +81,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Terbitkan'])[1]/preceding::div[3]</value>
-      <webElementGuid>5b15bc7c-e4e7-42af-995a-134504a66087</webElementGuid>
+      <webElementGuid>ffc7f3c1-815c-4b53-b228-6f26541527ba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -88,7 +89,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div[3]</value>
-      <webElementGuid>693b5789-d665-46c7-b0c5-29560a061e62</webElementGuid>
+      <webElementGuid>0753e430-8337-400d-a6b1-2a5f424d95c4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -100,6 +101,6 @@
           &quot;) or . = concat(&quot;
             Description can&quot; , &quot;'&quot; , &quot;t be blank
           &quot;))]</value>
-      <webElementGuid>50dceb8f-4a3f-4a88-9b4c-314cd075a3d5</webElementGuid>
+      <webElementGuid>28512a03-50ff-448c-8d41-0334de57280f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -13,6 +13,10 @@
          <key>CSS</key>
          <value>div.form-text.text-danger</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class = 'form-text text-danger' and (contains(text(), concat(&quot;Name can&quot; , &quot;'&quot; , &quot;t be blank&quot;)) or contains(., concat(&quot;Name can&quot; , &quot;'&quot; , &quot;t be blank&quot;)))]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>cc2a9c1d-66a2-4189-b83d-65cecb2f30df</webElementGuid>
+      <webElementGuid>e8de6bfc-2733-44a3-9e5a-148c0dd05609</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,17 +34,15 @@
       <name>class</name>
       <type>Main</type>
       <value>form-text text-danger</value>
-      <webElementGuid>23e75455-1ab3-409a-b93e-e04c3176002e</webElementGuid>
+      <webElementGuid>5b3d9bcf-9f0f-4dbe-b9fe-fc33ddb692b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-            Name can't be blank
-          </value>
-      <webElementGuid>86dfc98f-c2f2-40ff-889c-4d977d06768b</webElementGuid>
+      <value>Name can't be blank</value>
+      <webElementGuid>11f7ca64-9457-433f-bc79-d98928e180ce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -48,7 +50,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/section[@class=&quot;pt-5 mt-5&quot;]/section[@class=&quot;container container-sm position-relative&quot;]/section[@class=&quot;row mt-5&quot;]/div[@class=&quot;col-11&quot;]/form[1]/div[@class=&quot;mb-4&quot;]/div[@class=&quot;form-text text-danger&quot;]</value>
-      <webElementGuid>79a7a9e2-2b04-4371-9ef2-9d6d77226502</webElementGuid>
+      <webElementGuid>a7a85928-48e7-4f85-a42e-3392312a4c97</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -56,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Produk'])[1]/following::div[2]</value>
-      <webElementGuid>69b1c23c-eb82-40b7-9d2d-e244e19c2000</webElementGuid>
+      <webElementGuid>ad901481-ee9c-401a-b89a-d874ae341d68</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Harga Produk'])[1]/preceding::div[1]</value>
-      <webElementGuid>85559ebe-7b79-4bda-8c23-caa09003bbb6</webElementGuid>
+      <webElementGuid>05544d7a-7331-481e-9f13-b26ad61e83fd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -72,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('Price can', &quot;'&quot;, 't be blank')])[1]/preceding::div[3]</value>
-      <webElementGuid>d75c5f94-62c0-47a8-9257-19cd8201076e</webElementGuid>
+      <webElementGuid>83c1f4a1-67bf-4cff-a477-84d6c66bac7f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -80,7 +82,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div[3]</value>
-      <webElementGuid>0699d58a-1122-4c7e-bbe3-2a20bf044303</webElementGuid>
+      <webElementGuid>c8a8dd18-b7af-4b9b-b66a-b881e7af5cd3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +94,6 @@
           &quot;) or . = concat(&quot;
             Name can&quot; , &quot;'&quot; , &quot;t be blank
           &quot;))]</value>
-      <webElementGuid>5da39f7f-4d74-49ae-9157-245f651fb310</webElementGuid>
+      <webElementGuid>6e4e6e87-1933-4592-b4ee-da05d81156ff</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

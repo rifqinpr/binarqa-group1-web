@@ -17,15 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.delay(10)
+WebUI.waitForElementPresent(findTestObject('Products/Product Detail Page/h5_Nama Produk'), 0)
 
-WebUI.verifyElementVisible(findTestObject('Products/Product Detail Page/h5_Nama Produk'))
+WebUI.waitForElementPresent(findTestObject('Products/Product Detail Page/p_Kategori Produk'), 0)
 
-WebUI.verifyElementVisible(findTestObject('Products/Product Detail Page/p_Deskripsi Produk'))
+WebUI.waitForElementPresent(findTestObject('Products/Product Detail Page/p_Harga Produk'), 0)
 
-WebUI.verifyElementVisible(findTestObject('Products/Product Detail Page/p_Harga Produk'))
+WebUI.waitForElementPresent(findTestObject('Products/Product Detail Page/p_Deskripsi Produk'), 0)
 
-WebUI.verifyElementVisible(findTestObject('Products/Product Detail Page/p_Kategori Produk'))
+WebUI.verifyElementVisible(findTestObject('Products/Product Detail Page/h5_Nama Produk'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementVisible(findTestObject('Products/Product Detail Page/img_Gambar Produk'))
+WebUI.verifyElementVisible(findTestObject('Products/Product Detail Page/p_Kategori Produk'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('Products/Product Detail Page/p_Harga Produk'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('Products/Product Detail Page/p_Deskripsi Produk'), FailureHandling.STOP_ON_FAILURE)
 

@@ -3,7 +3,7 @@
    <description></description>
    <name>h5_Nama Produk</name>
    <tag></tag>
-   <elementGuidId>848d020d-482b-4bd3-8af9-5225445cd6e2</elementGuidId>
+   <elementGuidId>d52f0788-acd7-4c07-b744-c1200b3d4474</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,10 +11,10 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[2]/div/div/h5</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Deskripsi'])[1]/following::h5[1]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>h5</value>
-      <webElementGuid>300af1d2-5dbb-4027-bd93-384b6065e086</webElementGuid>
+      <webElementGuid>9044d4c3-5325-4b7a-abb2-57ae05297bbb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,15 +30,15 @@
       <name>class</name>
       <type>Main</type>
       <value>card-title fs-5 fw-bolder</value>
-      <webElementGuid>ed20c966-5278-4fa1-acdb-b7825204101f</webElementGuid>
+      <webElementGuid>a3562f73-41c2-47fc-b8f2-167ff0949149</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Lemari Baju Portable</value>
-      <webElementGuid>65d06529-5a8b-43c3-9dc2-ac30ce0a71de</webElementGuid>
+      <value>dhgdfjhfk</value>
+      <webElementGuid>770339e9-26f4-4c63-97e6-2298294e0036</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/section[@class=&quot;pt-5 mt-5&quot;]/section[@class=&quot;container my-5&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-4&quot;]/div[@class=&quot;card p-2 rounded-4 shadow border-0&quot;]/div[@class=&quot;card-body&quot;]/h5[@class=&quot;card-title fs-5 fw-bolder&quot;]</value>
-      <webElementGuid>933456e4-538f-471e-90b5-391f7f0c621c</webElementGuid>
+      <webElementGuid>5b992fa4-3835-4fcb-a79b-801d4d244561</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Deskripsi'])[1]/following::h5[1]</value>
-      <webElementGuid>702f4c15-7a1b-46c8-8f50-42a48a9a2b03</webElementGuid>
+      <webElementGuid>072aa4ce-df46-4531-b72e-fb03795345a2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,15 +62,23 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Saya tertarik dan ingin nego'])[1]/preceding::h5[1]</value>
-      <webElementGuid>023405a1-86e9-4661-b13c-709a7dbc8890</webElementGuid>
+      <webElementGuid>e739b71b-01a9-4ac4-bb55-35f4d7e5fc4c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Perabot Preloved'])[1]/preceding::h5[1]</value>
-      <webElementGuid>401f3a19-0532-4f36-9d01-082cf0b67e7e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='binar'])[1]/preceding::h5[1]</value>
+      <webElementGuid>37e5cb88-9bae-427b-b341-69e65db03f58</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='dhgdfjhfk']/parent::*</value>
+      <webElementGuid>0ee26eb8-0e40-4a3b-ad4f-e4b53b054353</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,14 +86,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/h5</value>
-      <webElementGuid>1a13c87a-3bc4-41b9-9672-2ff5e6194975</webElementGuid>
+      <webElementGuid>5ccd4f66-502c-469b-9f17-c1c840de5c78</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//h5[(text() = 'Lemari Baju Portable' or . = 'Lemari Baju Portable')]</value>
-      <webElementGuid>6d32bed1-118e-4896-95d1-eff12f3af8e6</webElementGuid>
+      <value>//h5[(text() = 'dhgdfjhfk' or . = 'dhgdfjhfk')]</value>
+      <webElementGuid>b4761788-ca09-4e2b-9664-bb4bda0c7e00</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

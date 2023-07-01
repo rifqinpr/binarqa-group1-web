@@ -3,15 +3,15 @@
    <description></description>
    <name>img_Gambar Produk</name>
    <tag></tag>
-   <elementGuidId>17e687b8-36c0-4a1c-8185-1acf61549d4a</elementGuidId>
+   <elementGuidId>5d93e351-c44a-4d90-99a2-ab4c5a81d814</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.carousel-item.active > img.w-100</value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='productImage']/div/div/img</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>img.w-100</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>476b05fd-2f68-4006-872e-65ed13bb8cf1</webElementGuid>
+      <webElementGuid>1e5aa1d1-d5eb-4636-ba47-1accfb173556</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,15 +30,15 @@
       <name>class</name>
       <type>Main</type>
       <value>w-100</value>
-      <webElementGuid>85c719e5-4d75-41b0-8d56-ca32aa46f45c</webElementGuid>
+      <webElementGuid>4c440731-b23f-4af1-9344-333dc7e82774</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>src</name>
       <type>Main</type>
-      <value>https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcXA2IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--efe949d433f654729057846ffca07ede9b4c63d3/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUJHa0NBQVE9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--2b68d049d94399062afe49501241e300c4ec690c/lemari_imut.jpg</value>
-      <webElementGuid>c963d227-0949-4489-b5e4-583b54b1cd4d</webElementGuid>
+      <value>https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFhBIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--75db52d40e529118956bd586c2185bcb80671a64/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUJHa0NBQVE9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b51bc04357e2116d1146cd80e9e84a7128b17960/kisspng-computer-icons-mobile-phones-telephone-email-home-phone-icon-5ac5cd33a7e793.7238041015229125636878%20(2).png</value>
+      <webElementGuid>61d6f281-e697-4432-94c5-cad4f7f423b8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;productImage&quot;)/div[@class=&quot;carousel-inner&quot;]/div[@class=&quot;carousel-item active&quot;]/img[@class=&quot;w-100&quot;]</value>
-      <webElementGuid>1662d0e7-045b-4d57-978b-c877311a3ad8</webElementGuid>
+      <webElementGuid>395e0a51-fab6-430b-b2a4-1952cacde859</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,30 +54,30 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='productImage']/div/div/img</value>
-      <webElementGuid>ba942c5f-c1f9-455e-a612-a121b14e3183</webElementGuid>
+      <webElementGuid>ed747372-e1be-4e69-8e1f-2ba2cc694c67</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:img</name>
       <type>Main</type>
-      <value>//img[contains(@src,'https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcXA2IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--efe949d433f654729057846ffca07ede9b4c63d3/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUJHa0NBQVE9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--2b68d049d94399062afe49501241e300c4ec690c/lemari_imut.jpg')]</value>
-      <webElementGuid>147459fa-e25c-4f36-9c8b-cac0b3cb7124</webElementGuid>
+      <value>//img[contains(@src,'https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFhBIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--75db52d40e529118956bd586c2185bcb80671a64/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUJHa0NBQVE9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b51bc04357e2116d1146cd80e9e84a7128b17960/kisspng-computer-icons-mobile-phones-telephone-email-home-phone-icon-5ac5cd33a7e793.7238041015229125636878%20(2).png')]</value>
+      <webElementGuid>be2fcfce-91c1-4645-bcdb-32434f03d79c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//img</value>
-      <webElementGuid>6a16dea5-1eb4-4ffa-966a-f2c689c79b36</webElementGuid>
+      <value>//div/div/img</value>
+      <webElementGuid>af83f8a0-f3ff-479d-9d3b-00870eb725f2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//img[@src = 'https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcXA2IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--efe949d433f654729057846ffca07ede9b4c63d3/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUJHa0NBQVE9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--2b68d049d94399062afe49501241e300c4ec690c/lemari_imut.jpg']</value>
-      <webElementGuid>a53a31d3-0cf2-4863-b525-de598110c453</webElementGuid>
+      <value>//img[@src = 'https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFhBIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--75db52d40e529118956bd586c2185bcb80671a64/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUJHa0NBQVE9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b51bc04357e2116d1146cd80e9e84a7128b17960/kisspng-computer-icons-mobile-phones-telephone-email-home-phone-icon-5ac5cd33a7e793.7238041015229125636878%20(2).png']</value>
+      <webElementGuid>2d20ff48-3bda-429c-8275-5f4783b8fbba</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

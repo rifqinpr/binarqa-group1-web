@@ -23,10 +23,10 @@ import internal.GlobalVariable
 public class createGlobalVariables {
 	@Keyword
 	void addGlobalVariable(String email, def value) {
-	GroovyShell shell = new GroovyShell()
-	MetaClass mc = shell.evaluate("internal.GlobalVariable").metaClass
-	String getterEmail = "get" + email.capitalize()
-	mc.'static'."$getterEmail" = { -> return value }
-	mc.'static'."$email" = value
+		GroovyShell shell = new GroovyShell()
+		MetaClass mc = shell.evaluate("internal.GlobalVariable").metaClass
+		String getterEmail = "get" + email.capitalize()
+		mc.'static'."$getterEmail" = { -> return value }
+		mc.'static'."$email" = value
 	}
 }
