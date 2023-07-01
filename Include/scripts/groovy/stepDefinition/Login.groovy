@@ -51,12 +51,22 @@ class Login {
 
 	@When("I input email (.*)")
 	public void i_input_email(String email) {
-		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
+		if (email == 'empty') {
+			WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : ''], FailureHandling.STOP_ON_FAILURE)
+		}
+		else {
+			WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
 	@And("I input password (.*)")
 	public void i_input_password(String password) {
-		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
+		if (password == 'empty') {
+			WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : ''], FailureHandling.STOP_ON_FAILURE)
+		}
+		else {
+			WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
 	@And("I click Masuk button")
@@ -67,17 +77,16 @@ class Login {
 	@Then("I should see the next step (.*)")
 	public void i_should_see_the_nextstep(String status) {
 		if (status == 'success') {
-			//WebUI.verifyElementVisible(findTestObject('User Profile/a_Profil Saya'))
 			WebUI.callTestCase(findTestCase('Pages/Login/Verify Login Valid'), [:], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (status == 'required email') {
-			WebUI.callTestCase(findTestCase('Pages/Login/Verify Required Email'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Login/Verify Required Email'), [('expected') : ''], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (status == 'required pass') {
-			WebUI.callTestCase(findTestCase('Pages/Login/Verify Required Password'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Login/Verify Required Password'), [('expected') : ''], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (status == 'invalid') {
-			WebUI.callTestCase(findTestCase('Pages/Login/Read Error Msg - Invalid Email or Pass'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Login/Read Error Msg - Invalid Email or Pass'), [('expected') : ''], FailureHandling.STOP_ON_FAILURE)
 		}
 		WebUI.closeBrowser()
 	}
