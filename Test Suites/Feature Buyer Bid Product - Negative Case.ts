@@ -36,7 +36,7 @@
       <guid>d951acee-d7c6-4c2c-86e6-c7b4912f1fed</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Bid/BID04 - Buyer Bid with Input Alphabet And Special Character in Harga Tawar Field</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Bid/BID04 - Buyer Bid with Input Non Numeric in Harga Tawar Field</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

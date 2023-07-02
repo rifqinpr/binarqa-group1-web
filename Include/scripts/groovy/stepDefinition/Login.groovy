@@ -53,6 +53,8 @@ class Login {
 	public void i_input_email(String email) {
 		if (email == 'empty') {
 			WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : ''], FailureHandling.STOP_ON_FAILURE)
+		}else if (email == 'global') {
+			WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : GlobalVariable.email], FailureHandling.STOP_ON_FAILURE)
 		}
 		else {
 			WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
@@ -63,6 +65,8 @@ class Login {
 	public void i_input_password(String password) {
 		if (password == 'empty') {
 			WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : ''], FailureHandling.STOP_ON_FAILURE)
+		}else if (password == 'global') {
+			WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : GlobalVariable.password], FailureHandling.STOP_ON_FAILURE)
 		}
 		else {
 			WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)

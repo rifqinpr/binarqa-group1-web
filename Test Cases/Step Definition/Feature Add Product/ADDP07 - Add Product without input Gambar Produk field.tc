@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Runner</name>
+   <name>ADDP07 - Add Product without input Gambar Produk field</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>58e6b499-0618-4c0c-8ed7-acd3354dfecb</testCaseGuid>
+   <testCaseGuid>556dc956-437d-4713-af53-6cf150d2246f</testCaseGuid>
 </TestCaseEntity>

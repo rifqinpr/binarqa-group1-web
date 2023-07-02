@@ -23,10 +23,11 @@ import org.junit.runner.RunWith
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features = "Include/features/Bid",
+features = "Include/features",
 glue = "stepDefinition",
-tags = "@BidInvalid, @Transaksi01",
-monochrome = true
+tags = "",
+monochrome = true,
+plugin = "html:Reports/Cucumber"
 )
 
 public class Runner {

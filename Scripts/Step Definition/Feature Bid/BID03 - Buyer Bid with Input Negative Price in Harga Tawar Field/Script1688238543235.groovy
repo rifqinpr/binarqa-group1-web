@@ -33,5 +33,5 @@ WebUI.callTestCase(findTestCase('Pages/Product Detail/Buy Bid Product/Input Harg
 
 WebUI.callTestCase(findTestCase('Pages/Product Detail/Buy Bid Product/Click Button Kirim'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Product Detail/Buy Bid Product/Verify Text - Menunggu respon penjual'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Pages/Product Detail/Buy Bid Product/Verify Input Harga Tawar'), [:], FailureHandling.STOP_ON_FAILURE)
 

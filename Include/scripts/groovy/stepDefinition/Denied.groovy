@@ -42,8 +42,6 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
-
-
 class Denied {
 	@Given("Seller Denied already login")
 	public void seller_Denied_already_login() {
@@ -76,5 +74,6 @@ class Denied {
 	@Then("verify text Penawaran produk ditolak")
 	public void verify_text_Penawaran_produk_ditolak() {
 		WebUI.callTestCase(findTestCase('Pages/Offer Page/Verify Text - Penawaran produk ditolak'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.closeBrowser()
 	}
 }

@@ -43,13 +43,17 @@ import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
-
+import packages.createGlobalVariables
 
 
 class profile {
 	@Given("User already login to the web and on the Edit Profile Page")
 	public void user_on_the_login_page() {
+		//setting email in global variable
+		def setGlobalVariable = new createGlobalVariables()
+		setGlobalVariable.addGlobalVariable('email', 'group1qatest@mytestmail.net')
 		WebUI.openBrowser('https://secondhand.binaracademy.org/')
+		WebUI.maximizeWindow()
 		WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [:], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Icon Navbar'), [:], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Account'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -101,7 +105,7 @@ class profile {
 	public void user_clickSimpan_profile() {
 		WebUI.callTestCase(findTestCase('Pages/Profile/Click Button Simpan'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Then("User verify edit profile: (.*)")
 	public void user_input_nama(String status) {
 		if (status == 'success') {

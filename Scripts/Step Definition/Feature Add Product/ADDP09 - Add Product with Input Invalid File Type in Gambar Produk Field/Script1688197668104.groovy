@@ -19,19 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Step Definition/Feature Register/REG01 - User register with valid credentials'), [:])
 
-WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Icon Navbar'), [:])
-
-WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Account'), [:])
-
-WebUI.selectOptionByLabel(findTestObject('User Profile/select_Pilih Kota'), 'Jakarta', false)
-
-WebUI.setText(findTestObject('User Profile/textarea_Alamat'), 'Alamat')
-
-WebUI.setText(findTestObject('User Profile/input_No Handphone'), '0')
-
-WebUI.uploadFile(findTestObject('User Profile/input_Avatar'), 'C:\\Users\\ASUS\\Downloads\\Image\\imgp.jpeg')
-
-WebUI.click(findTestObject('User Profile/button_simpan'))
+WebUI.callTestCase(findTestCase('Step Definition/Feature User Profile/USR01 - Edit profile with input valid'), [:])
 
 WebUI.callTestCase(findTestCase('Pages/Homepage/Click Jual Floating Button'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -46,7 +34,7 @@ WebUI.callTestCase(findTestCase('Pages/Add Product/Input Kategori Produk'), [('k
 WebUI.callTestCase(findTestCase('Pages/Add Product/Input Deskripsi Produk'), [('deskripsiProduk') : 'Deskripsi Produk A'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\Users\\ASUS\\Downloads\\test.txt'], 
+WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : System.getProperty("user.dir") + "\\Data Files\\ImageForTest\\invalid_image.txt"], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Add Product/Click Terbitkan Button'), [:], FailureHandling.STOP_ON_FAILURE)

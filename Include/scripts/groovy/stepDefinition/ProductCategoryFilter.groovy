@@ -28,6 +28,8 @@ import cucumber.api.java.en.When
 public class ProductCategoryFilter {
 	@Given("User is in homepage and see product category filter button")
 	public void user_see_filter() {
+		WebUI.openBrowser('https://secondhand.binaracademy.org/')
+		WebUI.maximizeWindow()
 		WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify Category Filter Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 	
@@ -63,5 +65,6 @@ public class ProductCategoryFilter {
 		}else if(category == 'Kesehatan') {
 			WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify First Product Card Category'), [('textExpected') : WebUI.getText(findTestObject('Homepage/Kategori Filter/a_Filter Kesehatan')), ('isRegex') : false], FailureHandling.STOP_ON_FAILURE)
 		}
+		WebUI.closeBrowser()
 	}
 }

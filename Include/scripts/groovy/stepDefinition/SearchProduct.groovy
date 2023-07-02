@@ -43,6 +43,11 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 class SearchProduct {
+	@Given('User is in Secondhand homepage')
+	public void user_in_secondhand_homepage() {
+		WebUI.openBrowser('https://secondhand.binaracademy.org/')
+	}
+	
 	@When("User input (.*) of product name in search field")
 	public void input_search_field(String text) {
 		WebUI.callTestCase(findTestCase('Pages/Homepage/Input Text in Search Field'), [('text') : text], FailureHandling.STOP_ON_FAILURE)
@@ -57,5 +62,6 @@ class SearchProduct {
 	public void product_searched(String text) {
 		text = '(?i).*'+text+'.*'
 		WebUI.callTestCase(findTestCase('Pages/Homepage/Verify First Product Card Name'), [('text') : text], FailureHandling.STOP_ON_FAILURE)
+		WebUI.closeBrowser()
 	}
 }

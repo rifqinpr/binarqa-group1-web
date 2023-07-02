@@ -1,11 +1,11 @@
 @Accept
-Feature: Accept Bid
-  Seller wants to accept buyer bid
+Feature: Seller Accept Bid
+  Seller wants to accept buyer bid offer
 
-  @AcceptValid
+  @ACC01
   Scenario: Seller wants to accept buyer bid
-  
-    Given Seller already login
+  	Given Precondition success
+    And Seller already login
     When seller click notification
     And seller accept click all notification
     And seller click first notification

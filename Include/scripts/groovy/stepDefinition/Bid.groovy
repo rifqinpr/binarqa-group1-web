@@ -42,39 +42,69 @@ import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
+import packages.createGlobalVariables
 
 class Bid {
-
-	@Given("buyer already login")
-	public void buyer_already_login() {
+	private void preconditionforbid() {
+		//setting email in global variable
+		def setGlobalVariable = new createGlobalVariables()
+		setGlobalVariable.addGlobalVariable('email', 'group1qatest@mytestmail.net')
+		//to make sure first product card not make error
+		WebUI.openBrowser('https://secondhand.binaracademy.org/')
 		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
-		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : "alexbeli@gmail.com"], FailureHandling.STOP_ON_FAILURE)
-		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : "asdqwe"], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : GlobalVariable.email], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : GlobalVariable.password], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Jual Floating Button'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Add Product/Input Nama Produk'), [('namaProduk') : 'Produk A'], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Add Product/Input Harga Produk'), [('hargaProduk') : '100000'], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Add Product/Input Kategori Produk'), [('kategoriProduk') : 'Kesehatan'], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Add Product/Input Deskripsi Produk'), [('deskripsiProduk') : 'Deskripsi Produk A'],FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : System.getProperty("user.dir") + "\\Data Files\\ImageForTest\\binar.jpg"], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Add Product/Click Terbitkan Button'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+	}
+
+	@Given('buyer already login')
+	public void buyer_login() {
+		preconditionforbid()
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : 'alexbeli1@gmail.com'], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : 'asdqwe'], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("buyer click first cart product")
-	public void buyer_click_first_cart_product() {
+	@When('buyer click first product card')
+	public void click_first_card() {
 		WebUI.callTestCase(findTestCase('Pages/Homepage/Click First Card Product'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("buyer click Saya tertarik dan ingin nego button")
-	public void buyer_click_button() {
+	@And('buyer click Saya tertarik dan ingin nego button')
+	public void click_nego() {
 		WebUI.callTestCase(findTestCase('Pages/Product Detail/Click Saya Tertarik dan Ingin Nego'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("buyer memasukkan harga tawaran {string}")
-	public void buyer_memasukkan_harga_tawaran(String harga) {
-		WebUI.callTestCase(findTestCase('Pages/Product Detail/Buy Bid Product/Input Harga Tawar'), [('harga') : harga], FailureHandling.STOP_ON_FAILURE)
+	@And('buyer memasukkan harga tawaran (.*)')
+	public void input_tawar(String price) {
+		if(price != 'empty') {
+			WebUI.callTestCase(findTestCase('Pages/Product Detail/Buy Bid Product/Input Harga Tawar'), [('harga') : price], FailureHandling.STOP_ON_FAILURE)
+		}else if(price == 'empty') {
+			WebUI.callTestCase(findTestCase('Pages/Product Detail/Buy Bid Product/Input Harga Tawar'), [('harga') : ''], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
-	@When("buyer click tombol Kirim")
-	public void buyer_click_tombol_Kirim() {
+	@And('buyer click tombol Kirim')
+	public void click_kirim() {
 		WebUI.callTestCase(findTestCase('Pages/Product Detail/Buy Bid Product/Click Button Kirim'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@Then("buyer menunggu respon penjual")
-	public void buyer_menunggu_respon_penjual() {
-		WebUI.callTestCase(findTestCase('Pages/Product Detail/Buy Bid Product/Verify Text - Menunggu respon penjual'), [:], FailureHandling.STOP_ON_FAILURE)
+	@Then('verify buy status expected (.*)')
+	public void verify_buy_status(String status) {
+		if(status == 'success') {
+			WebUI.callTestCase(findTestCase('Pages/Product Detail/Buy Bid Product/Verify Text - Menunggu respon penjual'), [:], FailureHandling.STOP_ON_FAILURE)
+		}else {
+			WebUI.callTestCase(findTestCase('Pages/Product Detail/Buy Bid Product/Verify Input Harga Tawar'), [:], FailureHandling.STOP_ON_FAILURE)
+		}
+		WebUI.closeBrowser()
 	}
 }

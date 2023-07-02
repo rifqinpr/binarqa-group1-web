@@ -26,12 +26,12 @@ import com.kms.katalon.core.util.KeywordUtil
 
 class Hook_Listener {
 	def openBrowser() {
-		WebUI.openBrowser('https://secondhand.binaracademy.org/');
+		WebUI.openBrowser('https://secondhand.binaracademy.org/')
 		WebUI.maximizeWindow()
 	}
 	
 	def closeBrowser() {
-		WebUI.closeBrowser();
+		WebUI.closeBrowser()
 	}
 	
 	@BeforeTestCase

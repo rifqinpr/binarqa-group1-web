@@ -43,7 +43,7 @@
       <guid>d3811abf-5e9f-4c1b-9cb6-a65fbcf2eebb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Add Product/ADDP07 - Add Product Without Input Gambar Produk Field</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Add Product/ADDP07 - Add Product without input Gambar Produk field</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

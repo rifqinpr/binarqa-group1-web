@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>BID04 - Buyer Bid with Input Alphabet And Special Character in Harga Tawar Field</name>
+   <name>BID04 - Buyer Bid with Input Non Numeric in Harga Tawar Field</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>1a878a15-f2b9-4551-b983-324b675213b1</testCaseGuid>

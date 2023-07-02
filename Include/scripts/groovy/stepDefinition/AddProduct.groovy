@@ -44,87 +44,107 @@ import cucumber.api.java.en.When
 
 
 class AddProduct {
-
-	@Given("I login as Seller")
-	public void i_login_as_seller() {
-		WebUI.openBrowser('')
-		WebUI.navigateToUrl('https://secondhand.binaracademy.org/')
-		WebUI.maximizeWindow()
-		WebUI.click(findTestObject('Object Repository/Navbar/a_Masuk'))
-		WebUI.setText(findTestObject('Object Repository/Login/input_Email'), 'group1@gmail.com')
-		WebUI.setText(findTestObject('Object Repository/Login/input_Password'), 'group1@123')
-		WebUI.click(findTestObject('Object Repository/Login/button_Masuk'))
+	@Given("I login as (.*)")
+	public void login_as(String user) {
+		WebUI.openBrowser('https://secondhand.binaracademy.org/')
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+		if(user == 'user1') {
+			WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : GlobalVariable.email], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : GlobalVariable.password], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+		}
+		else if(user == 'user2') {
+			WebUI.callTestCase(findTestCase('Pages/Register/Click Button Daftar di sini from login page'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Register/Input Nama with custom keyword'), [('name') : ''], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Register/Input Email with custom keyword'), [('email') : ''], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Register/Input Password'), [('password') : GlobalVariable.password], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Register/Click Button Daftar to submit'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Icon Navbar'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Account'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Profile/Upload Image'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Profile/Input Nama'), [('nama') : 'Group1'], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Profile/Set Kota'), [('kota') : 'Jakarta'], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Profile/Input Alamat'), [('alamat') : 'Jl. Kenangan'], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Profile/Input No Handphone'), [('noHP') : '0843434343'], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Profile/Click Button Simpan'), [:], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
 	@When("I click jual button")
 	public void i_click_jual_button() {
-		WebUI.click(findTestObject('Object Repository/Homepage/a_Button Jual'))
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Jual Floating Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("I fill nama product (.*)")
 	public void i_fill_nama_product(String nama_product) {
 		if(nama_product=='correct') {
-			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/input_Nama Produk'), 'Baju')
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Nama Produk'), [('namaProduk') : 'Produk A'], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (nama_product=='incorrect'){
-			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/input_Nama Produk'), '')
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Nama Produk'), [('namaProduk') : ''], FailureHandling.STOP_ON_FAILURE)
 		}
 	}
 
 	@When("I fill harga product (.*)")
 	public void I_fill_harga_product(String harga_product) {
 		if(harga_product=='correct') {
-			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/input_Harga Produk'), '300000')
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Harga Produk'), [('hargaProduk') : '100000'], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (harga_product=='incorrect'){
-			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/input_Harga Produk'), '')
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Harga Produk'), [('hargaProduk') : ''], FailureHandling.STOP_ON_FAILURE)
+		}
+		else if (harga_product=='negative'){
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Harga Produk'), [('hargaProduk') : '-100000'], FailureHandling.STOP_ON_FAILURE)
 		}
 	}
 
 	@When("I fill kategori (.*)")
 	public void I_fill_kategori(String kategori) {
 		if(kategori=='correct') {
-			WebUI.selectOptionByLabel(findTestObject('Object Repository/Products/Add Product Page/select_Kategori'), 'Elektronik', false)
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Kategori Produk'), [('kategoriProduk') : 'Elektronik'], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (kategori=='incorrect'){
-			WebUI.selectOptionByLabel(findTestObject('Object Repository/Products/Add Product Page/select_Kategori'), 'Elektronik', false)
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Kategori Produk'), [('kategoriProduk') : 'Pilih Kategori'], FailureHandling.STOP_ON_FAILURE)
 		}
 	}
 
 	@When("I fill deskripsi (.*)")
 	public void I_fill_deskripsi(String deskripsi) {
 		if(deskripsi=='correct') {
-			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/textarea_Deskripsi'), 'Lampu dengan watt yang bagus')
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Deskripsi Produk'), [('deskripsiProduk') : 'Deskripsi Produk A'], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (deskripsi=='incorrect'){
-			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/textarea_Deskripsi'), 'Lampu dengan watt yang bagus')
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Deskripsi Produk'), [('deskripsiProduk') : ''], FailureHandling.STOP_ON_FAILURE)
 		}
 	}
 
 	@When("I upload image product (.*)")
 	public void I_fill_image(String img) {
 		if(img=='correct') {
-			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\binar.png'],
-			FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : System.getProperty("user.dir") + "\\Data Files\\ImageForTest\\binar.jpg"], FailureHandling.STOP_ON_FAILURE)
+		}
+		else if (img=='multiple'){
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : System.getProperty("user.dir") + "\\Data Files\\ImageForTest\\lemari_imut.jpg"], FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : System.getProperty("user.dir") + "\\Data Files\\ImageForTest\\binar.jpg"], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (img=='incorrect'){
-			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\Users\\ntt.reka\\Downloads\\binar.pdf'],
-			FailureHandling.STOP_ON_FAILURE)
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : System.getProperty("user.dir") + "\\Data Files\\ImageForTest\\invalid_image.txt"], FailureHandling.STOP_ON_FAILURE)
 		}
 	}
 
 	@When("I click button Terbitkan")
 	public void i_click_button_Terbitkan() {
-		WebUI.click(findTestObject('Object Repository/Products/Add Product Page/label_Button Terbitkan'))
+		WebUI.callTestCase(findTestCase('Pages/Add Product/Click Terbitkan Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("I (.*) add product")
 	public void i_add_product(String status) {
 		if(status=='success') {
-			WebUI.verifyElementPresent(findTestObject('Object Repository/Products/Product Detail Page/img_Gambar Produk'), 0)
+			WebUI.callTestCase(findTestCase('Pages/Add Product/Verify Success Add Product'), [('namaProduk') : 'Produk A', ('hargaProduk') : 'Rp 100.000', ('kategoriProduk') : 'Elektronik', ('deskripsiProduk') : 'Deskripsi Produk A'], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (status=='failed'){
 			WebUI.verifyElementPresent(findTestObject('Object Repository/Products/Add Product Page/label_Button Terbitkan'), 0)
 		}
+		WebUI.closeBrowser()
 	}
 }

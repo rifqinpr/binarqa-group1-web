@@ -48,34 +48,32 @@ class EditProduct {
 
 	@Given("I login")
 	public void i_login() {
-		WebUI.openBrowser('')
-		WebUI.navigateToUrl('https://secondhand.binaracademy.org/')
-		WebUI.maximizeWindow()
-		WebUI.click(findTestObject('Object Repository/Navbar/a_Masuk'))
-		WebUI.setText(findTestObject('Object Repository/Login/input_Email'), 'group1@gmail.com')
-		WebUI.setText(findTestObject('Object Repository/Login/input_Password'), 'group1@123')
-		WebUI.click(findTestObject('Object Repository/Login/button_Masuk'))
+		WebUI.openBrowser('https://secondhand.binaracademy.org/')
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : GlobalVariable.email], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : GlobalVariable.password], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Given("I click Product saya")
 	public void i_click_Product_saya() {
-		WebUI.click(findTestObject('Object Repository/Navbar/a_Produk Saya Icon'))
+		WebUI.callTestCase(findTestCase('Pages/Daftar Jual Saya/Click Product List Icon'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Given("I click Detail Product")
 	public void i_click_Detail_Product() {
-		WebUI.click(findTestObject('Object Repository/Daftar Jual Saya/div_ProductCard'))
+		WebUI.callTestCase(findTestCase('Pages/Edit Product/Click Product Card in Daftar Jual Saya'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("I click button Edit")
 	public void i_click_button_Edit() {
-		WebUI.click(findTestObject('Object Repository/Products/Product Detail Page/Button_Edit'))
+		WebUI.callTestCase(findTestCase('Pages/Product Detail/Click Button Edit'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("I edit nama product (.*)")
 	public void i_edit_nama_product(String nama_product) {
 		if(nama_product=='correct') {
-			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/input_Nama Produk'), 'Baju')
+			WebUI.callTestCase(findTestCase('Pages/Edit Product/Edit Nama Produk Field'), [('namaProduk') : 'Tambahan'], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (nama_product=='incorrect'){
 			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/input_Nama Produk'), '')
@@ -85,7 +83,7 @@ class EditProduct {
 	@When("I edit harga product (.*)")
 	public void i_edit_harga_product(String harga_product) {
 		if(harga_product=='correct') {
-			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/input_Harga Produk'), '300000')
+			WebUI.callTestCase(findTestCase('Pages/Edit Product/Edit Harga Produk Field'), [('hargaProduk') : '250000'], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (harga_product=='incorrect'){
 			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/input_Harga Produk'), '')
@@ -95,44 +93,32 @@ class EditProduct {
 	@When("I edit kategori (.*)")
 	public void i_edit_kategori(String kategori) {
 		if(kategori=='correct') {
-			WebUI.selectOptionByLabel(findTestObject('Object Repository/Products/Add Product Page/select_Kategori'), 'Elektronik', false)
+			WebUI.callTestCase(findTestCase('Pages/Edit Product/Edit Kategori Field'), [('kategoriProduk') : 'Kesehatan'], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (kategori=='incorrect'){
-			WebUI.selectOptionByLabel(findTestObject('Object Repository/Products/Add Product Page/select_Kategori'), 'Elektronik', false)
+			WebUI.selectOptionByLabel(findTestObject('Object Repository/Products/Add Product Page/select_Kategori'), 'Pilih Kategori', false)
 		}
 	}
 
 	@When("I edit deskripsi (.*)")
 	public void i_edit_deskripsi(String deskripsi) {
 		if(deskripsi=='correct') {
-			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/textarea_Deskripsi'), 'Lampu dengan watt yang bagus')
+			WebUI.callTestCase(findTestCase('Pages/Edit Product/Edit Deskripsi Field'), [('deskripsiProduk') : 'Tambahan'], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (deskripsi=='incorrect'){
 			WebUI.setText(findTestObject('Object Repository/Products/Add Product Page/textarea_Deskripsi'), 'Lampu dengan watt yang bagus')
 		}
 	}
 
-	@When("I edit image product (.*)")
-	public void i_edit_image_product(String img) {
-		if(img=='correct') {
-			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\binar.png'],
-			FailureHandling.STOP_ON_FAILURE)
-		}
-		else if (img=='incorrect'){
-			WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\Users\\ntt.reka\\Downloads\\binar.pdf'],
-			FailureHandling.STOP_ON_FAILURE)
-		}
-	}
-
 	@When("I click button terbitkan")
 	public void i_click_button_terbitkan() {
-		WebUI.click(findTestObject('Object Repository/Products/Add Product Page/label_Button Terbitkan'))
+		WebUI.callTestCase(findTestCase('Pages/Add Product/Click Terbitkan Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("I (.*) edit product")
 	public void i_edit_product(String status) {
 		if(status=='success') {
-			WebUI.verifyElementPresent(findTestObject('Object Repository/Products/Product Detail Page/img_Gambar Produk'), 0)
+			WebUI.callTestCase(findTestCase('Pages/Edit Product/Verify Success Edit Product'), [('namaProduk') : 'Tambahan', ('hargaProduk') : 'Rp 250.000', ('kategoriProduk') : 'Kesehatan', ('deskripsiProduk') : 'Tambahan'], FailureHandling.STOP_ON_FAILURE)
 		}
 		else if (status=='failed'){
 			WebUI.verifyElementPresent(findTestObject('Object Repository/Products/Add Product Page/label_Button Terbitkan'), 0)

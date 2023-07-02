@@ -3,7 +3,7 @@ Feature: Web User Profile
   As a User, I want to edit profile in Secondhand Webstore
 
   @USR01 @Positive
-  Scenario Outline: Verify to edit profile with valid credentials
+  Scenario Outline: Verify to edit profile with valid data
     Given User already login to the web and on the Edit Profile Page
     When User upload image with valid file type
     And User input Nama Profile with <nama>
@@ -18,7 +18,7 @@ Feature: Web User Profile
       | Kelompok | Jakarta | Jl. Sumatera 21 | 0811122229911 | success |
 
   @USR02 @USR03 @USR04 @USR05 @Negative
-  Scenario Outline: Verify to edit profile with empty fields
+  Scenario Outline: Verify to edit profile with <status>
     Given User already login to the web and on the Edit Profile Page
     When User upload image with valid file type
     And User input Nama Profile with <nama>

@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description>get randomEmail from Register</description>
-      <initValue>'defaultmail@mytestmail.net'</initValue>
+      <initValue>'group1qatest@mytestmail.net'</initValue>
       <name>email</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

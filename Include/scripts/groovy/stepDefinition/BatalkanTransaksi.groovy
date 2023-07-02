@@ -86,5 +86,6 @@ class BatalkanTransaksi {
 	@Then("Verify text Penjualan dibatalkan")
 	public void verify_text_Penjualan_dibatalkan() {
 		WebUI.callTestCase(findTestCase('Pages/Offer Page/Verify Penjualan dibatalkan Text'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.closeBrowser()
 	}
 }

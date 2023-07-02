@@ -98,7 +98,7 @@ class Register {
 	public void i_click_Daftar_button() {
 		WebUI.callTestCase(findTestCase('Pages/Register/Click Button Daftar to submit'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Then("I should see the result for register (.*)")
 	public void see_the_result_register(String status) {
 		WebUI.callTestCase(findTestCase('Pages/Register/Verify with if-else'), [('status') : status], FailureHandling.STOP_ON_FAILURE)
