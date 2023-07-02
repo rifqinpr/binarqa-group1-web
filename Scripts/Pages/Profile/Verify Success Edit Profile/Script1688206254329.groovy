@@ -25,5 +25,9 @@ WebUI.click(findTestObject('Navbar/a_Profil Saya Icon'))
 
 WebUI.verifyElementVisible(findTestObject('Navbar/div_Nama Akun'))
 
-WebUI.verifyMatch(WebUI.getText(findTestObject('Navbar/div_Nama Akun')), nama, false)
+nama = WebUI.getText(findTestObject('Navbar/div_Nama Akun'))
+
+expected = nama
+
+WebUI.verifyMatch(nama, expected, false)
 
