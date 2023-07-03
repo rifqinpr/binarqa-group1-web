@@ -40,6 +40,26 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>e9f532b6-722a-4a17-aa09-7d585010ded1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Step Definition/Feature Search Product/SRC01 - Search Product</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5c02b350-4b15-46fc-a576-6e01d0f9ab3c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5245adb9-523b-46ee-847b-5846b597fc98</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Step Definition/Feature Product Category Filter/CAT01 - User See Semua Product Category</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>1d717176-ec6c-42ee-ba2e-bcd53d0a90f1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

@@ -5,11 +5,11 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>3</numberOfRerun>
+   <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
-   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <rerunImmediately>true</rerunImmediately>
+   <rerunFailedTestCasesOnly>true</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>9812d2e8-316b-4395-bc4b-1bcb9b15d80e</testSuiteGuid>
    <testCaseLink>
       <guid>89f77704-2564-4379-87c0-045429d9c9c2</guid>
@@ -36,7 +36,7 @@
       <guid>2d701e50-8671-4467-9086-de393dd71b11</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Step Definition/Feature Bid/BID02 - Buyer Bid with Input Harga Tawar Higher Than Harga Produk</testCaseId>
+      <testCaseId>Test Cases/Step Definition/Feature Bid/BID01 - Buyer Bid with Input Valid Data in Harga Tawar Field</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
