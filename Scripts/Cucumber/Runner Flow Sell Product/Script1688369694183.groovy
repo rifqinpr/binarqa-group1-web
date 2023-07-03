@@ -14,7 +14,14 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+import internal.GlobalVariable
+import javassist.bytecode.stackmap.BasicBlock.Catch
+
 import org.openqa.selenium.Keys as Keys
 
-CucumberKW.runWithCucumberRunner(Runner.class)
+CucumberKW.runWithCucumberRunner(RunnerRegister.class)
+CucumberKW.runWithCucumberRunner(RunnerLogin.class)
+CucumberKW.runWithCucumberRunner(RunnerUserProfile.class)
+CucumberKW.runWithCucumberRunner(RunnerAddProduct.class)
+CucumberKW.runWithCucumberRunner(RunnerEditProduct.class)
+CucumberKW.runWithCucumberRunner(RunnerDeleteProduct.class)

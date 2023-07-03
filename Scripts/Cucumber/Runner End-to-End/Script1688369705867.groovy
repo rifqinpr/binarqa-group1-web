@@ -17,4 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CucumberKW.runWithCucumberRunner(Runner.class)
+CucumberKW.runWithCucumberRunner(RunnerRegister.class)
+CucumberKW.runWithCucumberRunner(RunnerLogin.class)
+CucumberKW.runWithCucumberRunner(RunnerUserProfile.class)
+//CucumberKW.runWithCucumberRunner(RunnerAddProduct.class)
+CucumberKW.runWithCucumberRunner(RunnerSearch.class)
+CucumberKW.runWithCucumberRunner(RunnerProductCategory.class)
+CucumberKW.runWithCucumberRunner(RunnerBuyerBidProduct.class)
+//CucumberKW.runWithCucumberRunner(RunnerSellerAcceptBid.class)
+//CucumberKW.runWithCucumberRunner(RunnerUpdateStatusBerhasil.class)
+CucumberKW.runWithCucumberRunner(RunnerSellerDeniedBid.class)
