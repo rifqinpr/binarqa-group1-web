@@ -25,7 +25,7 @@ import org.junit.runner.RunWith
 @CucumberOptions(
 features = "Include/features/Login.feature",
 glue = "stepDefinition",
-tags = "@LGN01",
+tags = "",
 monochrome = true,
 plugin = "html:Reports/Cucumber/Login"
 )

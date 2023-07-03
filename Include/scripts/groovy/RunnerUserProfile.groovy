@@ -25,7 +25,7 @@ import org.junit.runner.RunWith
 @CucumberOptions(
 features = "Include/features/User Profile.feature",
 glue = "stepDefinition",
-tags = "@USR01",
+tags = "",
 monochrome = true,
 plugin = "html:Reports/Cucumber/User Profile"
 )

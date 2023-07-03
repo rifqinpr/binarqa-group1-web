@@ -31,5 +31,4 @@ plugin = "html:Reports/Cucumber/Seller Accept Bid"
 )
 
 public class RunnerSellerAcceptBid {
-
 }

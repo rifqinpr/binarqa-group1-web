@@ -15,6 +15,20 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import javassist.bytecode.stackmap.BasicBlock.Catch as Catch
 import org.openqa.selenium.Keys as Keys
 
-CucumberKW.runWithCucumberRunner(Runner.class)
+try{CucumberKW.runWithCucumberRunner(RunnerRegister.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerLogin.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerUserProfile.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerAddProduct.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerEditProduct.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerDeleteProduct.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerDaftarJual.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerProductCategory.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerSearch.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerBuyerBidProduct.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerSellerAcceptBid.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerSellerDeniedBid.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerUpdateStatusBerhasil.class)}catch(Exception){}
+try{CucumberKW.runWithCucumberRunner(RunnerUpdateStatusBatalkan.class)}catch(Exception){}

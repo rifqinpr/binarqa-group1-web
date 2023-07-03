@@ -25,8 +25,8 @@ public class randomEmail {
 	public static String getEmail(String prefix) {
 		Date today = new Date()
 		String todaysDate = today.format('mmddyy-hhmm')
-		String email = 'user' + todaysDate + '@' + prefix
-		//int randomNo = (int)(Math.random()*1000)
+		int randomNo = (int)(Math.random()*1000)
+		String email = 'user' + todaysDate + '-' + randomNo + '@' + prefix
 		return email;
 	}
 }

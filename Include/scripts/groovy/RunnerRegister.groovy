@@ -25,7 +25,7 @@ import org.junit.runner.RunWith
 @CucumberOptions(
 features = "Include/features/Register.feature",
 glue = "stepDefinition",
-tags = "@REG01",
+tags = "",
 monochrome = true,
 plugin = "html:Reports/Cucumber/Register"
 )

@@ -31,5 +31,4 @@ plugin = "html:Reports/Cucumber/Delete Product"
 )
 
 public class RunnerDeleteProduct {
-	
 }

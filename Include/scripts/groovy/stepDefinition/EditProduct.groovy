@@ -41,13 +41,16 @@ import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
-
+import packages.createGlobalVariables
 
 
 class EditProduct {
 
 	@Given("I login")
 	public void i_login() {
+		//setting email in global variable
+		def setGlobalVariable = new createGlobalVariables()
+		setGlobalVariable.addGlobalVariable('email', 'group1qatest@mytestmail.net')
 		WebUI.openBrowser('https://secondhand.binaracademy.org/')
 		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : GlobalVariable.email], FailureHandling.STOP_ON_FAILURE)
