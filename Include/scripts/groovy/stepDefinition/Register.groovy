@@ -48,7 +48,7 @@ class Register {
 	@Given("I already access the website and user on the register page")
 	public void i_already_access_the_website_and_user_on_the_register_page() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/')
-		WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Register/Click Button Daftar di sini from login page'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
@@ -98,7 +98,7 @@ class Register {
 	public void i_click_Daftar_button() {
 		WebUI.callTestCase(findTestCase('Pages/Register/Click Button Daftar to submit'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Then("I should see the result for register (.*)")
 	public void see_the_result_register(String status) {
 		WebUI.callTestCase(findTestCase('Pages/Register/Verify with if-else'), [('status') : status], FailureHandling.STOP_ON_FAILURE)

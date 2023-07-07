@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>USR05 - Edit profile without fill No Handphone</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b171b8a3-4a07-4cb1-820b-a4054d51fad9</testCaseGuid>
+</TestCaseEntity>

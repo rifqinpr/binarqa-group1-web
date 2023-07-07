@@ -17,4 +17,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyMatch(WebUI.getText(findTestObject('HomePage/p_First Product Card Category')), textExpected, isRegex)
+WebUI.verifyMatch(WebUI.getText(findTestObject('Homepage/p_First Product Card Category')), textExpected, isRegex)

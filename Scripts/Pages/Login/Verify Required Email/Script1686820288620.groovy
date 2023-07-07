@@ -17,12 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementAttributeValue(findTestObject('Login/input_Email'), 'required', 'true', 20)
+WebUI.verifyElementHasAttribute(findTestObject('Login/input_Email'), 'required', 20, FailureHandling.STOP_ON_FAILURE)
 
-required = WebUI.getAttribute(findTestObject('Login/input_Email'), 'required')
+WebUI.verifyMatch(WebUI.getAttribute(findTestObject('Login/input_Email'), 'required'), 'true', false)
 
-com.kms.katalon.core.util.KeywordUtil.logInfo(required)
-
-expected = required
-
-WebUI.verifyMatch(required, expected, false)

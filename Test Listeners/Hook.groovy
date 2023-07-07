@@ -26,12 +26,12 @@ import com.kms.katalon.core.util.KeywordUtil
 
 class Hook_Listener {
 	def openBrowser() {
-		WebUI.openBrowser('https://secondhand.binaracademy.org/');
+		WebUI.openBrowser('https://secondhand.binaracademy.org/')
 		WebUI.maximizeWindow()
 	}
 	
 	def closeBrowser() {
-		WebUI.closeBrowser();
+		WebUI.closeBrowser()
 	}
 	
 	@BeforeTestCase
@@ -44,7 +44,7 @@ class Hook_Listener {
 
 	@AfterTestCase
 	def AfterTestCase(TestCaseContext testCaseContext) {
-		KeywordUtil.logInfo('Test Case: ' + testCaseContext.getTestCaseStatus())
+		KeywordUtil.logInfo('Test Case: ' + testCaseContext.getTestCaseId() + ' | ' + testCaseContext.getTestCaseStatus())
 		this.closeBrowser()
 	}
 
@@ -55,6 +55,6 @@ class Hook_Listener {
 
 	@AfterTestSuite
 	def AfterTestSuite(TestSuiteContext testSuiteContext) {
-		KeywordUtil.logInfo('Test Suite: ' + testSuiteContext.getTestSuiteId() + ', ' + testSuiteContext.getStatus())
+		KeywordUtil.logInfo('Test Suite: ' + testSuiteContext.getTestSuiteId() + ' | ' + testSuiteContext.getStatus())
 	}
 }

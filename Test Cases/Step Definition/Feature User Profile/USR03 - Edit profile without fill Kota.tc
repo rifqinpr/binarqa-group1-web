@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>USR03 - Edit profile without fill Kota</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e00e5a8a-8250-4267-8a20-810e3551be99</testCaseGuid>
+</TestCaseEntity>

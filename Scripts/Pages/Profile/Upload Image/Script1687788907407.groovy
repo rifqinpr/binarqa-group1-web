@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.uploadFile(findTestObject('User Profile/input_Avatar'), 'C:\\Users\\syafr_ohq9dt0\\Downloads\\awan.jpg')
+WebUI.uploadFile(findTestObject('User Profile/input_Avatar'), System.getProperty("user.dir") + "\\Data Files\\ImageForTest\\imgp.jpeg")
 

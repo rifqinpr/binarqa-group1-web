@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Success Edit Profile</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a2de4398-d92a-4c4f-bc47-60ddb142d815</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f9d94d6f-5c1d-45c7-ba8b-36f73b39613f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f9d94d6f-5c1d-45c7-ba8b-36f73b39613f</id>
+      <masked>false</masked>
+      <name>expected</name>
+   </variable>
+</TestCaseEntity>
