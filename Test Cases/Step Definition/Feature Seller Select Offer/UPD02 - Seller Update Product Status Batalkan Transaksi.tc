@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>UPD02 - Seller Update Product Status Batalkan Transaksi</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2336792d-fcaf-44e9-b849-ff391f5a5136</testCaseGuid>
+</TestCaseEntity>

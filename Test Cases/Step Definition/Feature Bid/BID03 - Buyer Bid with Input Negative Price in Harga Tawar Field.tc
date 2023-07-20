@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BID03 - Buyer Bid with Input Negative Price in Harga Tawar Field</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>88eae138-1998-4a45-a9ba-4fb907f5988a</testCaseGuid>
+</TestCaseEntity>

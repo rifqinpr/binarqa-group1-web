@@ -19,19 +19,21 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Step Definition/Feature Register/REG01 - User register with valid credentials'), [:])
 
-WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun Icon'), [:])
+WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Icon Navbar'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Akun'), [:])
+WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Account'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('User Profile/select_Pilih Kota'), 'Jakarta', false)
+WebUI.callTestCase(findTestCase('Pages/Profile/Upload Image'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('User Profile/textarea_Alamat'), 'Alamat')
+WebUI.callTestCase(findTestCase('Pages/Profile/Input Nama'), [('nama') : 'Group1'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('User Profile/input_No Handphone'), '0')
+WebUI.callTestCase(findTestCase('Pages/Profile/Set Kota'), [('kota') : 'Jakarta'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.uploadFile(findTestObject('User Profile/input_Avatar'), 'C:\\Users\\ASUS\\Downloads\\Image\\imgp.jpeg')
+WebUI.callTestCase(findTestCase('Pages/Profile/Input Alamat'), [('alamat') : 'Jl. Kenangan'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('User Profile/button_simpan'))
+WebUI.callTestCase(findTestCase('Pages/Profile/Input No Handphone'), [('noHP') : '0843434343'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Pages/Profile/Click Button Simpan'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Homepage/Click Jual Floating Button'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -46,7 +48,7 @@ WebUI.callTestCase(findTestCase('Pages/Add Product/Input Kategori Produk'), [('k
 WebUI.callTestCase(findTestCase('Pages/Add Product/Input Deskripsi Produk'), [('deskripsiProduk') : 'Deskripsi Produk A'], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : 'C:\\Users\\ASUS\\Downloads\\test.txt'], 
+WebUI.callTestCase(findTestCase('Pages/Add Product/Input Gambar Produk'), [('pathToFile') : System.getProperty("user.dir") + "\\Data Files\\ImageForTest\\invalid_image.txt"], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Add Product/Click Terbitkan Button'), [:], FailureHandling.STOP_ON_FAILURE)

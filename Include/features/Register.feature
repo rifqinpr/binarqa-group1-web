@@ -16,7 +16,7 @@ Feature: Web User Register
       | random | random | abc!12345 | success |
 
   @REG02 @Negative
-  Scenario Outline: Verify to register with invalid email
+  Scenario Outline: Verify to register with invalid email: <condition>
     Given I already access the website and user on the register page
     When I register with input Nama <nama>
     And I register with input Email <email>
@@ -25,12 +25,12 @@ Feature: Web User Register
     Then I should see the result for register <status>
 
     Examples: 
-      | nama       | email               | password  | status         |
-      | registered | groupsatu@gmail.com | abc!12345 | invalid email  |
-      | without @  | groupsatugm.com     | abc!12345 | required email |
-      | without @  | groupsatugmail      | abc!12345 | required email |
-      | kosong aja | empty               | abc!12345 | required email |
-      | incomplete | @gmail.com          | abc!12345 | required email |
+      | nama       | email               | password  | status         | condition             |
+      | registered | groupsatu@gmail.com | abc!12345 | invalid email  | already registered    |
+      | without @  | groupsatugm.com     | abc!12345 | required email | without @             |
+      | without @  | groupsatugmail      | abc!12345 | required email | without @ and non-tld |
+      | kosong aja | empty               | abc!12345 | required email | empty email           |
+      | incomplete | @gmail.com          | abc!12345 | required email | incomplete email      |
 
   #note: This test result @REG03 should be FAILED, because it's not match with EXPECTED RESULT ----- (BUG)
   @REG03 @Negative
@@ -60,7 +60,7 @@ Feature: Web User Register
       | empty | empty | empty    | required nama |
 
   @REG05 @Negative
-  Scenario Outline: Verify to register with invalid password
+  Scenario Outline: Verify to register with invalid password: <condition>
     Given I already access the website and user on the register page
     When I register with input Nama <nama>
     And I register with input Email <email>
@@ -69,6 +69,7 @@ Feature: Web User Register
     Then I should see the result for register <status>
 
     Examples: 
-      | nama            | email  | password | status            |
-      | less than eight | random | aq12     | invalid password  |
-      | kosoong         | random | empty    | required password |
+      | nama            | email  | password | status            | condition      |
+      | less than eight | random | aq12     | invalid password  | <8 char        |
+      | kosoong         | random | empty    | required password | empty password |
+		#less than eight char expected failed

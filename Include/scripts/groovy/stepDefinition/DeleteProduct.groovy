@@ -26,33 +26,30 @@ import internal.GlobalVariable
 public class DeleteProduct {
 	@Given("I Login")
 	public void i_login() {
-		WebUI.openBrowser('')
-		WebUI.navigateToUrl('https://secondhand.binaracademy.org/')
-		WebUI.maximizeWindow()
-		WebUI.click(findTestObject('Object Repository/Navbar/a_Masuk'))
-		WebUI.setText(findTestObject('Object Repository/Login/input_Email'), 'groupbinar1@gmail.com')
-		WebUI.setText(findTestObject('Object Repository/Login/input_Password'), 'group1@123')
-		WebUI.click(findTestObject('Object Repository/Login/button_Masuk'))
+		WebUI.openBrowser('https://secondhand.binaracademy.org/')
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : GlobalVariable.email], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : GlobalVariable.password], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Given("I click Product")
 	public void i_click_Product() {
-		WebUI.click(findTestObject('Object Repository/Navbar/a_Produk Saya Icon'))
+		WebUI.callTestCase(findTestCase('Pages/Daftar Jual Saya/Click Product List Icon'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Given("I click Product Detail")
 	public void i_click_Product_Detail() {
-		WebUI.click(findTestObject('Object Repository/Daftar Jual Saya/div_ProductCard'))
+		WebUI.callTestCase(findTestCase('Pages/Edit Product/Click Product Card in Daftar Jual Saya'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("I click button Delete")
 	public void i_click_button_delete() {
-		WebUI.click(findTestObject('Object Repository/Products/Product Detail Page/Button_Delete_gherkin'))
+		WebUI.callTestCase(findTestCase('Pages/Product Detail/Click Button Delete'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Then("I success delete product")
 	public void i_success_delete_product() {
-		WebUI.callTestCase(findTestCase('Delete_Produk/Verif delete produk'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Delete Product/Verify Success Delete Product'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
-	
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>USR02 - Edit profile without fill Nama</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f7691dcb-aa93-4d03-a9b8-c379e0834fe0</testCaseGuid>
+</TestCaseEntity>

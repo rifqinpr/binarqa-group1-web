@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('HomePage/Kategori Filter/a_Filter Hobi'))
+WebUI.click(findTestObject('Homepage/Kategori Filter/a_Filter Hobi'))
 

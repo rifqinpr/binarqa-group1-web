@@ -17,5 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementAttributeValue(findTestObject('User Profile/input_No Handphone'), 'required', 'true', 20)
+WebUI.verifyElementHasAttribute(findTestObject('User Profile/input_No Handphone'), 'required', 20)
 
+WebUI.verifyMatch(WebUI.getAttribute(findTestObject('User Profile/input_No Handphone'), 'required'), 'true', false)

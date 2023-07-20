@@ -41,18 +41,24 @@ import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
+import packages.createGlobalVariables
 
 class Login {
 	@Given("I already registered an account and go to Login page")
 	public void i_already_registered_an_account() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/')
-		WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("I input email (.*)")
 	public void i_input_email(String email) {
 		if (email == 'empty') {
 			WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : ''], FailureHandling.STOP_ON_FAILURE)
+		}else if (email == 'global') {
+			//setting email in global variable
+			def setGlobalVariable = new createGlobalVariables()
+			setGlobalVariable.addGlobalVariable('email', 'group1qatest@mytestmail.net')
+			WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : GlobalVariable.email], FailureHandling.STOP_ON_FAILURE)
 		}
 		else {
 			WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
@@ -63,6 +69,8 @@ class Login {
 	public void i_input_password(String password) {
 		if (password == 'empty') {
 			WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : ''], FailureHandling.STOP_ON_FAILURE)
+		}else if (password == 'global') {
+			WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : GlobalVariable.password], FailureHandling.STOP_ON_FAILURE)
 		}
 		else {
 			WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)

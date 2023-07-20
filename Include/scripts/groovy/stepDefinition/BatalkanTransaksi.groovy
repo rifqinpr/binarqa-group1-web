@@ -47,7 +47,7 @@ import cucumber.api.java.en.When
 class BatalkanTransaksi {
 	@Given("seller has already login and has product and approved")
 	public void seller_has_already_login_and_has_product_and_approved() {
-		WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : "alexjual1@gmail.com"], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : "asdqwe"], FailureHandling.STOP_ON_FAILURE)
 		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -55,36 +55,37 @@ class BatalkanTransaksi {
 
 	@When("sellers click notification")
 	public void sellers_click_notification() {
-		WebUI.callTestCase(findTestCase('Buyer Bid/Click Notification'),[:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Notification/Click Notification Icon on Navbar'),[:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@And("sellers click all notification")
 	public void sellers_click_all_notification() {
-		WebUI.callTestCase(findTestCase('Buyer Bid/Click Lihat semua notifikasi'),[:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Notification/Click Lihat Semua Notifikasi'),[:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("sellers click first notification")
 	public void sellers_click_first_notification() {
-		WebUI.callTestCase(findTestCase('Buyer Bid/Click First Notification'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Notification/Click First Notification'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("sellers click Status")
 	public void sellers_click_Status() {
-		WebUI.callTestCase(findTestCase('Update Status Order/Click Status Button'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Offer Page/Click Status Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("sellers click radio button Batalkan Transaksi")
 	public void sellers_click_radio_button_Batalkan_Transaksi() {
-		WebUI.callTestCase(findTestCase('Update Status Order/Click Batalkan Transaksi Button'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Offer Page/Click Batalkan Transaksi Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("sellers click Kirim button")
 	public void sellers_click_Kirim_button() {
-		WebUI.callTestCase(findTestCase('Update Status Order/Click Kirim Button'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Offer Page/Click Kirim Button'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("Verify text Penjualan dibatalkan")
 	public void verify_text_Penjualan_dibatalkan() {
-		WebUI.callTestCase(findTestCase('Update Status Order/Verify Penjualan dibatalkan Text'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Offer Page/Verify Penjualan dibatalkan Text'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.closeBrowser()
 	}
 }

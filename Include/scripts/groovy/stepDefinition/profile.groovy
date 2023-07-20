@@ -4,6 +4,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import javax.net.ssl.SSLEngineResult.Status
+
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
@@ -41,72 +43,82 @@ import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
-
+import packages.createGlobalVariables
 
 
 class profile {
-	@Given("user on the login page")
+	@Given("User already login to the web and on the Edit Profile Page")
 	public void user_on_the_login_page() {
-		WebUI.callTestCase(findTestCase('Pages/Login/Click Masuk from homepage'), [:], FailureHandling.STOP_ON_FAILURE)
+		//setting email in global variable
+		def setGlobalVariable = new createGlobalVariables()
+		setGlobalVariable.addGlobalVariable('email', 'group1qatest@mytestmail.net')
+		WebUI.openBrowser('https://secondhand.binaracademy.org/')
+		WebUI.maximizeWindow()
+		WebUI.callTestCase(findTestCase('Step Definition/Feature Login/LGN01 - User login with valid credentials'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Icon Navbar'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Homepage/Click Profile Account'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("user input email (.*)")
-	public void user_input_email(String email) {
-		WebUI.callTestCase(findTestCase('Pages/Login/Input Email'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@When("user input password (.*)")
-	public void user_input_password_meditran(String password) {
-		WebUI.callTestCase(findTestCase('Pages/Login/Input Password'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@When("user click login button")
-	public void user_click_login_button() {
-		WebUI.callTestCase(findTestCase('Pages/Login/Click Button Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@When("user click user profile")
-	public void user_click_user_profile() {
-		WebUI.callTestCase(findTestCase('Pages/Login/Click user profile'), [:], FailureHandling.STOP_ON_FAILURE)
-		WebUI.callTestCase(findTestCase('Pages/Login/Click image2'), [:], FailureHandling.STOP_ON_FAILURE)
-	}
-
-	@When("user click image")
-	public void user_click_image() {
-
-		WebUI.callTestCase(findTestCase('Pages/Login/Click Image Profile Masuk'), [:], FailureHandling.STOP_ON_FAILURE)
-
-
-
+	@When("User upload image with valid file type")
+	public void user_uploadProfilePhoto() {
 		WebUI.callTestCase(findTestCase('Pages/Profile/Upload Image'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Pages/Profile/Verify Image Filled'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("user input nama")
-	public void user_input_nama() {
-		WebUI.callTestCase(findTestCase('Pages/Profile/Input Nama 2'), [('nama') : 'Deksa'], FailureHandling.STOP_ON_FAILURE)
+	@And("User input Nama Profile with (.*)")
+	public void user_inputNamaProfile(String nama) {
+		if (nama == 'empty') {
+			WebUI.callTestCase(findTestCase('Pages/Profile/Input Nama'), [('nama') : ''], FailureHandling.STOP_ON_FAILURE)
+		} else {
+			WebUI.callTestCase(findTestCase('Pages/Profile/Input Nama'), [('nama') : nama], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
-	@When("user input kota")
-	public void user_input_kota() {
-		WebUI.callTestCase(findTestCase('Pages/Profile/Set Kota'), [:], FailureHandling.STOP_ON_FAILURE)
+	@And("User set Kota with (.*)")
+	public void user_setKotaProfile(String kota) {
+		if (kota == 'empty') {
+			WebUI.callTestCase(findTestCase('Pages/Profile/Set Kota'), [('kota') : 'Pilih Kota'], FailureHandling.STOP_ON_FAILURE)
+		} else {
+			WebUI.callTestCase(findTestCase('Pages/Profile/Set Kota'), [('kota') : kota], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
-	@When("user input alamat")
-	public void user_input_alamat() {
-		WebUI.callTestCase(findTestCase('Pages/Profile/Input Alamat'), [('alamat') : 'jl anggur'], FailureHandling.STOP_ON_FAILURE)
+	@And("User input Alamat Profile with (.*)")
+	public void user_inputAlamatProfile(String alamat) {
+		if (alamat == 'empty') {
+			WebUI.callTestCase(findTestCase('Pages/Profile/Input Alamat'), [('alamat') : ''], FailureHandling.STOP_ON_FAILURE)
+		} else {
+			WebUI.callTestCase(findTestCase('Pages/Profile/Input Alamat'), [('alamat') : alamat], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
 
-	@When("user input no handphone")
-	public void user_input_no_handphone() {
-		WebUI.callTestCase(findTestCase('Pages/Profile/Input No Handphone'), [('noHP') : '0843434343'], FailureHandling.STOP_ON_FAILURE)
+	@And("User input No Handphone with (.*)")
+	public void user_inputNoHP_Profile(String noHP) {
+		if (noHP == 'empty') {
+			WebUI.callTestCase(findTestCase('Pages/Profile/Input No Handphone'), [('noHP') : ''], FailureHandling.STOP_ON_FAILURE)
+		} else {
+			WebUI.callTestCase(findTestCase('Pages/Profile/Input No Handphone'), [('noHP') : '0843434343'], FailureHandling.STOP_ON_FAILURE)
+		}
 	}
-	@When("user click button submit")
-	public void user_click_button_submit() {
+
+	@And("User click Simpan button to submit")
+	public void user_clickSimpan_profile() {
 		WebUI.callTestCase(findTestCase('Pages/Profile/Click Button Simpan'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@Then("I verify the step success")
-	public void i_verify_the_step_success() {
-		WebUI.callTestCase(findTestCase('Pages/Profile/Verify text'), [:], FailureHandling.STOP_ON_FAILURE)
+	@Then("User verify edit profile: (.*)")
+	public void user_input_nama(String status) {
+		if (status == 'success') {
+			WebUI.callTestCase(findTestCase('Pages/Profile/Verify Success Edit Profile'), [('expected') : ''], FailureHandling.STOP_ON_FAILURE)
+		} else if (status == 'empty nama') {
+			WebUI.callTestCase(findTestCase('Pages/Profile/Verify Required Nama'), [:], FailureHandling.STOP_ON_FAILURE)
+		} else if (status == 'empty alamat') {
+			WebUI.callTestCase(findTestCase('Pages/Profile/Verify Required Alamat'), [:], FailureHandling.STOP_ON_FAILURE)
+		} else if (status == 'empty kota') {
+			WebUI.callTestCase(findTestCase('Pages/Profile/Verify Required Kota'), [:], FailureHandling.STOP_ON_FAILURE)
+		} else if (status == 'empty noHP') {
+			WebUI.callTestCase(findTestCase('Pages/Profile/Verify Required No Handphone'), [:], FailureHandling.STOP_ON_FAILURE)
+		}
+		WebUI.closeBrowser()
 	}
 }

@@ -22,5 +22,5 @@ WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify Ca
 WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Click Hobi Category Filter'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Pages/Homepage/Category Filter Button/Verify First Product Card Category'), [('textExpected') : WebUI.getText(
-            findTestObject('HomePage/Kategori Filter/a_Filter Hobi')), ('isRegex') : false], FailureHandling.STOP_ON_FAILURE)
+            findTestObject('Homepage/Kategori Filter/a_Filter Hobi')), ('isRegex') : false], FailureHandling.STOP_ON_FAILURE)
 

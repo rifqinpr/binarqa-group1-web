@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>USR04 - Edit profile without fill Alamat</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ef7a5745-c24a-4d81-aa60-896123ae243b</testCaseGuid>
+</TestCaseEntity>
