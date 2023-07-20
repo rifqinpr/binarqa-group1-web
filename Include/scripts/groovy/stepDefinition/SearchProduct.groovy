@@ -47,7 +47,11 @@ class SearchProduct {
 	public void user_in_secondhand_homepage() {
 		WebUI.openBrowser('https://secondhand.binaracademy.org/')
 	}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> branch 'master' of https://github.com/rifqinpr/binarqa-group1-web
 	@When("User input (.*) of product name in search field")
 	public void input_search_field(String text) {
 		WebUI.callTestCase(findTestCase('Pages/Homepage/Input Text in Search Field'), [('text') : text], FailureHandling.STOP_ON_FAILURE)

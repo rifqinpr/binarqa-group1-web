@@ -1,0 +1,270 @@
+[33mcommit 4875cc5546cdcdaec47d70ad38f72d15f6bca0e2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: deksaplay <syafradha@gmail.com>
+Date:   Fri Jul 7 13:29:07 2023 +0700
+
+    fds
+
+[33mcommit 23758d1aca496f997a752ba4bb0adc907340c166[m
+Author: deksaplay <syafradha@gmail.com>
+Date:   Sat Jul 1 15:18:03 2023 +0700
+
+    fddsfds
+
+[33mcommit fb8d72a3235e6d0f11778ece73afe9f2dfc2b9b8[m
+Author: rifqinpr <rifqinpr@gmail.com>
+Date:   Sat Jul 1 15:06:20 2023 +0700
+
+    Fixing non-gherkin ADDP
+
+[33mcommit 39c55334953b86b5208f9ab8398d7dba7cbeb5ec[m
+Author: Silmi Khashaish Fillah <silmi.k.fillah@gmail.com>
+Date:   Sat Jul 1 13:29:59 2023 +0700
+
+    Fixing Register Gherkin Test - matching glue steps & new scenario
+
+[33mcommit 0feeddbcdc1d8a0f22d9245036a7844c76b42d73[m
+Author: Silmi Khashaish Fillah <silmi.k.fillah@gmail.com>
+Date:   Sat Jul 1 12:51:41 2023 +0700
+
+    Fixing Login Gherkin Test - matching glue steps
+
+[33mcommit a253af07a0a47bd8695a4c68acf3e2497b37b302[m
+Author: Silmi Khashaish Fillah <silmi.k.fillah@gmail.com>
+Date:   Sat Jul 1 11:51:36 2023 +0700
+
+    Update Test Suite Register - setting test data & new test case
+
+[33mcommit daa43c4781393b42969b8205a3fd07fecd203ed3[m
+Author: alexdkm <intel7data@gmail.com>
+Date:   Sat Jul 1 00:26:49 2023 +0700
+
+    Update Test Suites non gherkin invalid bid test case
+
+[33mcommit 4309b7d15b4fe5008a8f400e681326981ce8b482[m
+Author: alexdkm <intel7data@gmail.com>
+Date:   Sat Jul 1 00:18:34 2023 +0700
+
+    Update Negative Test Case Gherkin & Non Gherkin Bid
+
+[33mcommit f026bd7222272a6ce3a8978dc70660a390ef5adf[m
+Author: Silmi Khashaish Fillah <silmi.k.fillah@gmail.com>
+Date:   Fri Jun 30 18:17:53 2023 +0700
+
+    Add Test Suite Register & update keyword for register
+
+[33mcommit 147f5c4aa8ac6338f24541fb302c94ff16640630[m
+Author: alexdkm <intel7data@gmail.com>
+Date:   Fri Jun 30 15:23:12 2023 +0700
+
+    Fix Gherkin Bid
+
+[33mcommit 60c6211e15a603dcdbfcbb4144f8bef811c2cc95[m
+Author: alexdkm <intel7data@gmail.com>
+Date:   Fri Jun 30 14:25:16 2023 +0700
+
+    Fix Object Repo & Suites Bid
+
+[33mcommit 9a1f85d98909a9b550b438fdff04456b15e08633[m
+Author: alexdkm <intel7data@gmail.com>
+Date:   Fri Jun 30 09:33:26 2023 +0700
+
+    Update Test Suites Feature Accept & Denied Bid
+
+[33mcommit 943a033f14eabcce16848fc8382676bc56497123[m
+Author: deksaplay <syafradha@gmail.com>
+Date:   Fri Jun 30 08:55:08 2023 +0700
+
+    fdfd
+
+[33mcommit fc073a095306cb9e046d18d6523da38a3a73bc22[m
+Merge: 9d2db3a 862f1c0
+Author: deksaplay <syafradha@gmail.com>
+Date:   Fri Jun 30 02:46:43 2023 +0700
+
+    Merge branch 'master' of https://github.com/rifqinpr/binarqa-group1-web
+
+[33mcommit 9d2db3a74889429569660d376caa8e47e787bc92[m
+Author: deksaplay <syafradha@gmail.com>
+Date:   Fri Jun 30 02:46:09 2023 +0700
+
+    fdsfsd
+
+[33mcommit 862f1c09c07c25454fe2badbdc2fec66e38c5810[m
+Author: Silmi Khashaish Fillah <silmi.k.fillah@gmail.com>
+Date:   Thu Jun 29 12:39:25 2023 +0700
+
+    Update Login
+
+[33mcommit 873f9398fbd7ad5dfbbaee3252d9317b8325f4ec[m
+Author: deksaplay <syafradha@gmail.com>
+Date:   Thu Jun 29 12:32:36 2023 +0700
+
+    CDDDS
+
+[33mcommit 441e4f97f018a4d4ef20b554c2ba56db1e3d0660[m
+Author: deksaplay <syafradha@gmail.com>
+Date:   Wed Jun 28 17:31:36 2023 +0700
+
+    deksa
+
+[33mcommit b32b7d82d91c660cfb5ec54d64592fd562627a73[m
+Author: alexdkm <intel7data@gmail.com>
+Date:   Mon Jun 26 21:48:55 2023 +0700
+
+    Update Update Status Produk
+
+[33mcommit bb9195ec493c41d447201445762f88f25ab9e737[m
+Author: alexdkm <intel7data@gmail.com>
+Date:   Mon Jun 26 21:45:38 2023 +0700
+
+    Update Edit Profile
+
+[33mcommit a2a6a5b2a6fa9b414ceaf98d495561a5d4cca524[m
+Author: deksaplay <syafradha@gmail.com>
+Date:   Mon Jun 26 20:59:55 2023 +0700
+
+    test1
+
+[33mcommit a8b8beb6447f05edfa5f1251d92a97347ceb0502[m
+Merge: f1b7dd1 3b0f4b2
+Author: alexdkm <intel7data@gmail.com>
+Date:   Mon Jun 26 12:36:01 2023 +0700
+
+    Merge branch 'master' of https://github.com/rifqinpr/binarqa-group1-web.git
+
+[33mcommit f1b7dd1b4c54f790d31f212569a601c0fb75665b[m
+Author: alexdkm <intel7data@gmail.com>
+Date:   Mon Jun 26 12:34:15 2023 +0700
+
+    Fix Feature Bid
+
+[33mcommit 3b0f4b2fcb7635d73465ef48b9b10b9d71b96445[m
+Author: rekaamelia <rekaamelia1405@gmail.com>
+Date:   Sun Jun 25 22:00:58 2023 +0700
+
+    Fix scenario edit delete product
+
+[33mcommit 043ef1a9bf117a02442e8f1177cbf46303bad8b5[m
+Merge: 573c6a5 34e4554
+Author: rekaamelia <rekaamelia1405@gmail.com>
+Date:   Tue Jun 20 15:50:35 2023 +0700
+
+    Merge branch 'master' of https://github.com/rifqinpr/binarqa-group1-web.git
+
+[33mcommit 573c6a54b645f37cb9b2a78b43732668ca3e686e[m
+Author: rekaamelia <rekaamelia1405@gmail.com>
+Date:   Tue Jun 20 15:50:06 2023 +0700
+
+    Edit delete product
+
+[33mcommit 34e4554b3e4084848db5939edcf30b18bcc28788[m
+Author: Silmi Khashaish Fillah <silmi.k.fillah@gmail.com>
+Date:   Mon Jun 19 16:28:40 2023 +0700
+
+    Update Register & Login - create global variables for keywords
+
+[33mcommit a7523adbd8e63cc7d44dcd1376475db647405faf[m
+Author: alexdkm <intel7data@gmail.com>
+Date:   Mon Jun 19 05:44:05 2023 +0700
+
+    Feature Bid & Gherkin Bid Done
+
+[33mcommit ddea3c71ed46d66ade3533509ab762b20a8a115c[m
+Author: rifqinpr <rifqinpr@gmail.com>
+Date:   Mon Jun 19 04:06:07 2023 +0700
+
+    Adjustment on Notification
+
+[33mcommit 5b5f4da753714ad6244b8d2bc22be04687516eca[m
+Author: alexdkm <intel7data@gmail.com>
+Date:   Mon Jun 19 03:19:13 2023 +0700
+
+    Progress denied buyer bid
+
+[33mcommit 2ed4926abfdaaefc073f49301f72166d301531c4[m
+Author: alexdkm <intel7data@gmail.com>
+Date:   Sun Jun 18 18:25:19 2023 +0700
+
+    Bid With Invalid Harga done
+
+[33mcommit 3e2bf4af60e1b10149eea7d3633ce5e34638507b[m
+Author: rekaamelia <rekaamelia1405@gmail.com>
+Date:   Sun Jun 18 13:34:12 2023 +0700
+
+    add product with gherkin
+
+[33mcommit 776cf05cd2334ceb6e36f015cd80636af2a56c2b[m
+Merge: 6fddfb4 e0ef50b
+Author: rekaamelia <rekaamelia1405@gmail.com>
+Date:   Sun Jun 18 11:45:57 2023 +0700
+
+    Merge branch 'master' of
+    https://github.com/rifqinpr/binarqa-group1-web.git
+    
+    Conflicts:
+            Include/scripts/groovy/sellproduct.groovy
+            Object Repository/Products/Page_detail_produk/button_Delete.rs
+            Object Repository/Products/Page_detail_produk/button_Edit.rs
+
+[33mcommit 6fddfb47be1e4c4219310a4b8aee64f4d18ebc5f[m
+Author: rekaamelia <rekaamelia1405@gmail.com>
+Date:   Sun Jun 18 11:42:54 2023 +0700
+
+    Edit delete non gherkin
+
+[33mcommit e0ef50bf58ae86e60df7cb95fd977f938f4e35cd[m
+Author: Silmi Khashaish Fillah <silmi.k.fillah@gmail.com>
+Date:   Sun Jun 18 11:37:05 2023 +0700
+
+    Update Register with new scenario & method Read Error
+
+[33mcommit 3e78d8ba16952ec0c3c15751fe0d3334789a88e5[m
+Author: rifqinpr <rifqinpr@gmail.com>
+Date:   Sun Jun 18 07:52:10 2023 +0700
+
+    Completing Non-gherkin for Add Product feature
+
+[33mcommit 733298756251a20631d92d3a6317aa942f3da7a7[m
+Author: Silmi Khashaish Fillah <silmi.k.fillah@gmail.com>
+Date:   Sat Jun 17 21:25:04 2023 +0700
+
+    Improve Login with method Read Error
+
+[33mcommit e75f18ed7c29dc85659280bf1f304877373e92f6[m
+Author: rifqinpr <rifqinpr@gmail.com>
+Date:   Sat Jun 17 16:41:18 2023 +0700
+
+    Adding Test Add Product with multiple image
+
+[33mcommit 8f5b6aa980f41b647b9f54db94fd76e3d135773a[m
+Author: rifqinpr <rifqinpr@gmail.com>
+Date:   Sat Jun 17 16:07:57 2023 +0700
+
+    Adding non-gherkin test for Add Product
+
+[33mcommit 6051ec7b4e4dd5c13d39d360fa97fd6aaedb5776[m
+Author: Silmi Khashaish Fillah <silmi.k.fillah@gmail.com>
+Date:   Sat Jun 17 14:04:57 2023 +0700
+
+    Add test cases & feature file for Register
+
+[33mcommit 20320288dce1ddb221d8ac3cd2530cf71230ec45[m
+Author: rifqinpr <rifqinpr@gmail.com>
+Date:   Sat Jun 17 13:52:53 2023 +0700
+
+    Improving gherkin test for product category filter
+
+[33mcommit cfd6ce1380f927bffa054d8594b7390a12070fed[m
+Author: rifqinpr <rifqinpr@gmail.com>
+Date:   Sat Jun 17 13:22:06 2023 +0700
+
+    Improve Product Filter Feature in non-gherkin test
+
+[33mcommit da58a90fa748b004f8123a9b1c864392dfd174d6[m
+Author: rekaamelia <rekaamelia1405@gmail.com>
+Date:   Sat Jun 17 12:01:04 2023 +0700
+
+    Addproduct
+
+[33mcommit d63f6c21bed6a35f40d81b042bf676b7e50084b8[m
+Author
